@@ -1,0 +1,172 @@
+schema_version: 1
+audit_file: sosatisfying/sessions/audits/2026-05-19T23-38-25-sosatisfying.md
+audit_sha: 9a2ddad690d992f155f8891c7385db616077b1bd
+processed_by: claude-opus-4-7
+playbook_version: 1.0.0
+processed_at: '2026-05-20T04:25:22Z'
+processing_run_id: aaad342c-f7e9-428b-8203-14c270a1f3bc
+processing_run_audits_count: 1
+deltas_emitted:
+- op: upsert_milestone
+  slug: affiliate-portfolio-model
+  name: Amazon-affiliate portfolio on Cloudflare Pages free tier
+  intent: Pursue a portfolio of small Amazon-affiliate review sites hosted on the Cloudflare Pages free tier, targeting at
+    least five affiliate conversions per month per site with cost-neutral operation.
+  status: active
+- op: upsert_milestone
+  slug: umbrella-domain-architecture
+  name: Umbrella domain with per-niche subpaths and $20/mo migration threshold
+  intent: Run all niches under sosatisfying.com with subpaths per niche (e.g., /pellet-smokers/, /homelab-ups/), and promote
+    any niche that clears roughly $20/month in affiliate revenue onto its own domain. Exact migration rule (sustained duration,
+    gross vs net) is still unspecified.
+  status: active
+- op: upsert_milestone
+  slug: stack-astro-mdx-cloudflare
+  name: Astro + MDX on Cloudflare Pages (Next.js rejected)
+  intent: Build all fifty sites as content collections in a single Astro + MDX repository deployed to Cloudflare Pages. Astro
+    chosen for zero-JS default, first-class MDX, typed per-product frontmatter via content collections, and per-page islands
+    for selective interactivity such as a sortable comparison table. One repo, one deploy, one cache, one analytics dashboard.
+  status: active
+- op: upsert_milestone
+  slug: content-production-model
+  track: brand
+  name: Human-led, AI-assisted, human-edited content with mandatory real-use observation
+  intent: Human picks products and angle, AI drafts ~600-word pages, human edits for voice and adds personal anecdotes. Every
+    page must contain at least one observation that could only come from real use of the product. Scaling mechanism for the
+    real-use requirement across fifty niches is unresolved.
+  status: active
+- op: upsert_milestone
+  slug: affiliate-program-mix
+  track: pricing
+  name: Amazon Associates default plus direct programs where they pay better
+  intent: Use Amazon Associates as the default affiliate program and add direct affiliate programs where they pay better (cited
+    8-15% versus Amazon's ~3%). Amazon link placed first for convenience; direct program offered as a 'best price' alternative.
+    Specific direct programs per niche are not yet identified.
+  status: active
+- op: upsert_milestone
+  slug: ui-ux-template
+  track: brand
+  name: Four-page-type template with field-guide aesthetic
+  intent: 'Adopt four page types (homepage decision page, /best/<thing>, /vs/<a>-vs-<b>, /guides/<topic>) with no category
+    index, tag pages, archive, or /blog/. Field-guide aesthetic: light theme, dark text, 720px max reading column, full-width
+    comparison tables, one accent color per niche (pellet=burnt orange, homelab=slate blue, motorcycle=oxblood red), system
+    font stack only, monospace for spec tables, zero animations or carousels. Presented to operator but session ended before
+    explicit yes/no.'
+  status: planned
+- op: upsert_milestone
+  slug: product-card-schema
+  track: brand
+  name: Standard product card schema
+  intent: Each product card includes image, product name, optional Top Pick badge, one-line verdict, three pros, one honest
+    downside, 'Best for' line, and a 'Check Price on Amazon ->' button. Button copy chosen to set honest expectations and
+    reduce bounce.
+  status: planned
+- op: upsert_milestone
+  slug: trust-signals
+  track: brand
+  name: Non-negotiable trust signals
+  intent: Auto-set 'Last updated <month> <year>' from git on every page, real author bio under every page (real name, real
+    photo or no photo, no stock), 'what we test for' strip near homepage top with 5-6 concrete niche-specific criteria, FTC
+    disclosure inline near the first affiliate link rather than in a footer drawer. No fake 'as seen on' logos, no fake review
+    counts, no five-star averages.
+  status: planned
+- op: upsert_milestone
+  slug: banned-ui-elements
+  track: brand
+  name: Banned UI elements
+  intent: Forbid pop-ups, newsletter modals, comments, cookie banners (justified by absence of tracking), star ratings (too
+    gameable), AI-generated stock images of grinning models, infinite scroll, related-posts widgets, and 'you may also like'
+    upsells.
+  status: planned
+- op: upsert_milestone
+  slug: performance-budget
+  name: CI-tested performance budget
+  intent: Enforce LCP under 1.5s on 4G, total JS under 30KB per page, AVIF images with width/height attributes and lazy-loading
+    below the fold, Cloudflare Web Analytics only (no JS, no banner), inline critical CSS, and no render-blocking assets.
+    Budget is to be tested in CI.
+  status: planned
+- op: upsert_milestone
+  slug: per-niche-customization-surface
+  track: brand
+  name: Per-niche customization surface
+  intent: 'Each niche customizes only name, tagline, accent color, ''what we test for'' bullets, products as MDX with frontmatter,
+    guides, and FAQ. Everything else is shared. Goal: a new niche requires a day of writing rather than a day of design.'
+  status: planned
+- op: upsert_milestone
+  slug: niche-candidate-pool
+  track: audience
+  name: Fifty-niche candidate pool from uploaded brief
+  intent: 'Maintain the fifty-niche candidate list from the uploaded ChatGPT transcript (pellet smoker tools, Indian Pursuit
+    touring gear, homelab UPS, freeze dryer setup, garage NAS, solar generator camping, steak shipping, garage gym recovery,
+    motorcycle wind noise, mini PC homelab, portable ham radio, emergency water storage, home sauna, tactical flashlight,
+    outdoor pizza oven, home coffee bar, quiet mechanical keyboards, tiny house solar, garage air quality, motorcycle camping,
+    smart meat thermometers, portable projector camping, garage security cameras, Blackstone griddle, shed office, quiet generators,
+    cold plunge, RV internet, hiking water filtration, portable battery, woodworking dust collection, quiet bedroom cooling,
+    digital nomad desk, budget podcast studio, garage refrigerators, beginner espresso, smart bird feeder cameras, AI streaming
+    setup, portable car fridge, quiet CPAP accessories, DIY home backup power, leather boot care, budget telescope, van life
+    kitchen, desk cable management, beginner drone, quiet air compressor, apartment gym, smart garage workshop, home weather
+    station). Segmentation hints: Highest Buyer Intent (UPS, RV internet, pellet smoker tools, freeze dryer accessories, motorcycle
+    touring gear, solar generators); Lowest Competition (Indian Pursuit accessories, quiet garage equipment, freeze dryer
+    setups, homelab UPS, quiet CPAP accessories); Best Cost-Neutral Probability (pellet smoker tools, homelab UPS, portable
+    power stations, motorcycle gear, RV internet setups).'
+  status: active
+- op: upsert_milestone
+  slug: first-three-niches
+  track: audience
+  name: Pick first three niches to build
+  intent: Select the first three niches from the fifty-niche candidate pool. Session ended after the assistant asked the operator
+    to confirm Section 2 and proceed to first-three picks; no selection was made.
+  status: planned
+- op: upsert_milestone
+  slug: traffic-source-mix
+  track: distribution
+  name: 'Initial traffic mix: social/forums first, SEO follow-on'
+  intent: Drive initial traffic through Reddit, YouTube Shorts, Quora, TikTok shorts, niche Facebook groups, and forum answers,
+    with Google SEO as a longer-tail follow-on rather than the primary funnel.
+  status: planned
+- op: upsert_milestone
+  slug: umbrella-domain-registration
+  track: launch
+  name: Register umbrella domain (~$10/year)
+  intent: Register a single umbrella domain to host all niche subpaths. Plan assumes ~$10/year. Exact registrar, final domain
+    name (working name is sosatisfying.com), and registration date are unresolved.
+  status: planned
+- op: upsert_milestone
+  slug: author-identity
+  track: brand
+  name: Decide author identity for required real-name bio
+  intent: Trust-signal rule mandates a real name under every page and forbids stock photos. The actual person whose name and
+    (optional) photo will appear, and the photo decision itself, are unresolved.
+  status: planned
+- op: upsert_milestone
+  slug: direct-affiliate-program-selection
+  track: pricing
+  name: Identify direct affiliate programs per niche
+  intent: Pair Amazon Associates with higher-paying direct affiliate programs where available (the assistant cited 8-15% vs
+    Amazon's ~3%). Specific direct programs per niche are not yet identified.
+  status: planned
+- op: upsert_milestone
+  slug: video-production-pipeline
+  track: demo
+  name: Video review production pipeline
+  intent: The uploaded brief recommended Descript, Captions, Runway, and Opus Clip for upgrading 'crappy kitchen or living
+    room' recordings into polished review content, plus a simple workflow (Phone -> Captions or Descript -> Opus Clip -> Shorts)
+    and an advanced workflow (Record -> Runway -> Descript -> Opus Clip), with lighting-over-camera as the guiding principle
+    and a note that operator age is an asset in trust niches (grilling, motorcycles, infrastructure, preparedness, homelab,
+    tools, solar, reviews). Not yet integrated as an explicit production-pipeline decision.
+  status: planned
+- op: upsert_milestone
+  slug: migration-threshold-rule
+  name: Define exact niche-to-own-domain migration rule
+  intent: 'The ~$20/month revenue threshold for migrating a niche to its own domain needs a precise rule: sustained for how
+    many months, gross vs net, and what triggers the migration.'
+  status: planned
+warnings: []
+notes: "First audit for sosatisfying \u2014 initial scoping session for an Amazon-affiliate review-portfolio business. Greenfield\
+  \ canvas seeded with approved decisions (portfolio model, umbrella-domain meta-architecture, Astro+MDX stack, content production\
+  \ model, affiliate program mix) as active milestones; the UI/UX template (Section 2: page types, field-guide aesthetic,\
+  \ product card schema, trust signals, banned elements, performance budget, customization surface) was presented but the\
+  \ session ended before explicit operator approval, so those landed as planned. Open questions (first-three niches, domain\
+  \ registration, author identity, direct affiliate programs, video pipeline, exact migration-threshold rule) were captured\
+  \ as planned milestones; strategy/engineering items with no clean track home (portfolio model, umbrella architecture, Astro\
+  \ stack, performance budget, migration-threshold rule) landed in drift for operator triage."

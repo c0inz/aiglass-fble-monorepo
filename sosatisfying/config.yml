@@ -1,0 +1,7 @@
+schema_version: 1
+workspace_slug: sosatisfying
+aiglass_side_repo:
+  raw_url_base: https://raw.githubusercontent.com/c0inz/aiglass-fble-sosatisfying/main
+  branch: main
+notes: "sosatisfying workspace \u2014 Amazon-affiliate review-site portfolio. Subdir\
+  \ of c0inz/aiglass-fble-monorepo."
