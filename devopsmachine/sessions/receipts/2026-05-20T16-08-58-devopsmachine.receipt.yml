@@ -1,0 +1,44 @@
+schema_version: 1
+audit_file: devopsmachine/sessions/audits/2026-05-20T16-08-58-devopsmachine.md
+audit_sha: b3fda47f926fe7c6d21fa0a326ee0c9dd110e4b2
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: f16ccc02-0de1-4437-bc55-5e56f8a06d11
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: fleet-model-standardization
+  name: Fleet model config standardization
+  intent: "Standardize all fleet agent configs (openclaw.json, models.json) to identical settings: Kimi K2.6 primary, Kimi K2.5 fallback, Grok 4.3 in picker, medium thinking level, 262144-token\
+    \ context window, 16384 max output tokens per step \u2014 zero variance across all VMs."
+  status: active
+- op: upsert_step
+  slug: remove-brave-plugin-devopsmachine
+  milestone: fleet-model-standardization
+  text: "Remove stale Brave plugin entry from devopsmachine openclaw.json config (completed \u2014 no more gateway startup warnings)"
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: push-unified-config-fleet
+  milestone: fleet-model-standardization
+  text: "Push unified openclaw.json to all fleet VMs \u2014 confirm deployment reached all hosts including offline agents and 192.168.1.113 (which had no openclaw.json)"
+  done: false
+  ordinal: 2
+- op: upsert_step
+  slug: verify-grok43-reasoning-effort
+  milestone: fleet-model-standardization
+  text: "Verify OpenClaw xAI provider profile for Grok 4.3 does not pass reasoning_effort parameter (unsupported on grok-4, causes API error) \u2014 update provider mapping if needed"
+  done: false
+  ordinal: 3
+- op: upsert_step
+  slug: resolve-web-search-provider
+  milestone: fleet-model-standardization
+  text: "Re-enable a functioning web search provider after Brave plugin removal \u2014 Brave was removed without a replacement configured"
+  done: false
+  ordinal: 4
+warnings: []
+notes: 'Session covered fleet-wide OpenClaw model standardization: upgrading primary to Kimi K2.6, adding Grok 4.3 to the picker, correcting context window to 262,144 tokens, and removing
+  the stale Brave plugin from devopsmachine. Created drift milestone fleet-model-standardization with four steps capturing completed Brave removal, pending full-fleet push confirmation,
+  unresolved Grok 4.3 reasoning_effort API incompatibility, and missing web search provider replacement. No standard product track matched this DevOps/infrastructure content so it lands
+  in drift for operator triage.'

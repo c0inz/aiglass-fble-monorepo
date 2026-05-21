@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: aiglass/sessions/audits/2026-05-20T16-08-23-aiglass.md
+audit_sha: 2030df2bf7d71b3e78ad24e3d62ecfa48cc57933
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 5bbe8fc8-767a-4bd6-ad2f-ad2733f51b4a
+processing_run_audits_count: 5
+deltas_emitted: []
+warnings: []
+notes: "Session covered Plan 4 initial spec (April\u2013May 2026), X OAuth setup, and bitcointalk analysis across multiple brands. The canvas was empty at this stage and Plan 4 had only\
+  \ just been committed \u2014 no milestones existed. All Plan 4 work was superseded and completed by the later audit 2026-05-20T16-08-20-aiglass, which reflects the fully deployed state;\
+  \ the milestone is attributed there rather than here to avoid capturing an intermediate state."

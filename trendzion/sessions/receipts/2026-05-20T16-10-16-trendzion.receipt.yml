@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-05-20T16-10-16-trendzion.md
+audit_sha: e10e5b961423da11138db1247a45ca59b254605b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 6e3ca2f9-1329-4a37-920c-f2d91b84b9a7
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: Brief inquiry about where Spyglass screenshot uploads are stored on disk; the assistant confirmed the .spyglass/uploads/ path. No project decisions were made. No canvas changes.

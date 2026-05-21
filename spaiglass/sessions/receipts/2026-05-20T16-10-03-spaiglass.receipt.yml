@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-05-20T16-10-03-spaiglass.md
+audit_sha: a1e66677bb9a61a3ef773f8b4972d2fbeb5586bd
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 8df612be-27d3-45d9-bd1e-bf867547e42c
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: Session ended immediately due to the assistant not being authenticated. The user reported the fleet.json duplicate entries bug, which was already captured via audit 2026-05-20T16-10-02-spaiglass
+  (delta index 8). No additional canvas changes attributed to this audit.

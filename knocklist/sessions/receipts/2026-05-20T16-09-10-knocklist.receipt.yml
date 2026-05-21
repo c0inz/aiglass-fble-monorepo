@@ -1,0 +1,46 @@
+schema_version: 1
+audit_file: knocklist/sessions/audits/2026-05-20T16-09-10-knocklist.md
+audit_sha: f8f022cc2a23d6b101d4e0ed170b354328a69816
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 55150a7f-af8e-408f-b0d8-360f5fccf982
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: app-live
+  track: launch
+  name: Knocklist app live at knocklist.app
+  intent: Core PWA deployed on Cloudflare edge (Workers, D1, KV, Pages) with auth, org management, territory drawing, pin dropping, leaderboard, and Google Maps integration functional.
+  status: active
+- op: upsert_milestone
+  slug: address-seeder
+  track: launch
+  name: 'Address seeder: OpenAddresses + Smarty pipeline'
+  intent: Seed every deliverable residential address in a territory into D1 using OpenAddresses bulk data combined with Smarty US Street API for cleaning and validation, enabling grey-dot
+    pre-flight map before any knocking begins.
+  status: active
+- op: upsert_step
+  slug: seeder-fix-deployed
+  track: launch
+  milestone: address-seeder
+  text: "CF Worker subrequest fix deployed (reduced ~130 parallel to ~52 sequential) \u2014 awaiting end-to-end verification with ZIP 31313"
+  done: false
+- op: upsert_milestone
+  slug: offline-pwa
+  track: launch
+  name: 'Offline PWA: IndexedDB + Service Worker sync'
+  intent: Pins drop instantly to local IndexedDB and sync silently when connectivity returns. Territory polygons, address data, and today's team pins pre-cached during morning pre-flight
+    on WiFi.
+  status: planned
+- op: upsert_milestone
+  slug: bass-integration-shelved
+  name: "BASS integration \u2014 shelved"
+  intent: BASS wizard after address confirmation requires customer-side interactions (disclosures, credit checks, installation scheduling) that cannot be automated headlessly. BASS left
+    as a separate manual step for sales reps. UI hiding of the BASS feature remains a pending task.
+  status: planned
+warnings: []
+notes: 'Multi-day session (2026-05-06 to 2026-05-12) covering the full Knocklist architecture pivot to Cloudflare edge, core app deployment to knocklist.app, BASS integration shelving,
+  address seeder design and partial fix, and offline PWA design. Five milestones and steps created: app-live (launch, active), address-seeder (launch, active) with an unverified fix
+  step, offline-pwa (launch, planned), and bass-integration-shelved (drift, planned). Sunshift and lifeparse were also created during this session but are separate projects and were
+  not added to the knocklist canvas.'

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-20T16-09-05-gadzoom.md
+audit_sha: b627c9f84b30ae59dbc07dfbed5be12434923b45
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 3ac9852d-8376-4638-9bb0-13f83b6cc6b4
+processing_run_audits_count: 7
+deltas_emitted: []
+warnings: []
+notes: "Session consisted of a truncated user message and no executed decisions \u2014 the runbook for connecting rsdanielbot to local vLLM was uploaded but not acted on, and the agent\
+  \ identified a host mismatch. No status changes were implied and no canvas changes are warranted."

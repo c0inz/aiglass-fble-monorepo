@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: thedezz-cms/sessions/audits/2026-05-20T16-10-05-thedezz-cms.md
+audit_sha: f1381f57b0e3bdc37f20894091534c3af6dbd83f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a5b4a4db-56e0-4710-839b-90eb91c8b1b2
+processing_run_audits_count: 6
+deltas_emitted:
+- op: upsert_step
+  slug: x-bookmarks-oauth-pkce
+  track: distribution
+  milestone: x-api-integration
+  text: "Complete OAuth 2.0 PKCE flow to access X.com bookmarks \u2014 redirect URI and token exchange not yet confirmed"
+  done: false
+warnings: []
+notes: Session focused on X.com bookmark access via OAuth 2.0 PKCE; the operator chose the official PKCE path over the session-cookie approach but did not complete the authorization
+  flow. The bookmark access step (delta 9) is attributed here as the explicit PKCE decision; the broader X API milestone was driven by the earlier 16-10-09 session.

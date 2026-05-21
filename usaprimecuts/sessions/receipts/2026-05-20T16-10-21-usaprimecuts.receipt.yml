@@ -1,0 +1,74 @@
+schema_version: 1
+audit_file: usaprimecuts/sessions/audits/2026-05-20T16-10-21-usaprimecuts.md
+audit_sha: de3c54bb46e6bae7b224e637fe8cfd543e8d12ee
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: d6831510-0427-453b-b747-540d3225659d
+processing_run_audits_count: 4
+deltas_emitted:
+- op: upsert_milestone
+  slug: costco-branding-removal
+  track: brand
+  name: Remove Costco Standard branding
+  intent: Remove 'The Costco Standard' section heading and all associated Costco benchmark copy across all pages. Operator does not want to promote Costco or use grocery baselines.
+  status: done
+  ordinal: 4
+- op: upsert_milestone
+  slug: affiliate-url-population
+  track: distribution
+  name: Populate affiliate URLs for all companies
+  intent: All 28+ companies in the companies table currently have NULL affiliate_url. These must be populated before the site can generate affiliate revenue. Includes applying to Tier
+    1 programs, outreach to Tier 2, and lead capture setup for Tier 3.
+  status: active
+  ordinal: 1
+- op: upsert_milestone
+  slug: affiliate-monetization-gameplan
+  track: distribution
+  name: "Affiliate monetization gameplan \u2014 three-tier strategy"
+  intent: 'Structured affiliate strategy saved to monetization-gameplan.md: Tier 1 (sign up today), Tier 2 (outreach needed with contact research), Tier 3 (lead capture). White Oak Pastures
+    excluded due to conflicting terms. Good Ranchers needs clarification.'
+  status: active
+  ordinal: 2
+- op: upsert_milestone
+  slug: ftc-affiliate-disclosure
+  track: distribution
+  name: FTC-compliant affiliate disclosure
+  intent: Add FTC-required affiliate disclosures to the site. Agent flagged this as needed; operator did not confirm implementation work has started.
+  status: planned
+  ordinal: 3
+- op: upsert_milestone
+  slug: db-migration-mariadb
+  track: drift
+  name: "Database migration: PostgreSQL \u2192 MariaDB on ExceedBackendDB"
+  intent: Migrated Next.js app from PostgreSQL to MariaDB on ExceedBackendDB. All 14 API routes and supporting lib files converted. Flarum also migrated. MariaDB removed from ExceedWebsites.
+    Commit 575ae43 live.
+  status: done
+  ordinal: 1
+- op: upsert_milestone
+  slug: social-reputation-system
+  track: audience
+  name: Social reputation / influencer score system
+  intent: DB schema exists (user_social_accounts table, influencer_score on users) but OAuth routes and profile UI have not been built. Twitter/X and TikTok OAuth blocked pending operator
+    creating developer app credentials. YouTube, Reddit, GitHub OAuth flows unblocked but not confirmed started.
+  status: planned
+  ordinal: 1
+- op: upsert_milestone
+  slug: beef-search-view-refresh
+  track: drift
+  name: beef_search view periodic refresh
+  intent: A beef_search regular view was created in MariaDB to replace the PostgreSQL materialized view. Periodic refresh is a medium-priority open TODO; no implementation started.
+  status: planned
+  ordinal: 4
+- op: upsert_milestone
+  slug: legacy-table-cleanup
+  track: drift
+  name: Remove legacy DB tables
+  intent: Legacy tables (truth_evidence, natural_claims, freedom_claims, research_sources, research_runs, research_items, score_evidence, delivery_evidence) remain in the DB and were
+    flagged for eventual removal.
+  status: planned
+  ordinal: 5
+warnings: []
+notes: "Oldest session (March 19\u201330): monetization gameplan defined in three tiers, Costco branding removal decided, PostgreSQL-to-MariaDB migration completed, nav cleanup executed,\
+  \ and social reputation system scoped (schema exists, OAuth not built). FTC disclosure flagged but unstarted. Legacy table cleanup and beef_search view refresh captured as planned\
+  \ work in drift. This is the foundational strategy session that drove several core decisions later actioned in the May sessions."

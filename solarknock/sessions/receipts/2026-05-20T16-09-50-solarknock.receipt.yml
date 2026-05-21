@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-50-solarknock.md
+audit_sha: b9edd32e0b9eeac197aaf4cb435d5ebf5035f9f3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 18df21d0-db45-42e0-9f9c-e9cdbb9168a7
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: google-geocoding-api-setup
+  track: audience
+  name: Enable Google Geocoding API for address lookup
+  intent: Geocode lookup feature is blocked on operator enabling the Google Geocoding API in Google Cloud Console and creating a server-side IP-restricted key; action required by JohnnyCoin.
+  status: active
+warnings: []
+notes: "Session was primarily about ECPWork (a separate project) and contained minimal solarknock-specific content. The Google Geocoding API enablement blocker \u2014 which also appears\
+  \ in audit 49 \u2014 was confirmed still unresolved here, reinforcing the google-geocoding-api-setup milestone attributed to this audit as the latest confirming source. ECPWork workflow\
+  \ editor and field properties changes are not solarknock canvas items."

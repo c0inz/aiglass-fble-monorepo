@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-05-20T16-10-17-trendzion.md
+audit_sha: b4bc0dd9c4549da3d2d4cb85586a5b90e478cf85
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 6e3ca2f9-1329-4a37-920c-f2d91b84b9a7
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: "Single-exchange session asking how Claude Code handles image attachments \u2014 a tooling question with no project content. No canvas changes; session contained only an operational\
+  \ clarification."

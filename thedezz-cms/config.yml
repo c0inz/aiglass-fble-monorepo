@@ -1,0 +1,8 @@
+schema_version: 1
+workspace_slug: thedezz-cms
+aiglass_side_repo:
+  raw_url_base: https://raw.githubusercontent.com/c0inz/aiglass-fble-thedezz-cms/main
+  branch: main
+notes: |
+  thedezz-cms workspace — subdir of c0inz/aiglass-fble-monorepo.
+  Audits + receipts only. Canvas state on aiglass-side repo.

@@ -1,0 +1,30 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-20T16-09-20-sitepilot.md
+audit_sha: d430f9540bd3c2aace6aca12617ffea46ab878e2
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 248d1e50-1156-431f-a12c-2450fa3532e8
+processing_run_audits_count: 11
+deltas_emitted:
+- op: upsert_milestone
+  slug: pdf-export
+  name: PDF export for forms
+  intent: Implement a PDF export feature for form submissions using headless Chromium, a shared assembleFormData() helper, a /forms/:stepId/pdf route, a lib/pdf-renderer.js module, a
+    form-pdf.ejs print template, sharp-based image downscaling, and a UI download button on the form header. Phase 1/2 split is defined in docs/FORM_export_spec.md.
+  status: planned
+- op: upsert_milestone
+  slug: actions-status-filters
+  name: Actions page status and assignee filters
+  intent: Add server-side Status and Assignee multi-select filter dropdowns to the /actions page, URL-param driven with assignee rendered as any-of-N chips and inline-in-header layout.
+  status: done
+- op: upsert_milestone
+  slug: form-file-visibility
+  name: Form file visibility fix
+  intent: Fix all form file attachments to be visible regardless of field_spec_ref linkage state by adding an Other files catch-all section to the form renderer, ensuring no attachment
+    is ever invisible.
+  status: done
+warnings: []
+notes: 'Operator session on 2026-05-18 covered form file visibility fixes, /actions filter dropdowns, and a PDF export design spec (saved but not committed). Three drift milestones created:
+  pdf-export (planned, spec written), actions-status-filters (done, deployed), and form-file-visibility (done, deployed). The PDF export milestone lands in drift because none of the
+  go-to-market tracks match a product engineering feature; operator should triage track assignment.'

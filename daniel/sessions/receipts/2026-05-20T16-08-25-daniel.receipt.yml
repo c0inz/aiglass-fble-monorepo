@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-25-daniel.md
+audit_sha: 1a22704afca5abcfdcd69b1c24747532e754749c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 0e8026db-498e-401e-9207-081a10679e40
+processing_run_audits_count: 12
+deltas_emitted: []
+warnings: []
+notes: Session blob (ac810df9 trajectory) contained only a source metadata header with no operator inputs. No decisions, no open questions, no canvas-relevant content. No canvas changes.

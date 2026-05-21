@@ -1,0 +1,303 @@
+schema_version: 1
+audit_file: nfthall/sessions/audits/2026-05-20T16-09-13-nfthall.md
+audit_sha: 4472cd97b4c7ac2ea422ad6a86769f8cdc09bf4b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a6f2e71b-c32b-4d11-92cd-db3791900ae0
+processing_run_audits_count: 2
+deltas_emitted:
+- op: upsert_milestone
+  slug: site-deployment
+  track: launch
+  name: Deploy nfthall.win
+  intent: Get Wiki.js v2.5.312 live on nfthall.win with SSL, DNS, Nginx, and Cloudflare proxy on the MarketPlace droplet.
+  status: complete
+  ordinal: 1
+- op: upsert_step
+  slug: wikijs-install
+  track: launch
+  milestone: site-deployment
+  text: Install Wiki.js v2.5.312 on MarketPlace droplet (165.22.133.43) port 3001 with PostgreSQL backend
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: nginx-vhost
+  track: launch
+  milestone: site-deployment
+  text: Configure Nginx vhost for nfthall.win and www.nfthall.win, proxy to localhost:3001, clean up duplicate vhost configs
+  done: true
+  ordinal: 2
+- op: upsert_step
+  slug: ssl-dns-cloudflare
+  track: launch
+  milestone: site-deployment
+  text: Obtain Let's Encrypt SSL certificates, point DNS to MarketPlace, enable Cloudflare proxy
+  done: true
+  ordinal: 3
+- op: upsert_step
+  slug: admin-account-setup
+  track: launch
+  milestone: site-deployment
+  text: Complete Wiki.js setup wizard via API, create admin account at admin@nfthall.win, save credentials to ~/credentials/nfthall.json
+  done: true
+  ordinal: 4
+- op: upsert_step
+  slug: public-access-fix
+  track: launch
+  milestone: site-deployment
+  text: Publish all 26 wiki pages by setting isPublished=true in PostgreSQL to fix 403 errors for guests
+  done: true
+  ordinal: 5
+- op: upsert_milestone
+  slug: article-first-batch
+  track: launch
+  name: Write first 6 foundational articles
+  intent: 'Draft encyclopedic articles for the highest-priority foundational NFT collections: Quantum, Rare Pepe, CryptoPunks, Counterparty Protocol, Spells of Genesis, Colored Coins.'
+  status: complete
+  ordinal: 2
+- op: upsert_step
+  slug: write-quantum
+  track: launch
+  milestone: article-first-batch
+  text: "Write Quantum article (Hall Score 100 \u2014 Kevin McCoy, first NFT)"
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: write-rare-pepe
+  track: launch
+  milestone: article-first-batch
+  text: "Write Rare Pepe article (Hall Score 95 \u2014 Joe Looney ecosystem)"
+  done: true
+  ordinal: 2
+- op: upsert_step
+  slug: write-cryptopunks
+  track: launch
+  milestone: article-first-batch
+  text: "Write CryptoPunks article (Hall Score 98 \u2014 Matt Hall and John Watkinson, Larva Labs)"
+  done: true
+  ordinal: 3
+- op: upsert_step
+  slug: write-counterparty
+  track: launch
+  milestone: article-first-batch
+  text: "Write Counterparty Protocol article (Hall Score 90 \u2014 Dermody, Krellenstein, Wagner)"
+  done: true
+  ordinal: 4
+- op: upsert_step
+  slug: write-spells-of-genesis
+  track: launch
+  milestone: article-first-batch
+  text: "Write Spells of Genesis article (Hall Score revised to 92 \u2014 EverdreamSoft, Shaban Shaame); include FDCARD, SATOSHICARD, ETHEREUMCARD, WILLCARD, BANKSYCARD, HODLCARD and\
+    \ other top cards"
+  done: true
+  ordinal: 5
+- op: upsert_step
+  slug: write-colored-coins
+  track: launch
+  milestone: article-first-batch
+  text: "Write Colored Coins article (Hall Score 85 \u2014 Meni Rosenfeld theorist)"
+  done: true
+  ordinal: 6
+- op: upsert_milestone
+  slug: article-full-200
+  track: launch
+  name: Complete 200-article priority set
+  intent: "Produce all 200 priority articles organized by era: Foundational 2012\u20132014 (15), Counterparty 2014\u20132016 (25), Ethereum Genesis 2017 (35), Infrastructure 2018\u2013\
+    2019 (40), Pre-Boom 2019\u20132020 (35), Mainstream Explosion 2021\u20132022 (50)."
+  status: active
+  ordinal: 3
+- op: upsert_step
+  slug: approve-200-list
+  track: launch
+  milestone: article-full-200
+  text: Approve 200-article priority list organized by era
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: write-remaining-194
+  track: launch
+  milestone: article-full-200
+  text: Write remaining ~194 articles; subagent dispatched but completion unconfirmed as of session end
+  done: false
+  ordinal: 2
+- op: upsert_milestone
+  slug: design-system
+  track: brand
+  name: Establish site design system
+  intent: 'Define and implement the visual identity for nfthall.win: dark theme color palette, typography (Playfair Display headings, Inter body), and institutional authority design
+    philosophy.'
+  status: complete
+  ordinal: 1
+- op: upsert_step
+  slug: color-palette
+  track: brand
+  milestone: design-system
+  text: 'Finalize dark theme palette: bg #0d1117, navy #1a2332, surface #1e2d3d, border #30363d, text #e6edf3, muted #8b949e, gold #f4a261, blue #0066cc'
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: typography
+  track: brand
+  milestone: design-system
+  text: 'Set typography: Playfair Display for headings, Inter for body; philosophy = institutional authority with modern accessibility'
+  done: true
+  ordinal: 2
+- op: upsert_step
+  slug: design-prototypes
+  track: brand
+  milestone: design-system
+  text: 'Build three HTML prototype pages: homepage, CryptoPunks collection page, Quantum artifact page'
+  done: true
+  ordinal: 3
+- op: upsert_step
+  slug: banner-implementation
+  track: brand
+  milestone: design-system
+  text: 'Build static collage banner: 160px height, zero free space between images, slight vertical jitter, inserts after header element; final spec confirmed after multiple iterations'
+  done: true
+  ordinal: 4
+- op: upsert_step
+  slug: desi-audit
+  track: brand
+  milestone: design-system
+  text: 'Desi design audit completed: 5.7/10 pre-fixes, estimated 7.6/10 post-fixes; backlog items include citations, Schema.org markup, category index pages, cross-references'
+  done: true
+  ordinal: 5
+- op: upsert_milestone
+  slug: hall-score-rubric
+  track: brand
+  name: Define Hall Score rubric
+  intent: 'Establish the 100-point scoring rubric for historic significance: Historical Significance (40), Cultural Impact (25), Rarity (15), Market Performance (10), Preservation Status
+    (5), Creator Reputation (5); define tiers Legendary/Historic/Notable/Emerging/Archive.'
+  status: complete
+  ordinal: 2
+- op: upsert_milestone
+  slug: seo-assets
+  track: distribution
+  name: Create SEO and discoverability assets
+  intent: Build sitemap.xml, robots.txt, og-image.svg, and Schema.org JSON-LD to make nfthall.win indexable and shareable.
+  status: active
+  ordinal: 1
+- op: upsert_step
+  slug: sitemap-robots
+  track: distribution
+  milestone: seo-assets
+  text: Create sitemap.xml (25 URLs) and robots.txt (all crawlers allowed except GPTBot)
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: og-image
+  track: distribution
+  milestone: seo-assets
+  text: Create og-image.svg and update manifest.json to say NFT Hall
+  done: true
+  ordinal: 2
+- op: upsert_step
+  slug: schema-org-jsonld
+  track: distribution
+  milestone: seo-assets
+  text: Add Schema.org JSON-LD markup to article pages
+  done: false
+  ordinal: 3
+- op: upsert_milestone
+  slug: image-preservation
+  track: launch
+  name: Implement image preservation strategy
+  intent: "Achieve triple redundancy for all NFT images: Arweave permanent storage (~$10\u201320/image), IPFS with active pinning, and CDN-backed WebP/AVIF/PNG direct hosting."
+  status: active
+  ordinal: 4
+- op: upsert_step
+  slug: real-images-banner
+  track: launch
+  milestone: image-preservation
+  text: Fetch 33 real PNG images for banner from Larva Labs, IPFS gateways, and Art Blocks; remaining images remain as SVG approximations
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: arweave-upload
+  track: launch
+  milestone: image-preservation
+  text: Upload all NFT images to Arweave for permanent one-time storage
+  done: false
+  ordinal: 2
+- op: upsert_step
+  slug: ipfs-pinning
+  track: launch
+  milestone: image-preservation
+  text: Pin all NFT images to IPFS with active pinning service
+  done: false
+  ordinal: 3
+- op: upsert_milestone
+  slug: static-pages
+  track: launch
+  name: Build static HTML pages outside Wiki.js
+  intent: Deploy /gallery, /tokens, /scores, and /owners as static HTML files served by Nginx directly, separate from the Wiki.js wiki; gallery shows 200 NFTs with Hall Scores, Fisher-Yates
+    shuffle, and marketplace links.
+  status: complete
+  ordinal: 5
+- op: upsert_milestone
+  slug: launch-roadmap
+  track: launch
+  name: 12-month phased launch roadmap
+  intent: "Execute four-phase launch: Phase 1 months 1\u20133 foundation + first 50 articles, Phase 2 months 4\u20136 core content + public beta, Phase 3 months 7\u20139 remaining articles\
+    \ + API, Phase 4 months 10\u201312 academic partnerships + sustainability. Q3 2026 target."
+  status: active
+  ordinal: 6
+- op: upsert_step
+  slug: phase-1-foundation
+  track: launch
+  milestone: launch-roadmap
+  text: "Phase 1 (months 1\u20133): deploy infrastructure, write first 50 articles, establish design system"
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: phase-2-beta
+  track: launch
+  milestone: launch-roadmap
+  text: "Phase 2 (months 4\u20136): core content expansion, public beta launch"
+  done: false
+  ordinal: 2
+- op: upsert_step
+  slug: phase-3-api
+  track: launch
+  milestone: launch-roadmap
+  text: "Phase 3 (months 7\u20139): complete remaining articles, launch public API"
+  done: false
+  ordinal: 3
+- op: upsert_step
+  slug: phase-4-partnerships
+  track: launch
+  milestone: launch-roadmap
+  text: "Phase 4 (months 10\u201312): academic partnerships, sustainability/endowment planning"
+  done: false
+  ordinal: 4
+- op: upsert_milestone
+  slug: github-repo
+  track: launch
+  name: Create GitHub repository
+  intent: 'Push the nfthall workspace to a repo under the c0inz org (suggested name: nfthall) for version control and collaboration.'
+  status: planned
+  ordinal: 7
+- op: upsert_milestone
+  slug: workspace-cleanup
+  intent: 'Reorganize the disorganized /home/readystack/.openclaw/workspace by creating a clean folder structure: articles/, static/, scripts/, design/, docs/.'
+  status: planned
+- op: upsert_milestone
+  slug: comments-decision
+  intent: Decide whether to enable comments on Wiki.js articles and which system to use (native built-in, Commento, or Disqus); determine if comments require registration or allow guests.
+  status: planned
+- op: upsert_milestone
+  slug: banner-responsive
+  intent: Confirm responsive behavior of the NFT banner at different viewport sizes; Option C (fixed 28px thumbnails, auto-fill rows by viewport width) was proposed but not decided.
+  status: planned
+- op: upsert_milestone
+  slug: cryptokitties-image-fix
+  intent: "Fix object-fit CSS for 2000\xD72000 CryptoKitties PNG thumbnails \u2014 switch from cover to contain with dark background to stop faces being cropped. Identified but not confirmed\
+    \ deployed."
+  status: planned
+warnings: []
+notes: "This long session (March 17 \u2013 April 10, 2026) covered the complete initial build of nfthall.win: Wiki.js deployment on MarketPlace, 200-article priority set approval with\
+  \ 6 articles confirmed written, design system finalization (dark theme, Playfair/Inter typography), Hall Score 100-point rubric, static gallery and supplementary pages, SEO asset creation,\
+  \ and a 12-month phased launch roadmap. The canvas was empty prior to this batch, so all 41 deltas are new milestones and steps derived from this session. Several open items (comments\
+  \ system, banner responsive behavior, GitHub repo, workspace cleanup, CryptoKitties image fix) land in drift as planned milestones pending operator triage."

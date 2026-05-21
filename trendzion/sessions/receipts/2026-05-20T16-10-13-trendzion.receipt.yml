@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-05-20T16-10-13-trendzion.md
+audit_sha: f4ce9360af02efc3dbd75f13af71262184635db7
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 6e3ca2f9-1329-4a37-920c-f2d91b84b9a7
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: "Audit covered a brief HAR file inquiry about a Coperniq work-order template \u2014 entirely unrelated to trendzion product work. No canvas changes identified; the session contained\
+  \ no trendzion project decisions or actionable items."

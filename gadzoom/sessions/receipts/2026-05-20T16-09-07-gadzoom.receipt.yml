@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-20T16-09-07-gadzoom.md
+audit_sha: 36513d1d6f32330eac3c7b6d15ab4db8f574fd4f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 3ac9852d-8376-4638-9bb0-13f83b6cc6b4
+processing_run_audits_count: 7
+deltas_emitted: []
+warnings: []
+notes: "Session consisted solely of the user sending 'hello' and the assistant offering to help \u2014 a 2-second exchange with no substantive content. No decisions, no open questions,\
+  \ no canvas changes."

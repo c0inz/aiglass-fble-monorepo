@@ -1,0 +1,8 @@
+schema_version: 1
+workspace_slug: ocmarketplace
+aiglass_side_repo:
+  raw_url_base: https://raw.githubusercontent.com/c0inz/aiglass-fble-ocmarketplace/main
+  branch: main
+notes: |
+  ocmarketplace workspace — subdir of c0inz/aiglass-fble-monorepo.
+  Audits + receipts only. Canvas state on aiglass-side repo.

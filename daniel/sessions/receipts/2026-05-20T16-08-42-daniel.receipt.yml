@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-42-daniel.md
+audit_sha: ff3924c384f293f5ee6c8c58b2359848668bbf02
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a79a2101-01e2-4deb-a4af-d19dc5f70875
+processing_run_audits_count: 11
+deltas_emitted: []
+warnings: []
+notes: "Checkpoint (2ba9482e) of the same Mar 16 \u2013 Apr 20 session as audit 41. Covers identical substantive content \u2014 Daniel setup, Playwright Skyward automation, Canyons credential\
+  \ confirmation, SKYWARD_PLAYBOOK.md rewrite. Superseded by later checkpoints; no additional canvas changes attributed here."

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-05-20T16-09-57-spaiglass.md
+audit_sha: 7b5849507def4db75b1d55941b8affe003601e1f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 8df612be-27d3-45d9-bd1e-bf867547e42c
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: Session covered the Gyaku procedural Kaizo arena game project, which is entirely unrelated to the SpaiGlass canvas. No SpaiGlass milestones, tracks, or product decisions were
+  made. No canvas changes attributed to this audit.

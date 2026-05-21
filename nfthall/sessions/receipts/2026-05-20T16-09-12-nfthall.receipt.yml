@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: nfthall/sessions/audits/2026-05-20T16-09-12-nfthall.md
+audit_sha: 58d722a9072d7afd992fda204b63a8b0eed5b883
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a6f2e71b-c32b-4d11-92cd-db3791900ae0
+processing_run_audits_count: 2
+deltas_emitted: []
+warnings: []
+notes: "This audit captured a single unauthenticated session where the user typed hello and was redirected to /login \u2014 no project content was exchanged. No canvas changes are attributable\
+  \ to this audit. The session contained no decisions, open questions, or status changes."

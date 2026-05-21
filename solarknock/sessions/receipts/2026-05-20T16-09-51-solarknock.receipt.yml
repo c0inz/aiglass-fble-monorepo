@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-51-solarknock.md
+audit_sha: 0fb78dcc8a9016838a37fc97fd6e284a97d9f842
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 18df21d0-db45-42e0-9f9c-e9cdbb9168a7
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: "Session covered the e2e test suite migration away from Brighthouse Solar hardcoded credentials and a perceived app regression at session end (operator halted all work). All content\
+  \ is dev/QA infrastructure \u2014 no product canvas milestones are implied. The test suite changes (commits 7575f38, 9b2b5e0, 1760c16, 3d365d4) and regression investigation are operational\
+  \ and do not map to any track. No canvas changes attributed to this audit."

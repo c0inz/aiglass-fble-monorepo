@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: usaprimecuts/sessions/audits/2026-05-20T16-10-20-usaprimecuts.md
+audit_sha: d15f61ef48d159b4058cdfa57d738bc5abd16151
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: d6831510-0427-453b-b747-540d3225659d
+processing_run_audits_count: 4
+deltas_emitted: []
+warnings: []
+notes: 'Trivial session containing only a single informational exchange: operator asked if the frontend-design plugin was available and received confirmation. No decisions made, no actionable
+  canvas changes identified.'

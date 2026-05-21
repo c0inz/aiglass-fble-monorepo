@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: ocmarketplace/sessions/audits/2026-05-20T16-09-14-ocmarketplace.md
+audit_sha: 9323952d1c90aca76ccff0a37b3bacfaa57e3d74
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 9bd422da-90a8-4e53-8a1a-98c878e5e05b
+processing_run_audits_count: 3
+deltas_emitted: []
+warnings: []
+notes: Session covered a single attempted lookup of a msgschool architecture document; the assistant's search command did not complete before the session ended. No decisions were made
+  and no actionable product canvas changes were identified. The implied existence of an architecture document is an infrastructure documentation concern, not a trackable product milestone.

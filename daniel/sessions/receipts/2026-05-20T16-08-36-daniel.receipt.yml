@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-36-daniel.md
+audit_sha: 2ee5c252f57ec5b1285337781bec93cb9265559f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 0e8026db-498e-401e-9207-081a10679e40
+processing_run_audits_count: 12
+deltas_emitted: []
+warnings: []
+notes: 'Earliest checkpoint of session 61ec2aa1 (ended 16:32:31): John said hello, agent loaded MEMORY.md and SKYWARD_PLAYBOOK.md, browser blocked, stale grades reported. Session had
+  not yet written the memory note or read CANVAS_PLAYBOOK.md at this point. Earliest snapshot; all subsequent decisions captured by audit 2026-05-20T16-08-26-daniel. No canvas changes
+  attributed here.'

@@ -1,0 +1,78 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-41-solarknock.md
+audit_sha: 9214a6a7121693074e3648b4704a62865678dce8
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: da31e44f-c655-453c-8c71-fc3389e74e58
+processing_run_audits_count: 9
+deltas_emitted:
+- op: upsert_milestone
+  slug: android-play-store-submission
+  track: launch
+  name: Android Play Store submission
+  intent: 'Complete all Play Store requirements and submit SolarKnock to Google Play: listing, assets, data safety form, content rating, internal track, and production review.'
+  status: active
+  ordinal: 60
+- op: upsert_step
+  slug: play-store-listing-draft
+  track: launch
+  milestone: android-play-store-submission
+  text: 'Store listing draft created in Play Console (app ID 4976200759832415358, developer account 6345899443505066512): app name ''SolarKnock'', short description, and full 1,900-character
+    description saved. Publishing entity: Fable Software LLC.'
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: play-store-category-contact
+  track: launch
+  milestone: android-play-store-submission
+  text: Set app category to 'Business' and fill in contact details (email, phone, website) in Store settings.
+  done: false
+  ordinal: 2
+- op: upsert_step
+  slug: play-store-graphic-assets
+  track: launch
+  milestone: android-play-store-submission
+  text: Upload 512x512 icon, 1024x500 feature graphic, and phone screenshots. Source of graphic assets not yet determined; operator to supply or build dedicated fixture suite.
+  done: false
+  ordinal: 3
+- op: upsert_step
+  slug: play-store-data-safety-form
+  track: launch
+  milestone: android-play-store-submission
+  text: Complete Data Safety form (location, crash logs, calendar, photos, app activity, financial/Stripe). Answers fully drafted in listing document but not yet entered into Play Console.
+  done: false
+  ordinal: 4
+- op: upsert_step
+  slug: play-store-content-rating
+  track: launch
+  milestone: android-play-store-submission
+  text: 'Complete content rating questionnaire and remaining setup tasks: privacy policy, app access, ads, target audience, government apps, financial features, health.'
+  done: false
+  ordinal: 5
+- op: upsert_step
+  slug: play-store-session-cookie-test
+  track: launch
+  milestone: android-play-store-submission
+  text: "Verify session-cookie persistence works in React Native \u2014 identified as highest-risk unknown before Play Store submission."
+  done: false
+  ordinal: 6
+- op: upsert_step
+  slug: play-store-internal-track-submit
+  track: launch
+  milestone: android-play-store-submission
+  text: 'Submit to Internal track: confirm package identifier, provide tester email list, verify Play Console account enrollment. Estimated effort: ~7 hours plus ~24h Google review window
+    for Internal track.'
+  done: false
+  ordinal: 7
+- op: upsert_milestone
+  slug: pricing-tiers
+  track: pricing
+  name: SolarKnock pricing tiers
+  intent: 'Define and publish SolarKnock subscription pricing: Team 10 at $250/month and Team 20 at $500/month as the v1.0 published tiers.'
+  status: active
+  ordinal: 10
+warnings: []
+notes: 'Session drove concrete Play Store listing work: store listing draft created in Play Console with app name, short description, and full description saved; pricing tiers confirmed
+  ($250/month Team 10, $500/month Team 20) and included in the listing. Created android-play-store-submission milestone in launch track with 7 steps covering remaining requirements,
+  and pricing-tiers milestone in pricing track. Multiple setup tasks (category, contact details, graphic assets, data safety, content rating) remain incomplete.'

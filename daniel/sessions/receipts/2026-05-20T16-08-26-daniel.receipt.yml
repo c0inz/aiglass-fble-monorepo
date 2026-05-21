@@ -1,0 +1,21 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-26-daniel.md
+audit_sha: 44aa5dbee7dbf7a6ff2288fb3a8ba4f0b2a552fe
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 0e8026db-498e-401e-9207-081a10679e40
+processing_run_audits_count: 12
+deltas_emitted:
+- op: upsert_milestone
+  slug: fix-chrome-playwright-daniel-vm
+  name: Fix Chrome/Playwright on Daniel VM
+  intent: Install google-chrome-stable or configure OpenClaw browser plugin to use bundled Playwright Chromium cache so that Skyward and Canvas grade pulls can execute. The apt install
+    attempt failed in the 2026-05-07 session because the elevated tool was unavailable; the dynamic path resolver was applied to SKYWARD_PLAYBOOK.md and CANVAS_PLAYBOOK.md as a stop-gap.
+    A durable fix is still needed.
+  status: active
+warnings: []
+notes: 'Full session (2026-05-07): John confirmed both SKYWARD_PLAYBOOK.md and CANVAS_PLAYBOOK.md should receive a dynamic Playwright Chromium path resolver (applied successfully), but
+  apt install of google-chrome-stable failed because the elevated tool was blocked. A durable Chrome/Playwright fix on the Daniel VM remains an open action item with no prior canvas
+  entry. Created drift milestone fix-chrome-playwright-daniel-vm to track this work. John also mentioned rolling out Chrome fleet-wide to browser-dependent VMs, but that scope extends
+  beyond Daniel''s canvas and is flagged in the milestone intent for operator triage.'

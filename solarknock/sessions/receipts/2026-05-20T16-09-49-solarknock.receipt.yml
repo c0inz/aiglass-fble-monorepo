@@ -1,0 +1,102 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-49-solarknock.md
+audit_sha: f5f935c931459c79529354b74cbefe273dde1d2c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 18df21d0-db45-42e0-9f9c-e9cdbb9168a7
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: per-rep-billing-model
+  track: pricing
+  name: Per-active-rep billing model
+  intent: Replace flat $12/org/month billing with $12/rep/month for reps with 3+ sign-in days per billing period; admin always counts as 1 license; include 7-day free trial with card-at-signup
+    but no charge until day 8.
+  status: active
+- op: upsert_step
+  slug: billing-model-implemented
+  track: pricing
+  milestone: per-rep-billing-model
+  text: 'Implement per-active-rep billing: countBillableSeats logic, invoice.upcoming webhook handler, Stripe subscription quantity update'
+  done: true
+- op: upsert_step
+  slug: seven-day-trial-implemented
+  track: pricing
+  milestone: per-rep-billing-model
+  text: Add 7-day free trial to all Stripe checkout flows; collect card at signup, no charge until day 8
+  done: true
+- op: upsert_step
+  slug: billing-model-verify-real-cycle
+  track: pricing
+  milestone: per-rep-billing-model
+  text: Verify per-seat billing automation against a real Stripe billing cycle (invoice.upcoming handler wired but unverified)
+  done: false
+- op: upsert_milestone
+  slug: stripe-price-id-mismatch
+  track: pricing
+  name: Fix Stripe price ID mismatch on production
+  intent: The Stripe price ID hardcoded in the landing page POST /api/landing/send-code route does not match the STRIPE_ORG_PRICE_ID environment variable on production; this also causes
+    EMAIL_FAILED on the landing page verification flow.
+  status: active
+- op: upsert_milestone
+  slug: free-signup-path
+  track: launch
+  name: Free signup path (solo org auto-create)
+  intent: Users who sign up without an invite code automatically receive a solo (free) org instead of receiving INVITE_REQUIRED; removes onboarding friction for organic visitors.
+  status: active
+- op: upsert_step
+  slug: free-signup-implemented
+  track: launch
+  milestone: free-signup-path
+  text: 'Unblock free signup: auto-create solo org for users without invite code on registration'
+  done: true
+- op: upsert_step
+  slug: org-member-cap-removed
+  track: launch
+  milestone: free-signup-path
+  text: Remove Stripe 30-member cap on org plans (commit 06e504a)
+  done: true
+- op: upsert_milestone
+  slug: landing-page-pricing-messaging
+  track: brand
+  name: Landing page pricing messaging and worry-free positioning
+  intent: Update landing page to feature shield callout with 4 worry-free billing bullet points (7-day trial, usage-only billing, 2 free sign-in days, cancel-anytime); ensure aspirational
+    features listed are clearly marked as planned.
+  status: active
+- op: upsert_step
+  slug: shield-callout-added
+  track: brand
+  milestone: landing-page-pricing-messaging
+  text: Add shield callout with 4 worry-free pricing bullet points to landing page
+  done: true
+- op: upsert_step
+  slug: tos-updated-for-billing
+  track: brand
+  milestone: landing-page-pricing-messaging
+  text: Rewrite Terms of Service at solarknock.com/terms to reflect 7-day trial, per-active-rep $12 pricing, and prorated cancellation policy
+  done: true
+- op: upsert_milestone
+  slug: twilio-sms-whatsapp-approval
+  track: distribution
+  name: Twilio phone number approval and outreach messaging
+  intent: Twilio phone +15592351552 (Fresno area code) is awaiting carrier approval for SMS and WhatsApp outreach; WhatsApp Business API setup also pending owner action. End-to-end messaging
+    tests for Integrated Reporting Sprint 4 are blocked on this.
+  status: active
+- op: upsert_milestone
+  slug: integrated-reporting-sprint5
+  track: demo
+  name: "Integrated Reporting Sprint 5 \u2014 Outreach schedule grid and cron automation"
+  intent: Build the outreach schedule grid UI and the automation cron engine for scheduling and firing outreach messages; Sprints 1-4 are confirmed complete.
+  status: active
+- op: upsert_milestone
+  slug: integrated-reporting-sprint6
+  track: demo
+  name: "Integrated Reporting Sprint 6 \u2014 Polish, background jobs, and tests"
+  intent: 'Complete final polish pass: daily report generation job, 30-day sent message cleanup cron, API tests for candidates CRUD and message parsing, Playwright tests for integrated
+    reporting UI, and error handling with rate limiting on message sends.'
+  status: active
+warnings: []
+notes: 'Session contained the most significant product decisions in this batch: billing model overhaul (per-active-rep $12/month with 7-day trial), free signup path unblocking, landing
+  page and Terms of Service updates, Integrated Reporting Sprints 5 and 6 scope, Twilio outreach approval status, and the Stripe price ID mismatch. All major pricing, launch, brand,
+  distribution, and demo milestones in this batch are attributed to or confirmed by this audit.'

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-34-daniel.md
+audit_sha: cc22f07b7c9b7e51db29c567aeabee8308eaa6ba
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 0e8026db-498e-401e-9207-081a10679e40
+processing_run_audits_count: 12
+deltas_emitted: []
+warnings: []
+notes: 'Checkpoint of session 61ec2aa1 (ended 17:27:48): initial update request, browser blocked, memory written, CANVAS_PLAYBOOK.md read. Early checkpoint of the same session; all actionable
+  content captured by audit 2026-05-20T16-08-26-daniel. No canvas changes attributed here.'

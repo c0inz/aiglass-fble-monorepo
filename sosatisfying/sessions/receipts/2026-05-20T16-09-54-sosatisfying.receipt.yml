@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sosatisfying/sessions/audits/2026-05-20T16-09-54-sosatisfying.md
+audit_sha: d15797ff317085e1da98bbeaf680073c143020e5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: f68f933e-e70b-4396-ad10-acae10e59f62
+processing_run_audits_count: 4
+deltas_emitted: []
+warnings: []
+notes: "This session (2026-04-19) was exploratory \u2014 the operator cloned c0inz/sosatisfying and the agent reviewed the repo structure. No decisions were finalized and no canvas track\
+  \ or milestone slugs were referenced. The session surfaced open questions (X credentials absent, dev.db in source control, Harberger-tax ad placeholder) but reached no actionable conclusions\
+  \ for the canvas."

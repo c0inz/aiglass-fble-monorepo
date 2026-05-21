@@ -1,0 +1,79 @@
+schema_version: 1
+audit_file: thedezz-cms/sessions/audits/2026-05-20T16-10-09-thedezz-cms.md
+audit_sha: fbe512800f94b74d2b1107f4e25e03bffa8dae58
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a5b4a4db-56e0-4710-839b-90eb91c8b1b2
+processing_run_audits_count: 6
+deltas_emitted:
+- op: upsert_milestone
+  slug: site-migration
+  track: launch
+  name: Migrate thedezz.com to static site on exceedwebsites
+  intent: Rebuild thedezz.com as a static HTML/CSS/JS site on 146.190.117.93, decommission DreamHost, and redirect ldsbee.com to thedezz.com.
+  status: active
+- op: upsert_step
+  slug: static-scaffold-built
+  track: launch
+  milestone: site-migration
+  text: Static site scaffold built (index.html, CSS, JS, four post pages) and assets downloaded from WordPress
+  done: true
+- op: upsert_step
+  slug: nginx-config-written
+  track: launch
+  milestone: site-migration
+  text: Nginx config and deploy.sh script written; ldsbee.com 301 redirect to thedezz.com configured
+  done: true
+- op: upsert_step
+  slug: deploy-to-exceedwebsites
+  track: launch
+  milestone: site-migration
+  text: "Deploy static site to 146.190.117.93 via deploy.sh \u2014 SSH connectivity not yet confirmed"
+  done: false
+- op: upsert_step
+  slug: dns-cutover
+  track: launch
+  milestone: site-migration
+  text: Update GoDaddy DNS A record for thedezz.com from DreamHost 173.236.255.184 to 146.190.117.93
+  done: false
+- op: upsert_step
+  slug: decommission-dreamhost
+  track: launch
+  milestone: site-migration
+  text: Decommission DreamHost after 1-2 week post-cutover fallback window; timeline not yet set
+  done: false
+- op: upsert_milestone
+  slug: x-api-integration
+  track: distribution
+  name: X API integration for automated posting
+  intent: Enable automated posting and bookmark access via the X API for @JohnDavenport and @InTheDezz accounts.
+  status: active
+- op: upsert_step
+  slug: x-api-posting-johndavenport
+  track: distribution
+  milestone: x-api-integration
+  text: OAuth 1.0a posting confirmed working for @JohnDavenport (Read+Write app permissions set)
+  done: true
+- op: upsert_step
+  slug: x-api-posting-inthedezz
+  track: distribution
+  milestone: x-api-integration
+  text: Obtain separate OAuth credentials or authorization flow for @InTheDezz (user ID 2033968193564512257) to enable posting as the site account
+  done: false
+- op: upsert_milestone
+  slug: editorial-scaffolding
+  track: brand
+  name: Editorial scaffolding and content planning
+  intent: 'Establish editorial standards and content planning documents for The Dezz: articles roadmap, headline standards, satire writing playbook, and draft article pipeline.'
+  status: active
+- op: upsert_milestone
+  slug: credential-exposure-remediation
+  name: Remediate plaintext credential exposure in git
+  intent: Scrub and rotate X API keys, OAuth secrets, GoDaddy API credentials, and email passwords committed in plaintext to c0inz/thedezz and c0inz/thedezz-cms repositories, and clean
+    TOOLS.md on the workspace.
+  status: active
+warnings: []
+notes: Largest session (March 17 to April 10, 2026) covering the full static site migration decision, X API OAuth 1.0a integration confirmed working for @JohnDavenport, editorial document
+  creation, and a significant credential exposure event. Created the site-migration milestone (deltas 0-5) and x-api-integration milestone (deltas 6-8, 10), and the credential-exposure-remediation
+  drift milestone (delta 13). Server deploy, DNS cutover, @InTheDezz OAuth, and DreamHost decommission remain pending.

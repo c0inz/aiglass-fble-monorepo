@@ -1,0 +1,8 @@
+schema_version: 1
+workspace_slug: savannah
+aiglass_side_repo:
+  raw_url_base: https://raw.githubusercontent.com/c0inz/aiglass-fble-savannah/main
+  branch: main
+notes: |
+  savannah workspace — subdir of c0inz/aiglass-fble-monorepo.
+  Audits + receipts only. Canvas state on aiglass-side repo.

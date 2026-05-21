@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-39-solarknock.md
+audit_sha: 7d237e21eb2dd49ad4566d7fbbb10364882980a9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: da31e44f-c655-453c-8c71-fc3389e74e58
+processing_run_audits_count: 9
+deltas_emitted:
+- op: upsert_milestone
+  slug: leaderboard-stats-timezone-fix
+  intent: 'Fix leaderboard vs. stats page ''today'' discrepancy caused by timezone mismatch: leaderboard uses org timezone server-side, stats bar uses device timezone client-side. Knocks
+    near day boundary fall into different ''today'' buckets. Two candidate fixes: pass orgTimezone to client, or move ''my today'' count server-side alongside leaderboard query.'
+  name: Leaderboard/stats today timezone mismatch bug fix
+  status: active
+warnings: []
+notes: Session investigated leaderboard vs. stats page 'today' discrepancy (org timezone server-side vs. device timezone client-side) and reviewed Android build status. No fix was chosen
+  and no stages were started or completed; session shifted topics without resolution. Created drift milestone for the timezone bug fix since no decision was made but the root cause and
+  fix candidates are well-defined. Android Play Store submission milestone attributed to audit 16-09-41, which drove more concrete action.

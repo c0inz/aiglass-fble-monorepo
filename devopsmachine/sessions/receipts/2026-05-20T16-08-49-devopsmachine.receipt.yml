@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: devopsmachine/sessions/audits/2026-05-20T16-08-49-devopsmachine.md
+audit_sha: 27f10838d22d6a8c557fb6f413751003c7709b08
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: f16ccc02-0de1-4437-bc55-5e56f8a06d11
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Session was a file-identification query only \u2014 operator uploaded the Audit Cull Harness Implementation Contract v1 and asked for its landing path and filename. No implementation\
+  \ work began and no canvas changes are implied."

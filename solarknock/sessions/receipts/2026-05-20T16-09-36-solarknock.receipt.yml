@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-36-solarknock.md
+audit_sha: 60e674e23df57dbdba6831152308945791ae617f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: da31e44f-c655-453c-8c71-fc3389e74e58
+processing_run_audits_count: 9
+deltas_emitted: []
+warnings: []
+notes: Session covered only a file-upload location inquiry (PEPK jar and Play app signing public key placed in .spyglass/uploads/). No decisions were made and no actionable canvas changes
+  were identified; the only open question (whether to move files or gitignore the directory) was left unresolved by the operator.

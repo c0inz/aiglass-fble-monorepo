@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: savannah/sessions/audits/2026-05-20T16-09-17-savannah.md
+audit_sha: 7d3f3e94ff4f45e5be5bd139a17e38ccd71381c3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 5f13321d-1064-4e5a-8a1b-9ea2c8cef598
+processing_run_audits_count: 3
+deltas_emitted: []
+warnings: []
+notes: "Session covered only the creation of two project directories (sosatisfying and savannah) on the VM. No product decisions, milestones, or scope were established \u2014 the operator\
+  \ confirmed the correct working directory and corrected a capitalization error. No canvas changes are attributable to this session."

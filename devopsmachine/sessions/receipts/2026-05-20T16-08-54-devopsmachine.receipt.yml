@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: devopsmachine/sessions/audits/2026-05-20T16-08-54-devopsmachine.md
+audit_sha: 1dc58d7cd311e7959dae49427837d54b4ed7bc99
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: f16ccc02-0de1-4437-bc55-5e56f8a06d11
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Session blob was empty beyond its metadata header \u2014 no operator input or conversation content was present. No canvas changes."

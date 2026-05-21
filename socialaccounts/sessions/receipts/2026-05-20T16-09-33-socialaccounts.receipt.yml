@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: socialaccounts/sessions/audits/2026-05-20T16-09-33-socialaccounts.md
+audit_sha: 249a0454c43564505384d60bfd66dcc17175baaa
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: fcb15f77-ab9a-4142-a5be-985ec142ea0d
+processing_run_audits_count: 4
+deltas_emitted: []
+warnings: []
+notes: "Session from 2026-04-23 consisted of repeated greeting exchanges \u2014 the operator sent 'hello' three times and received acknowledgment responses. No project-relevant content,\
+  \ decisions, or status changes were introduced. No canvas changes."

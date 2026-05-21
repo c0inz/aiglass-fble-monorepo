@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-37-solarknock.md
+audit_sha: 0d2e38476b463534bf43b2f158b5d9022406027a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: da31e44f-c655-453c-8c71-fc3389e74e58
+processing_run_audits_count: 9
+deltas_emitted: []
+warnings: []
+notes: Session covered GCP service account key uploads to .spyglass/uploads/ for three service accounts (gemini-cli, claude-cli, skgoogleplay). No decisions were made; assistant recommendations
+  to rotate keys and add .spyglass/ to .gitignore were not acted upon. No actionable canvas changes identified.

@@ -1,0 +1,29 @@
+schema_version: 1
+audit_file: usaprimecuts/sessions/audits/2026-05-20T16-10-19-usaprimecuts.md
+audit_sha: 76e9ef3883f801cfc7dec4f2917491b8195a5d7f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: d6831510-0427-453b-b747-540d3225659d
+processing_run_audits_count: 4
+deltas_emitted:
+- op: upsert_milestone
+  slug: grade-tier-schema
+  track: drift
+  name: 'Grade tier schema: prime / wagyu / choice / select / ungraded'
+  intent: Added select column to companies schema. Updated getGradeTier() in lib/db.ts to include Select tier and remove grass_fed as a grade fallback. grass_fed is now attribute only.
+    Ungraded brands use 'ungraded' if they make no claim; brands that assert a grade get that grade.
+  status: done
+  ordinal: 2
+- op: upsert_milestone
+  slug: data-integrity-scoring
+  track: drift
+  name: Company data integrity and scoring corrections
+  intent: Riverbend Ranch prime_score corrected from 10.00 to 5.5 and score_value from 12.70 to 2.0. Several scraped claims (Riverbend Ranch, Porter Road, Pursuit Farms wagyu flag) flagged
+    as needing human review. No canvas milestone previously tracked data auditing work.
+  status: active
+  ordinal: 3
+warnings: []
+notes: 'Session covering Melaleuca compliance review and Riverbend Ranch data corrections (May 4): grade tier schema updated (select column added, grass_fed removed from grade chain),
+  and Riverbend Ranch data integrity corrected with scoring values fixed. All three Melaleuca monetization schemes were rejected and produce no canvas work. The delta for costco-branding-removal
+  (index 3) is attributed to the earlier session where it was actioned, but grade schema and data integrity work are solidly rooted in this session.'

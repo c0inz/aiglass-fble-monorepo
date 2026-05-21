@@ -1,0 +1,74 @@
+schema_version: 1
+audit_file: savannah/sessions/audits/2026-05-20T16-09-19-savannah.md
+audit_sha: 2bca1e0ca278724d8b3f5b85f2927f9e671269ff
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 5f13321d-1064-4e5a-8a1b-9ea2c8cef598
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: legal-platform-posture
+  track: drift
+  name: Resolve legal and platform posture
+  intent: Decide between real-performer-with-AI-assistance vs disclosed-AI synthetic persona, and confirm AI-friendly platform selection. Covers CA/NY/EU AI Act disclosure requirements,
+    payment processor restrictions, US 2257 age-verification, and likeness-release requirements if a LoRA is trained on real photos.
+  status: active
+  ordinal: 1
+- op: upsert_milestone
+  slug: content-register-decision
+  track: drift
+  name: Decide content register (SFW vs paid tier)
+  intent: Operator must choose between SFW-only, SFW stream with spicy/flirty paid tier on Fanvue, or full adult tier on Fanvue with SFW Twitch. Decision cascades into persona voice,
+    art commission brief, and platform selection.
+  status: active
+  ordinal: 2
+- op: upsert_milestone
+  slug: persona-definition
+  track: brand
+  name: Define Savannah persona
+  intent: Lock persona name (Savannah vs Maya), voice character, and produce a v0 persona.md seed. Blocks art commission brief, voice clone brief, and content writing.
+  status: active
+  ordinal: 1
+- op: upsert_milestone
+  slug: brain-service-scaffold
+  track: drift
+  name: Scaffold brain service backend
+  intent: 'Build the unified brain service with Postgres on sadb (tables: users, facts, messages, summaries, events, costs), materialized-view context injection, per-user fact store
+    with embeddings and running summary, and fact-extraction with confidence scoring and conflict flagging. Exposes POST /reply endpoint (fields: user_id, message, channel; returns:
+    text, optional voice_url, optional image_url, state).'
+  status: planned
+  ordinal: 3
+- op: upsert_step
+  slug: postgres-schema
+  track: drift
+  milestone: brain-service-scaffold
+  text: Design and migrate Postgres schema on sadb (users, facts, messages, summaries, events, costs)
+  done: false
+  ordinal: 1
+- op: upsert_step
+  slug: reply-api-endpoint
+  track: drift
+  milestone: brain-service-scaffold
+  text: Implement POST /reply endpoint with user_id, message, channel inputs returning text, voice_url, image_url, state
+  done: false
+  ordinal: 2
+- op: upsert_step
+  slug: prompt-injection-classifier
+  track: drift
+  milestone: brain-service-scaffold
+  text: Implement prompt-injection classifier (small model on every inbound message) and output filter on every reply
+  done: false
+  ordinal: 3
+- op: upsert_milestone
+  slug: observability-and-evals
+  track: drift
+  name: Observability and eval harness
+  intent: Structured observability logging of every turn, frozen 100-message eval set to catch persona regressions, and daily backups of the brain database. Required before public launch.
+  status: planned
+  ordinal: 4
+warnings: []
+notes: Gameplan and audit session identified legal posture as the single biggest delivery risk and first decision required before any code, produced a unified DM + stream architecture,
+  and specified the brain service design (Postgres on sadb, retrieval layer, fact extraction, prompt-injection classifier, POST /reply API). Created legal-platform-posture, content-register-decision,
+  persona-definition, brain-service-scaffold (with three steps), and observability-and-evals milestones. The persona-name ambiguity (Savannah vs Maya) is flagged but slug uses savannah-project
+  naming convention.

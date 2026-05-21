@@ -1,0 +1,74 @@
+schema_version: 1
+audit_file: usaprimecuts/sessions/audits/2026-05-20T16-10-18-usaprimecuts.md
+audit_sha: 9be10d7a9bf288b01e587b570c53d0ff44d1897a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: d6831510-0427-453b-b747-540d3225659d
+processing_run_audits_count: 4
+deltas_emitted:
+- op: upsert_milestone
+  slug: editorial-affiliate-rewrite
+  track: brand
+  name: Editorial affiliate site rewrite
+  intent: 'Strip the site from a feature-heavy community platform to a clean editorial affiliate review site with no user accounts, no community features, and no AI search. Light theme,
+    Inter font, 8px grid, red accent #E5484D, 150ms transitions.'
+  status: done
+  ordinal: 1
+- op: upsert_milestone
+  slug: design-system
+  track: brand
+  name: 'Design system: light theme, monochrome + red accent'
+  intent: 'Establish the visual design system: light theme (switched from initial dark deployment), Inter font, 8px grid, single red accent #E5484D, 150ms transitions.'
+  status: done
+  ordinal: 2
+- op: upsert_milestone
+  slug: peer-comparison-ranking
+  track: brand
+  name: Peer-based company ranking within grade tiers
+  intent: 'Replace Costco/market-baseline comparisons with peer-based ranking: companies ranked within their own grade tier (prime, wagyu, choice, select, ungraded) against other DTC
+    competitors only.'
+  status: done
+  ordinal: 3
+- op: upsert_milestone
+  slug: site-structure-5page
+  track: brand
+  name: 5-page site structure
+  intent: 'Define and implement the final 5-page structure: / (homepage, bundles primary), /companies (rankings index), /companies/[slug] (company detail), /best-bundles (bundle landing),
+    /about (methodology).'
+  status: done
+  ordinal: 5
+- op: upsert_milestone
+  slug: company-logos
+  track: brand
+  name: Source and add company logo images
+  intent: logo_url is NULL for all 28 companies in the companies table. Images need to be sourced and populated.
+  status: active
+  ordinal: 6
+- op: upsert_milestone
+  slug: featured-bundles-launch
+  track: launch
+  name: "Featured bundles \u2014 live with curated picks"
+  intent: featured_bundles table created and seeded with 10 curated bundle picks across 7 companies. Bundle contents include item quantities. /best-bundles page is live.
+  status: done
+  ordinal: 1
+- op: upsert_milestone
+  slug: nav-cleanup
+  track: brand
+  name: "Nav cleanup \u2014 remove Compare and Beef Oracle"
+  intent: Removed /compare and /quiz (Beef Oracle) from top nav and footer. Merged /research and /research/contribute into a single tabbed page at /research. Routes remain in codebase
+    but are not surfaced to users.
+  status: done
+  ordinal: 7
+- op: upsert_milestone
+  slug: deployment-vpc-constraint
+  track: drift
+  name: "Deployment VPC constraint \u2014 DB access at 10.124.0.3"
+  intent: Any future deployment host must have VPC access to MariaDB at 10.124.0.3:3306. Currently satisfied by ExceedWebsites in the same VPC. No long-term deployment target was explicitly
+    confirmed.
+  status: active
+  ordinal: 6
+warnings: []
+notes: "Session covering the full editorial affiliate rewrite (May 4\u20139): site stripped to clean affiliate review model, design system finalized (light theme, red accent), 5-page\
+  \ structure settled, featured_bundles table seeded and /best-bundles live, company logos noted as NULL and needing population, nav cleanup completed. Multiple milestones created to\
+  \ capture completed infrastructure work and active gaps. Deployment VPC constraint captured in drift as no explicit long-term target was confirmed."

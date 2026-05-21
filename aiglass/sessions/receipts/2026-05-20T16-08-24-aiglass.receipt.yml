@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: aiglass/sessions/audits/2026-05-20T16-08-24-aiglass.md
+audit_sha: 8cf918c88417e777f4ad9792f591a6e189aba40e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 5bbe8fc8-767a-4bd6-ad2f-ad2733f51b4a
+processing_run_audits_count: 5
+deltas_emitted: []
+warnings: []
+notes: Session blob contained only a file header with no operator turns, decisions, or content. No canvas changes are attributable to this audit.

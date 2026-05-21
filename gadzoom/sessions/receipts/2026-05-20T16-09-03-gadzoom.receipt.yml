@@ -1,0 +1,20 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-20T16-09-03-gadzoom.md
+audit_sha: c11ad65f981781b7e05b78543625aea8252b47b4
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 3ac9852d-8376-4638-9bb0-13f83b6cc6b4
+processing_run_audits_count: 7
+deltas_emitted:
+- op: upsert_milestone
+  slug: surfacemarket-extraction
+  track: distribution
+  name: surfacemarket extracted from gadzoom monorepo
+  intent: "surfacemarket/ subdirectory extracted into standalone c0inz/surfacemarket repository; deletion pushed to c0inz/gadzoom \u2014 clean separation of protocol and trading platform\
+    \ codebases."
+  status: done
+  ordinal: 1
+warnings: []
+notes: Session was primarily msgschool work but included the completed surfacemarket extraction from the gadzoom monorepo into c0inz/surfacemarket. Created distribution/surfacemarket-extraction
+  as done. All other gadzoom-relevant items (gadzoom api/ and PHASE0_LOG.md uncommitted, runbook disposition) were open questions with no confirmed decisions driving new canvas entries.

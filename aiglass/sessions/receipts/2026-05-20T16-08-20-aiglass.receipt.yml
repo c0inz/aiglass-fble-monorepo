@@ -1,0 +1,80 @@
+schema_version: 1
+audit_file: aiglass/sessions/audits/2026-05-20T16-08-20-aiglass.md
+audit_sha: 8a0f48e13be2782cb93fd70ae1b11d7c9971e944
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 5bbe8fc8-767a-4bd6-ad2f-ad2733f51b4a
+processing_run_audits_count: 5
+deltas_emitted:
+- op: upsert_milestone
+  slug: plan-4a-production-deploy
+  track: launch
+  name: Ship Plan 4a to production
+  intent: Deploy the two-stage audit pipeline MVP (tracks, milestones, stage-1 cull harness, stage-2 delta apply, webhook ingest, safety poll, receipt tracking) to the production exceedwebsites
+    environment.
+  status: complete
+  ordinal: 1
+- op: upsert_step
+  slug: plan-4a-foundation-tasks-0-7
+  track: launch
+  milestone: plan-4a-production-deploy
+  text: "Complete foundation layer: DB migration, env, octokitWithPat, JSON schemas, parsers, ref grammar, applyDeltas (Tasks 0\u20137, 195 tests passing)"
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: plan-4a-core-tasks-8-22
+  track: launch
+  milestone: plan-4a-production-deploy
+  text: "Complete core pipeline tasks 8\u201322: crossValidate, playbook templates, playbookRender, playbookCommit, webhook HMAC handler, safety poll, auditFileIngest, ingest.ts, webhook\
+    \ dispatcher, bootstrap template repo, provision.ts with adopt path (296 tests passing)"
+  done: true
+  ordinal: 2
+- op: upsert_step
+  slug: plan-4a-all-14-workspaces-adopted
+  track: launch
+  milestone: plan-4a-production-deploy
+  text: 'Adopt all 14 workspace repos (c0inz/aiglass-fble-*): DB rows, webhooks, playbooks rendered, 13 existing audits backfilled with correct product_id'
+  done: true
+  ordinal: 3
+- op: upsert_step
+  slug: plan-4a-cors-fix
+  track: launch
+  milestone: plan-4a-production-deploy
+  text: "Fix production CORS bug (www vs apex origin mismatch) and deploy Cloudflare www\u2192apex redirect; login confirmed working end-to-end"
+  done: true
+  ordinal: 4
+- op: upsert_milestone
+  slug: public-runbook-and-schemas
+  track: distribution
+  name: Publish feeder-agent runbook and JSON schemas
+  intent: Create c0inz/aiglass-public repo with generic feeder-agent runbook (v0.2.0) and JSON schema files so any agent or user can access them without authentication.
+  status: complete
+  ordinal: 1
+- op: upsert_step
+  slug: public-repo-created
+  track: distribution
+  milestone: public-runbook-and-schemas
+  text: Create c0inz/aiglass-public repo, populate with README, feeder-agent.md runbook (v0.2.0), and three JSON schema files
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: two-repo-model-documented
+  track: distribution
+  milestone: public-runbook-and-schemas
+  text: 'Rewrite c0inz/aiglass-public v0.2.0 to clearly document two-repo boundary: aiglass-side repo holds canvas YAML and playbooks; customer-side repo (customer-owned) holds audits
+    and receipts'
+  done: true
+  ordinal: 2
+- op: upsert_milestone
+  slug: plan-4a5-decisions-actions-benchmarks
+  track: launch
+  name: "Plan 4a.5 \u2014 decisions, open questions, action items, benchmarks schema"
+  intent: Extend the stage-2 pipeline to capture structured decisions, open questions, action items, and benchmarks as first-class entities with aging signals and dedicated UI surfaces,
+    addressing the 'lost work' gap in the current prose-only audit pipeline.
+  status: planned
+  ordinal: 2
+warnings: []
+notes: "Session confirmed Plan 4a fully complete: all 22 tasks done, 296 tests passing, production deployed to exceedwebsites with migrations 0004\u20130006 applied, all 14 workspace\
+  \ repos adopted, CORS bug fixed, and c0inz/aiglass-public created with feeder-agent runbook v0.2.0. Created launch/plan-4a-production-deploy (complete) with four completed steps, distribution/public-runbook-and-schemas\
+  \ (complete) with two completed steps, and launch/plan-4a5-decisions-actions-benchmarks (planned) for the specced but undecided schema extension."

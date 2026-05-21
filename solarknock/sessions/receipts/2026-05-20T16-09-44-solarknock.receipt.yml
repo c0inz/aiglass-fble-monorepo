@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-44-solarknock.md
+audit_sha: b53f5b2e01564afc22410f69b1607826b58b9f1b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 18df21d0-db45-42e0-9f9c-e9cdbb9168a7
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: Session consisted entirely of 'hello' greeting exchanges with no substantive work. No decisions, open questions, or canvas-relevant content were present. No canvas changes attributed
+  to this audit.

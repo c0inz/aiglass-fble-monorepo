@@ -1,0 +1,36 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-05-20T16-10-02-spaiglass.md
+audit_sha: 2010a503f1f727b3a692e9996d307a8c0be32388
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 8df612be-27d3-45d9-bd1e-bf867547e42c
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: fleet-json-dedup-bug
+  name: Fix fleet.json duplicate connector entries
+  intent: Identify and fix the root cause of fleet.json accumulating duplicate spaiglass-developer project-role entries. The connector sync or write logic does not deduplicate on write,
+    causing ~5 identical entries in the fleet dropdown.
+  status: active
+- op: upsert_milestone
+  slug: deploy-relay-frontend-flag
+  name: Fix deploy-relay.sh --frontend flag
+  intent: Investigate and fix the deploy-relay.sh frontend upload step, which has been observed as broken or inconsistent, requiring manual scp as a workaround.
+  status: active
+- op: upsert_milestone
+  slug: stale-relay-assets-cleanup
+  name: Clean up stale frontend assets on relay
+  intent: Remove accumulated stale frontend asset builds from /opt/sgcleanrelay/frontend/assets/ (builds going back to April 12 with no cleanup). Add a cleanup step to the deploy process.
+  status: active
+- op: upsert_milestone
+  slug: architecture-json-upgrade
+  name: architecture.json upgrade and manual publication
+  intent: Publish the architecture-upgrade workplan, MANUAL.md, and MANUAL-REFERENCE.md that are written on disk. Implement the /architecture-manual route in relay/src/server.ts, update
+    the setup page copy, and implement the viewer.
+  status: active
+warnings: []
+notes: 'SpaiGlass multi-topic sprint covering the black-glass theme (shipped), universal focus-return fix (deployed), relay fleet roles URL fix (deployed), spaiglass-developer connector
+  restore, architecture.json upgrade workplan (written on disk, unpublished), deploy-relay.sh frontend flag breakage, and 47+ stale relay assets. Created four milestones in drift for
+  the unresolved items: fleet.json dedup bug, deploy-relay frontend flag fix, stale asset cleanup, and architecture.json manual publication. The black-glass theme and focus-return fix
+  are already shipped and not modeled as open milestones.'

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: knocklist/sessions/audits/2026-05-20T16-09-11-knocklist.md
+audit_sha: f69d89952c16f006548d32d12c816862328dc501
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 55150a7f-af8e-408f-b0d8-360f5fccf982
+processing_run_audits_count: 3
+deltas_emitted: []
+warnings: []
+notes: "Empty session trajectory \u2014 the source file contained only a header with no operator messages or agent activity. No decisions, open questions, or status changes were recorded.\
+  \ No canvas changes attributed to this audit."

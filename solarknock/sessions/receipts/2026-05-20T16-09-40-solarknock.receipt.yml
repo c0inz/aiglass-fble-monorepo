@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-40-solarknock.md
+audit_sha: 37c094bc15a6d378480cc7f9032ea7c7fb57c266
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: da31e44f-c655-453c-8c71-fc3389e74e58
+processing_run_audits_count: 9
+deltas_emitted: []
+warnings: []
+notes: "Session blob was empty \u2014 contained only a source metadata header with no trajectory entries. No canvas changes possible."

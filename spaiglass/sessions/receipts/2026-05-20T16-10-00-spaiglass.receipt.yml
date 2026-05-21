@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-05-20T16-10-00-spaiglass.md
+audit_sha: f9e66c2a65ed8e11238e31ffac639d0688980334
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 8df612be-27d3-45d9-bd1e-bf867547e42c
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: "Session covered Brighthouse Solar-to-LLC GHL sync build and Meta ad attribution \u2014 a completely different project (CRM/marketing for Brighthouse Solar) with no overlap with\
+  \ the SpaiGlass canvas. No canvas changes attributed to this audit."

@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sosatisfying/sessions/audits/2026-05-20T16-09-55-sosatisfying.md
+audit_sha: abe774330930364348d84d77216be534c39a812d
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: f68f933e-e70b-4396-ad10-acae10e59f62
+processing_run_audits_count: 4
+deltas_emitted: []
+warnings: []
+notes: This session (2026-03-17) was a webmaster portfolio session focused on migrating exceed.io and nine other domains off Dreamhost. SoSatisfying.com appears only as a named partner
+  in the exceed.io site rebuild and as an observed pre-existing site on exceedwebsites without a repo. No sosatisfying product work was performed and no canvas changes are attributable
+  to this audit.

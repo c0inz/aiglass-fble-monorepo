@@ -1,0 +1,25 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-38-daniel.md
+audit_sha: f71294b113cc508fa1563ae55f86923f9d7cf7a9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a79a2101-01e2-4deb-a4af-d19dc5f70875
+processing_run_audits_count: 11
+deltas_emitted:
+- op: upsert_milestone
+  slug: skyward-grade-parsing-bug
+  name: Fix Skyward grade-to-course parsing misalignment
+  intent: Resolve the position-based extraction bug where grade values are misaligned to courses due to DOM structure differences in Canyons Skyward. Tona directly reported incorrect
+    outputs (Sports Psychology, Art, Math grades all wrong).
+  status: active
+- op: upsert_milestone
+  slug: credentials-plaintext-exposure
+  name: Address plaintext credential exposure in workspace
+  intent: Credentials (Skyward username/password, Canvas API tokens, email password) are stored and echoed in plaintext in workspace files and session logs. Operator should review file
+    permissions and consider a secrets management approach.
+  status: active
+warnings: []
+notes: "Checkpoint of the same Apr 20 \u2013 Apr 28 session as audit 37, representing the later captured state. Session confirmed the Skyward grade-parsing misalignment (grades and courses\
+  \ matched by array index, breaks when DOM has invisible rows) and documented that Skyward credentials and Canvas tokens were echoed back in plaintext in response to user requests.\
+  \ Created drift milestone for the parsing bug (skyward-grade-parsing-bug) and the credentials exposure concern (credentials-plaintext-exposure)."

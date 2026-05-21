@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-46-solarknock.md
+audit_sha: 4ec5a989c701aea96258f5237d8240d24153bbc7
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 18df21d0-db45-42e0-9f9c-e9cdbb9168a7
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: Session covered production sync check (production was ~10 days behind local as of 2026-04-10), agent handoff prompt generation, and brief check-ins. All content is operational/infra
+  in nature (PM2, scp deploy, git remote, SSL cert expiries) with no product canvas implications. No canvas changes attributed to this audit.

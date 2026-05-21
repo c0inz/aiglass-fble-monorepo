@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-38-solarknock.md
+audit_sha: aa411092d16286d2cead7398312ad82393053b20
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: da31e44f-c655-453c-8c71-fc3389e74e58
+processing_run_audits_count: 9
+deltas_emitted: []
+warnings: []
+notes: "Session blob was empty \u2014 contained only a source header with no operator input or conversation content. No canvas changes possible."

@@ -1,0 +1,61 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-20T16-09-06-gadzoom.md
+audit_sha: fc89dcd86796c6fcabfa6492ae312619f74d680e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 3ac9852d-8376-4638-9bb0-13f83b6cc6b4
+processing_run_audits_count: 7
+deltas_emitted:
+- op: upsert_milestone
+  slug: surfacemarket-shell-deploy
+  track: launch
+  name: surfacemarket.ai shell deployed to Cloudflare Pages
+  intent: "Static shell for surfacemarket.ai live on Cloudflare Pages with custom domain, warm marketplace aesthetic, and auth wall \u2014 demonstrating the surface card concept to early\
+    \ visitors."
+  status: done
+  ordinal: 1
+- op: upsert_milestone
+  slug: phase0-api-foundation
+  track: demo
+  name: Phase 0 API foundation (Fastify + Prisma + EIP-712)
+  intent: "Production-grade Fastify 5 + TypeScript API with Postgres schema, Prisma migrations, EIP-712 + HMAC dual-auth, and 10 versioned endpoints \u2014 foundation for live economic\
+    \ loop and surfacemarket backend."
+  status: active
+  ordinal: 1
+- op: upsert_milestone
+  slug: gadz-token-chain-decision
+  track: pricing
+  name: GADZ token chain decision
+  intent: "Decide whether GADZ token launches on Litecoin EVM (Flare/FAssets), Base, or Stellar \u2014 longest-pole item blocking token milestones M12-M15 and multi-currency clearing."
+  status: planned
+  ordinal: 1
+- op: upsert_milestone
+  slug: adpix-repo-scaffold
+  track: launch
+  name: adpix.ai repository scaffolded
+  intent: "c0inz/adpix created as a new private GitHub repository with initial stub commit; local checkout at ~/projects/adpix \u2014 project origin established for the Harberger-tax\
+    \ favicon-grid Million Dollar Homepage variant."
+  status: planned
+  ordinal: 2
+- op: upsert_milestone
+  slug: harberger-tax-token-mechanics
+  track: pricing
+  name: GADZ token Harberger tax discount mechanic
+  intent: "GADZ holders pay lower tax rate on surface transactions; non-holders have equivalent GADZ acquisition cost included atomically (auto-acquire mechanic) \u2014 identified as\
+    \ strongest token-adoption mechanism."
+  status: planned
+  ordinal: 2
+- op: upsert_milestone
+  slug: archive-risk-doc
+  track: brand
+  name: "ArchiveRisk.md \u2014 unresolved design questions documented"
+  intent: "43-item risk register covering unresolved design questions, strategic gaps, legal risks, and contradictions from archived concept material \u2014 canonical reference for avoiding\
+    \ re-litigation of settled decisions."
+  status: done
+  ordinal: 2
+warnings: []
+notes: Major session covering repo cleanup, surfacemarket.ai shell deployment to Cloudflare Pages (completed), Phase 0 Fastify API implementation (substantially complete), and 15 milestones
+  written across 4 streams. Created launch/surfacemarket-shell-deploy as done, demo/phase0-api-foundation as active, pricing/gadz-token-chain-decision as the blocking token decision,
+  launch/adpix-repo-scaffold as planned, pricing/harberger-tax-token-mechanics as planned, and brand/archive-risk-doc as done. CI/CD was explicitly parked; gadzoom DB password rotation
+  is flagged as an open security item.

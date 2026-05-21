@@ -1,0 +1,27 @@
+schema_version: 1
+audit_file: sosatisfying/sessions/audits/2026-05-20T16-09-52-sosatisfying.md
+audit_sha: 4faa649673be91df99fdab3d8047bbce0ba35f51
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: f68f933e-e70b-4396-ad10-acae10e59f62
+processing_run_audits_count: 4
+deltas_emitted:
+- op: upsert_milestone
+  slug: niche-selection
+  track: audience
+  name: Select and confirm launch niches
+  intent: 'Evaluate and lock the first three niche sites in priority order: (1) homelab UPS/power protection, (2) pellet smokers, (3) Indian Pursuit gear. Operator confirmation pending
+    at session end.'
+  status: active
+- op: upsert_milestone
+  slug: template-spec
+  track: brand
+  name: Lock Section 2 UI/UX template specification
+  intent: Confirm the parameterized Astro component template shape (four page types, field-guide aesthetic, CTA wording, FTC disclosure placement, performance budgets, banned UI patterns)
+    as the canonical scaffold for all niche sites.
+  status: active
+warnings: []
+notes: 'This session (2026-05-07) confirmed the Section 2 UI/UX template shape and proposed the first three niche sites in priority order (homelab UPS, pellet smokers, Indian Pursuit).
+  The operator had not yet confirmed the niches by session end, so niche-selection is marked active rather than done. Template spec was explicitly locked by operator confirmation. Also
+  captured: the PLAN.md/memory discipline fix applied in-session addresses a context-loss problem but produces no standalone canvas delta.'

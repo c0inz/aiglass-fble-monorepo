@@ -1,0 +1,36 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-05-20T16-10-10-trendzion.md
+audit_sha: 49ef8fdb498382697cd2ee4593d64bc8baa3d698
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 6e3ca2f9-1329-4a37-920c-f2d91b84b9a7
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: corpus-v1-ingestion
+  track: drift
+  name: Corpus v1 data ingestion
+  intent: Load all v1 canonical sources (D&C, Ensign, New Era, cojc, JSP Journals) into sadb with provenance canon enforcement and zero NULL fields.
+  status: active
+- op: upsert_milestone
+  slug: times-and-seasons-loader
+  track: drift
+  name: Times and Seasons normalizer and loader
+  intent: "Write the normalizer and sadb loader for T&S Vols 1\u20136; OCR/segmentation subagents are complete for multiple volumes but no loader has been written yet."
+  status: active
+- op: upsert_milestone
+  slug: corpus-scraper-scripts
+  track: drift
+  name: Commit Ensign and New Era scraper scripts
+  intent: The scrape_ensign_fast.py and scrape_new_era.py scripts that produced the raw corpus data were never committed to the repo; only the raw output survives.
+  status: active
+- op: upsert_milestone
+  slug: x-posting-integration
+  track: distribution
+  name: X (Twitter) OAuth posting integration
+  intent: OAuth 1.0a posting via requests_oauthlib is functional for @TrendZion and @JohnDavenport against the fable_software_trendziondotcom app; tokens are live and synced in ~/credentials/x.json.
+  status: active
+warnings: []
+notes: Large corpus ingestion session covering D&C, Ensign, New Era, cojc reconciliation, provenance canon enforcement, T&S partial OCR work, and X OAuth integration. Created drift milestones
+  for corpus-v1-ingestion, times-and-seasons-loader, and corpus-scraper-scripts to track remaining data work, and a distribution milestone for the now-live X posting integration.

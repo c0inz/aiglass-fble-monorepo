@@ -1,0 +1,20 @@
+schema_version: 1
+audit_file: aiglass/sessions/audits/2026-05-20T16-08-21-aiglass.md
+audit_sha: 99bf367820c7c35f9fd61c167195c050347439a2
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 5bbe8fc8-767a-4bd6-ad2f-ad2733f51b4a
+processing_run_audits_count: 5
+deltas_emitted:
+- op: upsert_milestone
+  slug: lifeglass-federation-design
+  name: lifeglass federation architecture design
+  intent: Design and document a federated observation model where a global audit repo (c0inz/lifeglass-audits) serves as a shared stream with per-canvas subscribers projecting from it,
+    enabling aiglass and lifeglass to share audit infrastructure.
+  status: planned
+  ordinal: 1
+warnings: []
+notes: "Session introduced lifeglass \u2014 a net-new personal-life observation canvas concept \u2014 and a four-phase federation design allowing aiglass and lifeglass to share a global\
+  \ audit stream. The federation document was designated as authoritative but its placement in the repo was unconfirmed at session end. Created a drift milestone for the lifeglass-federation-design\
+  \ since the track assignment is uncertain and multiple design questions remain open."

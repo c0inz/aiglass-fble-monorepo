@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-20T16-09-30-sitepilot.md
+audit_sha: fd031a2bc73aded338c87d2875b5cd31b565fb64
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 248d1e50-1156-431f-a12c-2450fa3532e8
+processing_run_audits_count: 11
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check of the My Work tab returned PASS as part of run mobile-llm-5xq0my (an earlier run on the same day as sibling sessions). No human decisions were recorded.
+  The mobile QA automation pattern is already captured by delta 3 attributed to audit 16-09-28; no additional canvas changes needed.

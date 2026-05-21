@@ -1,0 +1,157 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-35-solarknock.md
+audit_sha: 825094c819cf8e13c423d334dcb9e18919a481d9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: da31e44f-c655-453c-8c71-fc3389e74e58
+processing_run_audits_count: 9
+deltas_emitted:
+- op: upsert_milestone
+  slug: google-cloud-oauth-cutover
+  track: launch
+  name: Google Cloud OAuth cutover to solarknock project
+  intent: Migrate OAuth credentials from legacy GCP project (solarknockcom) to new project (solarknock) under fablesoftware.us org, including Calendar scope and all auth flows.
+  status: complete
+  ordinal: 10
+- op: upsert_step
+  slug: cutover-executed-live
+  track: launch
+  milestone: google-cloud-oauth-cutover
+  text: Cutover executed and verified live (release tag prod-20260520-130957-c3f8f42); 5 active Calendar users will see one-time re-authorize prompt on next use.
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: old-project-cleanup
+  track: launch
+  milestone: google-cloud-oauth-cutover
+  text: 'Stage A4: confirm zero traffic on old project (solarknockcom, project 82610159184), verify no active Calendar refresh tokens on old OAuth client, delete old project (30-day
+    recoverable window), re-enable org policy iam.disableServiceAccountKeyCreation on fablesoftware.us.'
+  done: false
+  ordinal: 2
+- op: upsert_milestone
+  slug: secrets-management
+  track: launch
+  name: 'Secrets management: dotenv pattern and credential hygiene'
+  intent: 'Establish and document the canonical secrets pattern: server-side secrets in /var/www/solarknock/.env (chmod 600, not in git), ecosystem.config.cjs minimal (NODE_ENV and PORT
+    only), and track remaining cleanup items.'
+  status: active
+  ordinal: 20
+- op: upsert_step
+  slug: dotenv-pattern-documented
+  track: launch
+  milestone: secrets-management
+  text: docs/SECRETS_PLAYBOOK.md written; ecosystem.config.cjs committed in minimal form; .env pattern live in production.
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: rotate-leaked-secrets
+  track: launch
+  milestone: secrets-management
+  text: "Rotate Stripe, database, and session secrets that were previously committed in plain text in ecosystem.config.cjs \u2014 deferred separate pass per secret."
+  done: false
+  ordinal: 2
+- op: upsert_step
+  slug: cleanup-env-production-git
+  track: launch
+  milestone: secrets-management
+  text: "Remove .env.production from git tracking \u2014 file is tracked in git and contains secrets; flagged in SECRETS_PLAYBOOK.md Legacy table for a separate cleanup pass."
+  done: false
+  ordinal: 3
+- op: upsert_milestone
+  slug: pwa-offline-support
+  track: launch
+  name: PWA offline support (3-stage rollout)
+  intent: 'Deliver offline-capable PWA: Stage 1 = knock offline queue, Stage 2 = service-worker app-shell cache, Stage 3 = cache persistence and territory address cache.'
+  status: active
+  ordinal: 30
+- op: upsert_step
+  slug: pwa-stage-1-knock-queue
+  track: launch
+  milestone: pwa-offline-support
+  text: 'Stage 1 (offline knock queue): implemented and redeployed live as of 2026-05-19.'
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: pwa-stage-2-app-shell-cache
+  track: launch
+  milestone: pwa-offline-support
+  text: 'Stage 2 (service-worker app-shell cache): roadmapped, not yet deployed. Operator directive: do not deploy until scheduled.'
+  done: false
+  ordinal: 2
+- op: upsert_step
+  slug: pwa-stage-3-cache-persistence
+  track: launch
+  milestone: pwa-offline-support
+  text: 'Stage 3 (cache persistence and territory address cache): roadmapped, not yet deployed. Open question: whether synchronous main-thread write of ~4,700 pins (Brighthouse) is a
+    real-world performance cost.'
+  done: false
+  ordinal: 3
+- op: upsert_milestone
+  slug: prod-bug-fixes-may2026
+  track: launch
+  name: "Production bug fixes \u2014 May 2026"
+  intent: 'Track production bugs identified and resolved in the May 2026 sprint: location button stale GPS, map center-drag intercept.'
+  status: complete
+  ordinal: 40
+- op: upsert_step
+  slug: fix-location-button-stale-gps
+  track: launch
+  milestone: prod-bug-fixes-may2026
+  text: 'Location button fix: stale GPS coords sent all reps to 4343 N College Ave, Fresno (morning standup address). Fixed and deployed commit 9583fa5, release tag prod-20260520-001927-9583fa5.'
+  done: true
+  ordinal: 1
+- op: upsert_step
+  slug: fix-map-center-drag
+  track: launch
+  milestone: prod-bug-fixes-may2026
+  text: 'Map center-drag bug: invisible full-width territory sidebar wrapper intercepting touches. Fixed with pointerEvents="box-none" and deployed 2026-05-19; confirmed working by operator.'
+  done: true
+  ordinal: 2
+- op: upsert_milestone
+  slug: twilio-a2p-campaign
+  track: launch
+  name: Twilio A2P SMS campaign registration
+  intent: Complete Twilio A2P 10DLC campaign registration to enable SMS messaging for SolarKnock reps.
+  status: active
+  ordinal: 50
+- op: upsert_step
+  slug: a2p-resubmissions
+  track: launch
+  milestone: twilio-a2p-campaign
+  text: 'Campaign submitted 2026-04-11, resubmitted 2026-04-16 (with REVIEW01 invite code), resubmitted 2026-04-23 (HEAD 404 fix), resubmitted 2026-04-24 (SMS section added to privacy
+    pages). Status as of 2026-04-24: IN_PROGRESS.'
+  done: false
+  ordinal: 1
+- op: upsert_milestone
+  slug: join-beta-feature-assets
+  track: demo
+  name: Join-beta page feature card screenshots
+  intent: Capture Territories and Solar Estimate feature card screenshots for the /join-beta marketing page.
+  status: active
+  ordinal: 10
+- op: upsert_step
+  slug: territories-screenshot
+  track: demo
+  milestone: join-beta-feature-assets
+  text: "Capture Territories feature card screenshot for /join-beta page. Operator said 'i will get you screenshots for those' \u2014 pending operator action."
+  done: false
+  ordinal: 1
+- op: upsert_step
+  slug: solar-estimate-screenshot
+  track: demo
+  milestone: join-beta-feature-assets
+  text: Capture Solar Estimate feature card screenshot for /join-beta page. Pending operator action.
+  done: false
+  ordinal: 2
+- op: upsert_milestone
+  slug: knock-list-empty-state-ux
+  intent: 'Improve Knock List ''Today'' empty-state UX: current behavior looks like a bug when Today filter returns zero results while the Map tab shows pins (Map has no time filter).
+    Add a clear empty-state message explaining the filter.'
+  name: Knock List empty-state UX improvement
+  status: active
+warnings: []
+notes: Long-running session (74 MB) covering Google Cloud OAuth cutover to the solarknock GCP project, secrets management pattern (dotenv playbook), PWA offline support staging (Stage
+  1 live, Stages 2/3 roadmapped), two production bug fixes (location button stale GPS, map center-drag), and Twilio A2P campaign history. Canvas populated with launch-track milestones
+  for all of these, plus demo-track milestone for /join-beta feature screenshots, and two drift milestones for Knock List empty-state UX and leaderboard/stats timezone bug (no matching
+  track for either). Twilio A2P status as of last recorded date (2026-04-24) is IN_PROGRESS.

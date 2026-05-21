@@ -1,0 +1,8 @@
+schema_version: 1
+workspace_slug: daniel
+aiglass_side_repo:
+  raw_url_base: https://raw.githubusercontent.com/c0inz/aiglass-fble-daniel/main
+  branch: main
+notes: |
+  daniel workspace — subdir of c0inz/aiglass-fble-monorepo.
+  Audits + receipts only. Canvas state on aiglass-side repo.

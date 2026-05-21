@@ -1,0 +1,21 @@
+schema_version: 1
+audit_file: ocmarketplace/sessions/audits/2026-05-20T16-09-16-ocmarketplace.md
+audit_sha: f4471ab115dc18dd83dcc4b072c202f65d49799b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 9bd422da-90a8-4e53-8a1a-98c878e5e05b
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: anti-fraud-hardening
+  track: launch
+  name: Anti-fraud hardening (Stripe fraud response)
+  intent: 'Redesign and implement anti-fraud measures on top of the OTP auth model: Cloudflare Turnstile on OTP send and anonymous checkout endpoints, disposable-email blocking at OTP
+    send and email-collection step, forced 3DS on all Stripe payments, IP-based rate limiting on checkout (3 attempts/hour). Redesign is required because the original implementation
+    was written against password auth and is incompatible with the email-OTP / checkout-first model now on main.'
+  status: planned
+warnings: []
+notes: Session covered the anti-fraud hardening attempt triggered by a Stripe fraud flag. Partial implementation (Turnstile, disposable-email block, rate limiting, 3DS) was completed
+  against the old password-auth model, then blocked when the remote main was found to have already migrated to email OTP and anonymous checkout. The hardening work requires a full redesign
+  on top of the OTP model before it can ship. Created launch/anti-fraud-hardening in planned status to track the redesign and completion.

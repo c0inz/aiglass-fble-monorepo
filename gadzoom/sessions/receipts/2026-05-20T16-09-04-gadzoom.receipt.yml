@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-20T16-09-04-gadzoom.md
+audit_sha: c356d2c850489c7d9cbc0857379989184a565b5d
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 3ac9852d-8376-4638-9bb0-13f83b6cc6b4
+processing_run_audits_count: 7
+deltas_emitted: []
+warnings: []
+notes: Session introduced the simulator architecture proposal (SIM_MODE env-var approach, scripted agents, impression events) and noted M1 and M2 as already complete and M3 as not yet
+  complete. All simulator work was superseded and extended by the later audit T16-09-02 which confirmed the gadz-sim repo actually built and running; simulator deltas are attributed
+  there. No independent canvas changes are attributed to this audit.

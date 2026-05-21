@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: knocklist/sessions/audits/2026-05-20T16-09-09-knocklist.md
+audit_sha: 24257a85c3c73203d48470f4ae49bcaa3bf646e8
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 55150a7f-af8e-408f-b0d8-360f5fccf982
+processing_run_audits_count: 3
+deltas_emitted: []
+warnings: []
+notes: Short session in which the operator asked a factual question about file upload locations for two BASS-related PDF reference documents. No decisions were made and no status changes
+  were implied. No canvas changes attributed to this audit.

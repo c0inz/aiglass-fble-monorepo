@@ -1,0 +1,26 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-47-solarknock.md
+audit_sha: 69155202e29c855e2441924ba028291c6cfb587c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 18df21d0-db45-42e0-9f9c-e9cdbb9168a7
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-readiness-pre-checklist
+  track: demo
+  name: Mobile readiness pre-checklist and native build prep
+  intent: Address the ~20-26 hours of open items identified in PRE_MOBILE_CHECKLIST.md to reach full native readiness; includes resolving 87 Platform.OS branches, changing deep link
+    scheme from myapp:// to solarknock://, and completing remaining workplan items.
+  status: active
+- op: upsert_step
+  slug: pre-mobile-checklist-created
+  track: demo
+  milestone: mobile-readiness-pre-checklist
+  text: Create docs/PRE_MOBILE_CHECKLIST.md consolidating NATIVE_READINESS_WORKPLAN.md and AUDIT_WORKPLAN.md into a single document; commit to GitHub (commit 2584240)
+  done: true
+warnings: []
+notes: Session covered a full documentation and code review resulting in PRE_MOBILE_CHECKLIST.md (commit 2584240), consolidating two workplans and identifying ~20-26 hours of remaining
+  mobile-readiness work. Created the mobile-readiness-pre-checklist milestone with the checklist creation step marked done. Test coverage gap analysis (map interaction, lead CRUD, territory,
+  billing flows) was noted but not specific enough to warrant individual milestones at this stage.

@@ -1,0 +1,53 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-05-20T16-09-56-spaiglass.md
+audit_sha: 02e11547e15912eda589c2c9de737999bff9771b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 8df612be-27d3-45d9-bd1e-bf867547e42c
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: session-persistence
+  name: Session persistence (frames + scrollback rehydrate)
+  intent: Persist session frames to ~/.spaiglass/sessions/<tuple>/frames.jsonl and meta.json so a hard-refresh fully restores scrollback including file-diff frames (Phase 1+2) and prepares
+    for the context-file index and Context tab (Phase 3+4).
+  status: active
+- op: upsert_milestone
+  slug: context-files-tab
+  name: Context-files tab and GET /api/session/context-files
+  intent: Expose a persistent Context tab that lists files referenced in the session (filtered to paths within the session working directory) with clickable filenames that open the file
+    in the editor.
+  status: active
+- op: upsert_milestone
+  slug: skills-chip-row
+  name: Skills chip row and picker modal
+  intent: Ship SkillsChipRow and SkillsPickerModal with GET /api/skills and usePinnedSkills so users can pin and select skills from the chat interface.
+  status: active
+- op: upsert_milestone
+  slug: layout-split-editor-chat
+  name: 'Desktop layout: equal editor/chat pane split'
+  intent: Split the editor pane and chat pane equally across remaining horizontal space on desktop, leaving the file sidebar fixed. Mobile layout is explicitly held unchanged.
+  status: active
+- op: upsert_milestone
+  slug: relay-api-only-fleet-mgmt
+  name: Relay API-only fleet management (no raw SQL)
+  intent: All fleet management must go through the relay API. Direct SQL manipulation of the relay database is prohibited. Missing API operations (DELETE connector, POST create connector)
+    must be added to the API surface rather than bypassed.
+  status: active
+- op: upsert_milestone
+  slug: dashboard-deprecation
+  name: "Deprecate /dashboard \u2014 direct sign-in to fleet entry"
+  intent: Remove references to /dashboard from all workflows. Correct flow is sign-in directly to the most-recent or first fleet entry. Fleet dropdown is driven by the connectors table
+    in the relay database.
+  status: active
+- op: upsert_milestone
+  slug: aiglass-batch-pipeline
+  name: aiglass batch pipeline and monorepo setup
+  intent: 'Build and operate the aiglass session ingestion pipeline: session inventory, candidate filtering, attribution logic, monorepo commit structure (c0inz/aiglass-fble-monorepo
+    with per-project subdirectories). Run phased batch rollout starting with Phase A (projects with known repos, sessions under 100 KB).'
+  status: active
+warnings: []
+notes: Major SpaiGlass feature deployment session covering session persistence (frames.jsonl + scrollback rehydrate), context-files tab, skills chip row, desktop layout split, dashboard
+  deprecation, relay API-only fleet management, and the aiglass batch pipeline monorepo setup. Created seven new milestones in drift to represent live-but-untracked shipped features
+  and key architectural decisions made this session. The canvas had no existing milestones, so all ops are upserts into an empty canvas.

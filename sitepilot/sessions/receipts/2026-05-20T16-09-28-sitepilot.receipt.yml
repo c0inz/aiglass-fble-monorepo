@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-20T16-09-28-sitepilot.md
+audit_sha: d71dd666837285a6f00a7da7687fb2b44052e877
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 248d1e50-1156-431f-a12c-2450fa3532e8
+processing_run_audits_count: 11
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-qa-automation
+  name: Mobile QA automation suite
+  intent: 'Establish and track the automated mobile screenshot + LLM pass/fail judgment workflow (Playwright + LLM judge) covering key pages: Settings/Workflows, Dispatch, Schedule,
+    Accounts list, Projects list, Open Actions, Inbox, My Work tab.'
+  status: active
+warnings: []
+notes: Automated mobile layout check of the My Work tab returned PASS as part of run mobile-llm-5xwzdt; this audit also noted a prior run (mobile-llm-5xq0my) checked the same page. As
+  the latest audit in the batch noting the recurring mobile QA automation pattern across multiple pages and runs, this audit drives delta 3 (drift/mobile-qa-automation milestone). No
+  human decisions were recorded.

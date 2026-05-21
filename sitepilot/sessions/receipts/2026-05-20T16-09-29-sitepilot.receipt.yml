@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-20T16-09-29-sitepilot.md
+audit_sha: c208a2bb11abbc973ba448cf60db021a5108fb68
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 248d1e50-1156-431f-a12c-2450fa3532e8
+processing_run_audits_count: 11
+deltas_emitted:
+- op: upsert_milestone
+  slug: inbox-mobile-layout-fix
+  name: Inbox mobile layout fix
+  intent: "Fix inbox row content clipping on mobile viewport \u2014 project address and worker name are clipped on the right edge with no visible wrapping or horizontal scroll affordance.\
+    \ Detected by automated mobile QA run mobile-llm-5xq0my."
+  status: planned
+warnings: []
+notes: "Automated mobile layout check of the Inbox page returned FAIL \u2014 inbox row content (project address, worker name) is clipped on the right edge with no wrapping or scroll\
+  \ affordance. Created drift/inbox-mobile-layout-fix as a planned milestone to track remediation. No fix has been assigned or scheduled yet; operator should triage and assign."

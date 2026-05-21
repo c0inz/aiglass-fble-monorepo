@@ -1,0 +1,45 @@
+schema_version: 1
+audit_file: ocmarketplace/sessions/audits/2026-05-20T16-09-15-ocmarketplace.md
+audit_sha: 8dd4fa367683a7ea0d9c2b19093d7718e0386e54
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 9bd422da-90a8-4e53-8a1a-98c878e5e05b
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: combined-product-vision
+  track: launch
+  name: Combined CleanRelay + OCMarketplace product
+  intent: 'Merge CleanRelay and OCMarketplace into a single Telegram-bot product: one bot, single agent personality, per-user sequestered OpenClaw instance, CleanRelay content scanner
+    as gate, zero-friction onboarding (user says hello, receives pairing instructions, activates), free tier initially with recurring 30-day subscription billing path.'
+  status: active
+- op: upsert_milestone
+  slug: free-tier-onboarding
+  track: launch
+  name: Zero-friction free tier onboarding
+  intent: 'Implement the onboarding flow: user messages the bot, receives pairing instructions, and activates a free-tier per-user OpenClaw instance with no payment required at entry.'
+  status: active
+- op: upsert_milestone
+  slug: subscription-billing-design
+  track: pricing
+  name: Recurring subscription billing design
+  intent: Define and implement the 30-day recurring subscription billing tier. Venmo was explicitly rejected; payment mechanism is open. Free tier launches first; this milestone covers
+    the paid tier design and integration.
+  status: planned
+- op: upsert_milestone
+  slug: openclaw-dispatch-stub
+  name: Fix per-user OpenClaw dispatch stub
+  intent: Resolve the blocker at src/lib/telegram-handler.ts line 192 where per-user OpenClaw instance dispatch is stubbed out. This is identified as the current blocking item regardless
+    of whether products are combined.
+  status: active
+- op: upsert_milestone
+  slug: redis-pairing-codes
+  name: Migrate pairing codes from in-memory to Redis
+  intent: Replace global.pairingCodes and global.pairingTgCodes in-memory storage with Redis so that the pairing system survives multi-instance horizontal scaling.
+  status: planned
+warnings: []
+notes: 'Long session covering OCMarketplace three-way reconciliation, msgschool hardening, and fleet investigation. The key product-relevant decisions were: (1) combining CleanRelay
+  and OCMarketplace into a single Telegram-bot product with zero-friction free tier onboarding, (2) deferring paid billing but establishing 30-day recurring subscription as the pricing
+  target, and (3) identifying the per-user OpenClaw dispatch stub and in-memory pairing code storage as the two primary technical blockers. Created launch/combined-product-vision, launch/free-tier-onboarding,
+  pricing/subscription-billing-design, and two drift milestones for the infrastructure blockers.'

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-40-daniel.md
+audit_sha: 16de98a2688f20ae607189aefa10f8cceff520d9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a79a2101-01e2-4deb-a4af-d19dc5f70875
+processing_run_audits_count: 11
+deltas_emitted: []
+warnings: []
+notes: Apr 23 Claude session consisting entirely of authentication failures and a single eventual successful greeting with no work performed. No decisions, no new information, no canvas
+  changes applicable.

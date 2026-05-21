@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-05-20T16-09-58-spaiglass.md
+audit_sha: f0b41ae771b14bf14288685dc0856d27c5e3bd12
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 8df612be-27d3-45d9-bd1e-bf867547e42c
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: terminal-session-picker-bugs
+  name: 'Fix terminal session picker: history load and cwd mismatch'
+  intent: 'Fix two bugs in the terminal session picker: (1) conversation history does not load because encodedProject is not passed through the URL; (2) after picking a terminal session
+    the URL segment still points at the old project causing stale WS routing, project switcher, and breadcrumb state.'
+  status: active
+warnings: []
+notes: "Session diagnosed two bugs in the SpaiGlass terminal session picker: history not loading due to missing encodedProject URL param, and stale project context after picking a terminal\
+  \ session with an unregistered cwd. No fix was selected by the operator \u2014 both proposed options remained open. Created the terminal-session-picker-bugs milestone in drift to track\
+  \ the decision and implementation."

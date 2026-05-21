@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-45-daniel.md
+audit_sha: 71929fb4cef69eb4a2743a17f0121b193568a56c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a79a2101-01e2-4deb-a4af-d19dc5f70875
+processing_run_audits_count: 11
+deltas_emitted: []
+warnings: []
+notes: "Checkpoint (eb908ddf) of the same Mar 16 \u2013 Apr 20 founding session. Identical substantive content. Superseded by audit 46; no additional canvas changes attributed here."

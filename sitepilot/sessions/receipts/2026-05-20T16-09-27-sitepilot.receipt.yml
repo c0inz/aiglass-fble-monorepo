@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-20T16-09-27-sitepilot.md
+audit_sha: 5dca46f0f7632fd544d8d49eae10ac6ee79a58ac
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 248d1e50-1156-431f-a12c-2450fa3532e8
+processing_run_audits_count: 11
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check of the Inbox page returned PASS; no human decisions were recorded. This is a distinct earlier run from the FAIL recorded in audit 16-09-29. The mobile
+  QA automation pattern is captured by delta 3, attributed to the latest relevant audit (16-09-28) per cross-audit synthesis rules.

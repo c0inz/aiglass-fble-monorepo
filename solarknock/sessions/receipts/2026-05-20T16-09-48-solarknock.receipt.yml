@@ -1,0 +1,20 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-05-20T16-09-48-solarknock.md
+audit_sha: 81a0e49d391d7b49adbfa5f83a8a7d986cff7c5a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 18df21d0-db45-42e0-9f9c-e9cdbb9168a7
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: checkout-flow-e2e-verification
+  track: pricing
+  name: Verify checkout flow end-to-end
+  intent: Confirm the full browser-based checkout flow from solarknock.com through Stripe works for casual visitors; operator's primary conversion concern is preventing purchase failures
+    for new signups.
+  status: active
+warnings: []
+notes: "Session covered checkout flow review and map pin fixes (renter key icon change, zoom-proportional pin sizing \u2014 both shipped to production). The operator's stated primary\
+  \ concern \u2014 preventing purchase failures for casual visitors \u2014 drove the checkout-flow-e2e-verification milestone. Map pin changes are implementation details not warranting\
+  \ separate milestones. The bad-parcel deletion incident resulted in a behavioral rule change for the agent, not a canvas item."

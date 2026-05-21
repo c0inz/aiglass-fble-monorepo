@@ -1,0 +1,35 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-20T16-09-02-gadzoom.md
+audit_sha: c9dfc8dbad946545910cb7801998344314c5c41f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 3ac9852d-8376-4638-9bb0-13f83b6cc6b4
+processing_run_audits_count: 7
+deltas_emitted:
+- op: upsert_milestone
+  slug: protocol-positioning
+  track: brand
+  name: Establish GADZ protocol product positioning
+  intent: Canonical one-sentence descriptions for all four projects (gadz.ai, surfacemarket, adpix, SoSatisfying) agreed by operator and on record.
+  status: active
+  ordinal: 1
+- op: upsert_milestone
+  slug: gadz-sim-repo
+  track: demo
+  name: gadz-sim simulation repository scaffolded and running
+  intent: 'Standalone c0inz/gadz-sim repo with end-to-end simulation running: 100-buyer market with scripted strategies, traffic shocks, Claude Haiku LLM agents, and advertiser motivation
+    model; PR #1 open for demographics-and-revenue branch.'
+  status: active
+  ordinal: 2
+- op: upsert_milestone
+  slug: gadz-sim-metrics
+  track: demo
+  name: 'gadz-sim step 3: allocative efficiency and market metrics'
+  intent: Add price-discovery convergence, allocative efficiency, and wealth Gini metrics to the simulation to validate GADZ economic properties across seeds and scenarios.
+  status: planned
+  ordinal: 3
+warnings: []
+notes: "Operator session established canonical one-sentence product descriptions for all four projects and confirmed gadz-sim repository scaffolded, running end-to-end, and pushed with\
+  \ PR #1 open for demographics-and-revenue branch. Created brand/protocol-positioning milestone, demo/gadz-sim-repo as active, and demo/gadz-sim-metrics as planned for the proposed\
+  \ step 3. Resequenced build order (step 2 \u2192 step 1 \u2192 step 3 \u2192 step 4 \u2192 step 5) and LLM agent model (Claude Haiku) confirmed."

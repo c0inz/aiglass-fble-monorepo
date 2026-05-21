@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-05-20T16-10-14-trendzion.md
+audit_sha: 0508eb8fa755fede873a2a14690a7459032cb8ed
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 6e3ca2f9-1329-4a37-920c-f2d91b84b9a7
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: Four-second session consisting solely of a greeting exchange with no project content. No canvas changes; audit contained no decisions, questions, or actionable items.

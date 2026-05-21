@@ -1,0 +1,84 @@
+schema_version: 1
+audit_file: savannah/sessions/audits/2026-05-20T16-09-18-savannah.md
+audit_sha: 2f1f54eed8eb2c0d08169188b4f1dae0cb6e8e62
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 5f13321d-1064-4e5a-8a1b-9ea2c8cef598
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: platform-accounts-setup
+  track: launch
+  name: Set up platform accounts
+  intent: Create or designate Twitch channel (new vs existing account), configure mandatory AI disclosure metadata. YouTube simulcast account to be added at +30 days post-launch. TikTok
+    Live and Kick ruled out for v1.
+  status: planned
+  ordinal: 1
+- op: upsert_step
+  slug: twitch-channel-decision
+  track: launch
+  milestone: platform-accounts-setup
+  text: Decide new dedicated Twitch account vs existing account and confirm channel name
+  done: false
+  ordinal: 1
+- op: upsert_step
+  slug: youtube-simulcast-plan
+  track: launch
+  milestone: platform-accounts-setup
+  text: Plan YouTube simulcast with AI disclosure metadata for +30 days post-Twitch-launch
+  done: false
+  ordinal: 2
+- op: upsert_milestone
+  slug: streaming-hardware
+  track: demo
+  name: Confirm and provision streaming hardware
+  intent: Operator must confirm whether they have an existing Windows desktop, plan to build one, or use another option. Required before OBS Studio and VTube Studio setup.
+  status: active
+  ordinal: 1
+- op: upsert_milestone
+  slug: live2d-model
+  track: demo
+  name: Source Live2D model
+  intent: "Decide between stock purchase, custom commission ($1,500\u2013$4,000 budgeted post-validation), or operator-provided art. Premade models are recognizable; placeholder recommended\
+    \ for weeks 1\u20134 only."
+  status: planned
+  ordinal: 2
+- op: upsert_milestone
+  slug: voice-clone-brief
+  track: demo
+  name: Commission and license voice clone
+  intent: Source voice talent via ElevenLabs Instant Voice Clone. ElevenLabs ToS requires rights to source audio; standard Fiverr VA license does not include voice-model training rights.
+    A written clone-rights addendum is required before recording.
+  status: planned
+  ordinal: 3
+- op: upsert_milestone
+  slug: cost-model
+  track: pricing
+  name: Define and implement cost model
+  intent: "Establish per-streaming-hour API cost cap (~$3\u20135/hr estimated for Claude + ElevenLabs + Flux), per-stream cap in code, and per-user/per-day cost caps ($40\u2013$80/day\
+    \ per active surface). Add cost events table and observability logging of every turn."
+  status: planned
+  ordinal: 1
+- op: upsert_milestone
+  slug: dm-surface-launch
+  track: launch
+  name: Launch DM creator surface (1:1 persona)
+  intent: "Launch the private 1:1 DM persona surface first as recommended \u2014 smaller blast radius and easier recovery from bad replies than public stream. Uses Fanvue as primary\
+    \ platform (Patreon secondary). Post-Milestone 5 earliest point for paid tier launch."
+  status: planned
+  ordinal: 2
+- op: upsert_milestone
+  slug: twitch-stream-launch
+  track: launch
+  name: Launch Twitch stream
+  intent: 'Go live on Twitch as primary public streaming platform using OBS Studio, VTube Studio, Streamer.bot, ElevenLabs, and hosted LLM (OpenAI API or Claude API). Latency target:
+    <3s p50 from chat message to speech.'
+  status: planned
+  ordinal: 3
+warnings: []
+notes: Kickoff session established the full platform stack (OBS, VTube Studio, Streamer.bot, ElevenLabs, hosted LLM), confirmed Twitch as primary platform with YouTube simulcast at +30
+  days, ruled out TikTok and Kick for v1, identified Fanvue as paid-tier platform, and flagged content register (Q7) as the most consequential unresolved decision. Created platform-accounts-setup,
+  streaming-hardware, live2d-model, voice-clone-brief, cost-model, dm-surface-launch, and twitch-stream-launch milestones plus two steps under platform-accounts-setup. Content register
+  decision milestone (delta 1) is attributed to the later audit (19) where the legal posture question was first fully articulated, but the platform account steps and hardware/demo milestones
+  originate here.

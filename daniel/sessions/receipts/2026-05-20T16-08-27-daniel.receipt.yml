@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-27-daniel.md
+audit_sha: f6826bf501a14a6d8791939a1f7086dab43e856f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 0e8026db-498e-401e-9207-081a10679e40
+processing_run_audits_count: 12
+deltas_emitted: []
+warnings: []
+notes: 'Full session file (61ec2aa1) covering 2026-05-07: browser tool blocked, memory note written, CANVAS_PLAYBOOK.md read. All actionable content from this session is captured by
+  and superseded by audit 2026-05-20T16-08-26-daniel, which covers the same underlying session with a later end time and includes the playbook fix decisions. No additional canvas changes
+  attributed here.'

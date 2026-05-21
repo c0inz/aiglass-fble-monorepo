@@ -1,0 +1,45 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-46-daniel.md
+audit_sha: 64934080c8d41bf33e04b986481baaf336bc6720
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a79a2101-01e2-4deb-a4af-d19dc5f70875
+processing_run_audits_count: 11
+deltas_emitted:
+- op: upsert_milestone
+  slug: daniel-agent-setup
+  name: Daniel agent setup and credential configuration
+  intent: Configure Daniel as Tona Davenport's personal AI assistant, including identity files, Skyward and Canvas credentials for Weston's schools, and the SKYWARD_PLAYBOOK.md automation
+    guide.
+  status: active
+- op: upsert_step
+  slug: identity-files-written
+  milestone: daniel-agent-setup
+  text: IDENTITY.md and USER.md written to workspace; Canyons District set as primary school source, Providence Hall archived.
+  done: true
+- op: upsert_step
+  slug: skyward-playbook-written
+  milestone: daniel-agent-setup
+  text: SKYWARD_PLAYBOOK.md rewritten as school-agnostic Playwright automation reference; popup-capture login pattern documented.
+  done: true
+- op: upsert_step
+  slug: canyons-skyward-login-confirmed
+  milestone: daniel-agent-setup
+  text: Canyons Skyward headless login confirmed working via context.waitForEvent('page') popup-capture method.
+  done: true
+- op: upsert_step
+  slug: canyons-canvas-api-confirmed
+  milestone: daniel-agent-setup
+  text: Canyons Canvas API token confirmed working as of 2026-04-18.
+  done: true
+- op: upsert_step
+  slug: weston-passes-workplan
+  milestone: daniel-agent-setup
+  text: "Weston_Passes_Workplan.md requested by John; completion not confirmed in session logs \u2014 requires operator verification."
+  done: false
+warnings: []
+notes: "Earliest checkpoint (33e15cd9) of the Mar 16 \u2013 Apr 20 founding session, representing the latest synthesized state across the cluster of checkpoint audits (41\u201346). Session\
+  \ established Daniel as Tona Davenport's personal assistant, confirmed Canyons Skyward and Canvas automation, produced the school-agnostic SKYWARD_PLAYBOOK.md, and archived Providence\
+  \ Hall. Created the daniel-agent-setup drift milestone with steps for identity files, playbook, Skyward login, Canvas API confirmation, and the unconfirmed Weston_Passes_Workplan.md\
+  \ step."

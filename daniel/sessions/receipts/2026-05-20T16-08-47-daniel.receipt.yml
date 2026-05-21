@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: daniel/sessions/audits/2026-05-20T16-08-47-daniel.md
+audit_sha: d7f598a9c9afd772ea1d5da09e3136592e4010c3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a79a2101-01e2-4deb-a4af-d19dc5f70875
+processing_run_audits_count: 11
+deltas_emitted: []
+warnings: []
+notes: Apr 10 Claude session in which a developer context block was injected but the agent was not authenticated; session ended immediately with 'Not logged in.' No decisions made, no
+  work performed, no canvas changes applicable.

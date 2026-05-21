@@ -1,0 +1,25 @@
+schema_version: 1
+audit_file: thedezz-cms/sessions/audits/2026-05-20T16-10-07-thedezz-cms.md
+audit_sha: 2efea3cd70f03488f3c32b879d835e200d78cef9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a5b4a4db-56e0-4710-839b-90eb91c8b1b2
+processing_run_audits_count: 6
+deltas_emitted:
+- op: upsert_step
+  slug: editorial-docs-committed
+  track: brand
+  milestone: editorial-scaffolding
+  text: Articles_Roadmap.md, HeadlineStandards.md, and SatireWritingPlaybook.md drafted and committed to thedezz repo
+  done: true
+- op: upsert_step
+  slug: draft-articles-pipeline
+  track: brand
+  milestone: editorial-scaffolding
+  text: Draft article directory (/drafts/) exists with two satire articles and illustration assets; publishing workflow and milestone mapping not yet defined
+  done: false
+warnings: []
+notes: Session was a project status review that surfaced untracked editorial scaffolding (Articles_Roadmap.md, HeadlineStandards.md, SatireWritingPlaybook.md) and an API key enforcement
+  gap. The editorial-scaffolding milestone and its steps (deltas 11-12) are attributed here as this session explicitly flagged these as unmapped canvas gaps; delta 12 (draft pipeline
+  step) reflects the unresolved publishing workflow raised in this session.

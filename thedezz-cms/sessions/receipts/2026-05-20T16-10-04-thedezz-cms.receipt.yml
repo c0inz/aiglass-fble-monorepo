@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: thedezz-cms/sessions/audits/2026-05-20T16-10-04-thedezz-cms.md
+audit_sha: 1cb750309acc17962a8b0b68e7453d90306ca417
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a5b4a4db-56e0-4710-839b-90eb91c8b1b2
+processing_run_audits_count: 6
+deltas_emitted: []
+warnings: []
+notes: Session covered factual questions about file upload directory locations; the operator uploaded three files (screenshot and two BASS-related PDFs) but no task or milestone was
+  associated with the uploads. No actionable canvas changes identified.

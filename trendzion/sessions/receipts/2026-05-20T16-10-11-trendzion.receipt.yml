@@ -1,0 +1,24 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-05-20T16-10-11-trendzion.md
+audit_sha: 95208087c3864e416ac10321398f62bdfc51168a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: 6e3ca2f9-1329-4a37-920c-f2d91b84b9a7
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: og-card-word-pages
+  track: demo
+  name: OG / Twitter card images for word pages
+  intent: Generate and inject og:image, twitter:card, and related social meta tags for /w/<slug> word pages so X link previews show the word chart and title; deseret is the pilot page.
+  status: active
+- op: upsert_milestone
+  slug: deploy-og-card-deseret
+  track: launch
+  name: Deploy og-card-deseret branch to production
+  intent: Run wrangler pages deploy static to push the og-card-deseret branch changes (OG image, meta tags, masthead divider fix) live to trendzion.com.
+  status: active
+warnings: []
+notes: Session where the og:image / Twitter card for /w/deseret was built via static Playwright prerender and pushed to the og-card-deseret branch. Created demo/og-card-word-pages to
+  track the broader social-meta gap across all 256 word pages, and launch/deploy-og-card-deseret to track the pending production deployment.

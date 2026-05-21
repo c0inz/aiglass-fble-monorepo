@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: socialaccounts/sessions/audits/2026-05-20T16-09-31-socialaccounts.md
+audit_sha: 85c1c24d03989aaa1ba44fd59793d67d6498b16d
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: fcb15f77-ab9a-4142-a5be-985ec142ea0d
+processing_run_audits_count: 4
+deltas_emitted: []
+warnings: []
+notes: Session from 2026-04-24 consisted solely of a brief greeting exchange with no substantive operator input. No decisions, open questions, or canvas-relevant content were present.
+  No canvas changes.

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: thedezz-cms/sessions/audits/2026-05-20T16-10-08-thedezz-cms.md
+audit_sha: 138ef354d959b34721729d46ef04155ffd54ccb4
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a5b4a4db-56e0-4710-839b-90eb91c8b1b2
+processing_run_audits_count: 6
+deltas_emitted: []
+warnings: []
+notes: Session was an unauthenticated inquiry about X API bookmark access; the assistant returned a not-logged-in prompt and no content was produced. This predates and is superseded
+  by the 16-10-05 session on the same topic. No canvas changes attributed.

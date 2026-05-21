@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: thedezz-cms/sessions/audits/2026-05-20T16-10-06-thedezz-cms.md
+audit_sha: 4e0b98564371781005aa79d372135123408fe7d5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-21T03:08:47Z'
+processing_run_id: a5b4a4db-56e0-4710-839b-90eb91c8b1b2
+processing_run_audits_count: 6
+deltas_emitted: []
+warnings: []
+notes: Session consisted of a single greeting exchange with no substantive content. No canvas changes identified.
