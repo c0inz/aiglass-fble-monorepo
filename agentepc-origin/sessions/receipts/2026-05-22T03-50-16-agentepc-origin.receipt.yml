@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-16-agentepc-origin.md
+audit_sha: 5100edf72ab4fd11044f9dc2ecd3adc1d73d0b63
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 3e3b1b5c-d99a-4063-a322-1a30de517258
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check on the AgentEPC Dispatch page (test run mobile-llm-3u6iu9) returned PASS. No decisions or actionable canvas changes identified. No canvas changes
+  attributed to this audit.

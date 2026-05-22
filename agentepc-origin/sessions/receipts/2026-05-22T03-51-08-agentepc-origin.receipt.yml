@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-08-agentepc-origin.md
+audit_sha: 1843a5b21ec22e956dcd840d99ac71caa5194880
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 0494238d-2716-4912-bcec-a279f84bbd67
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the AgentEPC Inbox page returned PASS. No canvas-actionable items were identified; session confirms passing layout with no associated milestone
+  to update.

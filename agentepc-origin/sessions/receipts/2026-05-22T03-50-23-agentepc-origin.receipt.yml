@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-23-agentepc-origin.md
+audit_sha: 433bf0512c5600842360b01c0d4ea7935705b6cc
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 3e3b1b5c-d99a-4063-a322-1a30de517258
+processing_run_audits_count: 13
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-layout-fix-dispatch
+  name: 'Fix mobile layout: Dispatch page'
+  intent: "Resolve two mobile viewport defects on the Dispatch page \u2014 the search/location input is clipped at the top-left, and the Show/Date Range filter panel overlays the map\
+    \ and covers primary content."
+  status: active
+warnings: []
+notes: "Automated mobile layout check on the AgentEPC Dispatch page returned FAIL \u2014 the search/location input is clipped at the top-left and a Show/Date Range filter panel overlays\
+  \ the map, covering primary content. Created drift milestone mobile-layout-fix-dispatch to track these defects for operator triage and track assignment."

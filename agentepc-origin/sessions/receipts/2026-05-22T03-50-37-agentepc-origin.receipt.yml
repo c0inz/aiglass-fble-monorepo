@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-37-agentepc-origin.md
+audit_sha: 88040b256b3daba2ecc8064e3444dc996f035c75
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 959cd2fe-0599-40a5-9cc7-e0727ae9eebc
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: 'Automated mobile UI review of the Dispatch page returned FAIL: the map legend was clipped by the bottom nav bar and map tile credits. This is the earlier of two audits reporting
+  this same Dispatch legend defect; it is superseded by audit 03-50-44, which independently confirmed the same failure and is attributed the resulting delta. No canvas changes attributed
+  here.'

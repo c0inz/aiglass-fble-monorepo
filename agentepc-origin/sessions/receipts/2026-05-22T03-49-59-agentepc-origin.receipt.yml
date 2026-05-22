@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-49-59-agentepc-origin.md
+audit_sha: bfaac98868b0f9e69d0b24384dc1a7d687e4be4b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: d621c6c4-457e-46e9-890c-ca349ceea9c5
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Session consisted solely of file uploads (HAR file and six images) to the .spyglass/uploads/ directory; no decisions, no deadlines, and no canvas-relevant work items were recorded.
+  No canvas changes.

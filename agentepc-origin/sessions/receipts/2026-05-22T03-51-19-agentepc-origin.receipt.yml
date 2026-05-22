@@ -1,0 +1,34 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-19-agentepc-origin.md
+audit_sha: 54e90189375b7d8c9040dba5fecf91aced0dfcd3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 1eba54b6-9a13-4534-b2ff-2031d6427781
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: bug-31-form-field-spec-fix
+  name: "Bug #31 \u2014 empty am_field_spec on fresh tenants"
+  intent: Fix the root-cause bug where fresh tenants had an empty am_field_spec table, causing every form field save to return a 400 error. Implemented via migration 037 (derive am_field_spec
+    rows from arrangement and attribute data), provisioner wiring, routes/forms.js fix for arrangement_ref keying, routes/projects.js fix for project_property isolation, and a one-shot
+    BRI0 backfill. Deployed to app.agentepc.com.
+  status: done
+- op: upsert_milestone
+  slug: wo-save-path-dual-write
+  name: WO save path dual-write refactor for task_virtual specs
+  intent: 'Refactor the work-order save path to write through ai_field_entry in addition to direct column writes (dual-write strategy), so that task_virtual specs become load-bearing.
+    Prerequisite: add ai_step_instance.step_blueprint_ref column and implement task_virtual derivation for ad-hoc steps lacking a blueprint ref.'
+  status: active
+- op: upsert_milestone
+  slug: spec-71-load-state-contract
+  name: "Spec 71 load-state contract \u2014 disabled-button enforcement"
+  intent: 'Complete the data-state load-state contract for editor partials (form-editor.ejs, work-order-editor.ejs, workflows.ejs). The data-state marker is in place and spec 71 passes
+    31/31 in marker-only mode. Deferred work: audit all .then() code paths for null-dereference bugs and update spec selectors to wait on data-state=''ready'' before re-attempting disabled-button
+    enforcement.'
+  status: planned
+warnings: []
+notes: 'Large session (92 MB, truncated) spanning 2026-04-18 to 2026-05-02 covering Phases 1-4 of a multi-phase workplan. Key outcomes: Phase 2 (worker creation via UI) completed green;
+  bug #31 (empty am_field_spec on fresh tenants) fixed end-to-end via migration 037, route corrections, and BRI0 backfill with production deploy confirmed; spec 71 reached 31/31 with
+  data-state marker added; WO save path dual-write refactor decided but not yet implemented. Created drift/bug-31-form-field-spec-fix (done), drift/wo-save-path-dual-write (active),
+  and drift/spec-71-load-state-contract (planned) to capture these outcomes.'

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-27-agentepc-origin.md
+audit_sha: 7383dbf7d398b4f654d9d5041676b8849871d628
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 20d40e04-d1ad-4254-a1da-2ed24c3c9bea
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout audit of the AgentEPC Open Actions (Service Tickets) view, returning PASS. No decisions or canvas-mappable content; audit explicitly stated no milestone
+  or canvas item was referenced. No canvas changes.

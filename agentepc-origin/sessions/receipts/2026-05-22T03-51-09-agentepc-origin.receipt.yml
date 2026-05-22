@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-09-agentepc-origin.md
+audit_sha: ae113f9d5fb3aec4f60c97f6cbbaf060e9d99836
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 0494238d-2716-4912-bcec-a279f84bbd67
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the My Work tab (test run mobile-llm-3swuvy) returned PASS. No thoughts outside the canvas were present and no status changes were implied.
+  No canvas changes.

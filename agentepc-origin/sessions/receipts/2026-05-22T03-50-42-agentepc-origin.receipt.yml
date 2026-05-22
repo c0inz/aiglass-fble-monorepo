@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-42-agentepc-origin.md
+audit_sha: 231652817a5792306653db0ef75aaf097ed3f97b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 959cd2fe-0599-40a5-9cc7-e0727ae9eebc
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check for the Inbox page (test run mobile-llm-3tp3sx) returned PASS. No decisions, no open questions, and no actionable canvas changes were identified.

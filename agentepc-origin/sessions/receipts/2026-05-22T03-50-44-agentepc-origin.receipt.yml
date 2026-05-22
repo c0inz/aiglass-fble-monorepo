@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-44-agentepc-origin.md
+audit_sha: 56c0dbcd7e2b3ce1c9742afca215cac702c87053
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 959cd2fe-0599-40a5-9cc7-e0727ae9eebc
+processing_run_audits_count: 13
+deltas_emitted:
+- op: upsert_milestone
+  slug: dispatch-legend-overlap-fix
+  name: Fix Dispatch page legend overlap on mobile
+  intent: Resolve the layout defect where the Dispatch page map legend (Sites / Service Tickets / Work Orders / High Priority) is obscured by the bottom tab bar and map tile credits
+    on mobile viewports, causing legend text to be partially or fully hidden.
+  status: active
+warnings: []
+notes: 'Automated mobile layout test for the Dispatch page (test run mobile-llm-3tp3sx) returned FAIL: the map legend is overlapped by the bottom tab bar, hiding the legend labels. This
+  is the second and later audit confirming this defect; a drift milestone (dispatch-legend-overlap-fix) was created to track remediation work pending operator triage for track assignment.'

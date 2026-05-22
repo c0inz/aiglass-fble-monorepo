@@ -1,0 +1,35 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-49-58-agentepc-origin.md
+audit_sha: 459dfd77637568c23af9414472bcd3eb1cb6fe7e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: d621c6c4-457e-46e9-890c-ca349ceea9c5
+processing_run_audits_count: 13
+deltas_emitted:
+- op: upsert_milestone
+  slug: ui-sweep-phase1-2
+  name: "UI sweep Phase 1 & 2 \u2014 route and lib refactor"
+  intent: Patch all files referencing refactored tables (ai_step_instance, ai_task_instance, ai_work_ticket_old, and 28 under-account tables from mig 118) across 17 route and lib files.
+    Fix form renderer schema drift from mig 118 column split.
+  status: active
+- op: upsert_milestone
+  slug: bri0-reload
+  name: "BRI0 reload \u2014 3 accounts, full FK hydration"
+  intent: Truncate BRI0 and repull accounts 615611, 693903, and 694215 fresh from Coperniq using the canonical GraphQL extractor; apply CASCADE-to-NO-ACTION FK audit (mig 123).
+  status: active
+- op: upsert_milestone
+  slug: coperniq-batch-pull
+  name: "Coperniq batch pull \u2014 all 23 batches to AIEPC_PARITY_TEST"
+  intent: Run the Coperniq batch driver to pull all accounts into the AIEPC_PARITY_TEST staging schema. Each batch is independent; driver configured to continue on individual batch failure.
+  status: active
+- op: upsert_milestone
+  slug: backup-pipeline
+  name: "Backup pipeline \u2014 prod nightly dump, bombadil relay, sadb retention"
+  intent: 'Wire end-to-end backup: pg_dump at 02:00 UTC on GrandGallery, bombadil relay cron at 04:30 MT pulls and pushes to sadb, prunes prod to today-only, applies tiered retention.
+    Resend alerting on failure.'
+  status: active
+warnings: []
+notes: Large multi-week session (2026-05-06 to 2026-05-21) covering a full UI sweep of 17 route/lib files, BRI0 reload of 3 accounts with mig-123 FK audit, Coperniq batch driver run
+  across 23 batches, and a full backup pipeline build with Resend alerting. Four milestones created in drift (no canvas track maps to engineering/infra work); all landed active as work
+  was underway or complete. Open items flagged include image-mirror decisions, lib/sync-column-map.js, and 3 unmerged PRs.

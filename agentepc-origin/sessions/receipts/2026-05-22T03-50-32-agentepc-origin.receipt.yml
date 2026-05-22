@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-32-agentepc-origin.md
+audit_sha: d9b070d075758196c09800f0225eb69bf81cec8e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 20d40e04-d1ad-4254-a1da-2ed24c3c9bea
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout audit of the AgentEPC Accounts list page for test run mobile-llm-3tuu76, returning PASS. The audit noted no canvas milestone maps to this QA pattern and
+  no status changes are implied. No canvas changes.

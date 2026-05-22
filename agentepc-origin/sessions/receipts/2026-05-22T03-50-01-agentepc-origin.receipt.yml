@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-01-agentepc-origin.md
+audit_sha: 0384316a56a3239b601a3b5ddfd0d8a970688b66
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: d621c6c4-457e-46e9-890c-ca349ceea9c5
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile LLM review of the Open Actions / Service Tickets page for test run mobile-llm-462hl3 returned FAIL due to empty ASSIGNEE column; this is the second occurrence
+  of the same finding (also in 03-50-04). Delta attributed to the earlier run (03-50-04) which first surfaced the pattern; this audit's finding is captured by delta index 4 attributed
+  to 03-50-04.

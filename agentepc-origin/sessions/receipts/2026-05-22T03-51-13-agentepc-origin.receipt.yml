@@ -1,0 +1,17 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-13-agentepc-origin.md
+audit_sha: 8512a131e3e4801c5b8344e2a3e4158ab4e3ae19
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 0494238d-2716-4912-bcec-a279f84bbd67
+processing_run_audits_count: 13
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-my-work-nav-overlap-fix
+  name: Fix bottom-nav icon overlap on My Work tab mobile viewport
+  intent: Resolve the mobile layout defect where bottom-nav icons appear as a duplicate unlabeled floating row above the My Work header, causing overlap and breaking the page layout.
+  status: active
+warnings: []
+notes: Automated mobile layout audit of the My Work tab returned FAIL; bottom-nav icons appeared as a duplicate unlabeled floating row above the My Work header, causing layout overlap
+  on the mobile viewport. Created drift milestone mobile-my-work-nav-overlap-fix to track remediation. Supersedes the same finding in audit 2026-05-22T03-51-12-agentepc-origin.

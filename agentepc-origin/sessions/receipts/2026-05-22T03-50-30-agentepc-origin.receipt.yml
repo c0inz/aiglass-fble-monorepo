@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-30-agentepc-origin.md
+audit_sha: 9591f5627216006481d6433fabbe49205d6585d1
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 20d40e04-d1ad-4254-a1da-2ed24c3c9bea
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: "Automated mobile layout check of the AgentEPC Dispatch page, returning FAIL \u2014 the Show filter panel overlapped the map and the legend was partially clipped by the bottom\
+  \ nav bar. The audit explicitly stated this result does not map to any known canvas milestone and no status changes are implied; the canvas is empty with no existing milestone to update.\
+  \ No canvas changes."

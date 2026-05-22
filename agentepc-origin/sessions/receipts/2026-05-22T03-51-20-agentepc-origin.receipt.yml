@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-20-agentepc-origin.md
+audit_sha: 4dc3f0876b3172589e8ec161923e69fd4e8f83c3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 1eba54b6-9a13-4534-b2ff-2031d6427781
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: Short orientation session (2026-05-01) where the operator located uploaded files in .spyglass/uploads/ and confirmed their paths. No decisions were made, no code changes were
+  discussed, and no canvas milestones are implicated. No canvas changes.

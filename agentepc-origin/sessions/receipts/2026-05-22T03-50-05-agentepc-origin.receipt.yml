@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-05-agentepc-origin.md
+audit_sha: 227580632fe7d3e252b8027e06fc392fe922ee05
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: d621c6c4-457e-46e9-890c-ca349ceea9c5
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check of the AgentEPC Inbox page for test run mobile-llm-4378ih returned PASS. No layout defects detected; no canvas changes implied.

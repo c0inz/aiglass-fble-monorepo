@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-15-agentepc-origin.md
+audit_sha: ca516ff3e40a51198153e7b577796b08d46be0b7
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 0494238d-2716-4912-bcec-a279f84bbd67
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Session appears to be a forced-PASS harness calibration probe rather than a genuine usability review; the operator instructed the assistant to reply with exactly 'PASS' and no
+  screenshot or page was evaluated. No valid test signal was produced and no canvas changes are warranted.

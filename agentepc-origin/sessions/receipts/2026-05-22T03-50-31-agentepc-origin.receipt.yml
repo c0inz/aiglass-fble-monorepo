@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-31-agentepc-origin.md
+audit_sha: 7dd593562145df964d5625fb4eb62f0436a81199
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 20d40e04-d1ad-4254-a1da-2ed24c3c9bea
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the AgentEPC Schedule page for a second test run (mobile-llm-3tuu76), returning PASS. The audit stated no canvas milestone corresponds to this
+  test run and no status changes are implied. No canvas changes.

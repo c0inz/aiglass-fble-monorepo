@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-21-agentepc-origin.md
+audit_sha: 43bd0e61f07e51d646f5f6a1d9eb7e178675a9e2
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 1eba54b6-9a13-4534-b2ff-2031d6427781
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: Trivial 37-second session on 2026-04-24 consisting of a single 'hello' exchange with no work performed. No canvas changes.

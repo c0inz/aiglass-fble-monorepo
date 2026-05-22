@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-29-agentepc-origin.md
+audit_sha: a8f60268d8d841e887b4748a92300d80290cff88
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 20d40e04-d1ad-4254-a1da-2ed24c3c9bea
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the AgentEPC My Work tab for test run mobile-llm-3u0yrs, returning PASS. No open questions, no thoughts outside the canvas, and no status changes
+  were identified. No canvas changes.

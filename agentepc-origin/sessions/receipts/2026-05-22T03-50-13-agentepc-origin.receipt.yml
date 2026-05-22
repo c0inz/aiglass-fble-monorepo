@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-13-agentepc-origin.md
+audit_sha: 9e7f5239d3a068aec0dd9dc295bd9e9a437dc011
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 3e3b1b5c-d99a-4063-a322-1a30de517258
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check on the AgentEPC Inbox page returned PASS. No decisions or actionable canvas changes identified. No canvas changes attributed to this audit.

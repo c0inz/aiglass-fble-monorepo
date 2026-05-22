@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-15-agentepc-origin.md
+audit_sha: a578946d830c0fdb98e011f48668ee52a86fafbe
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 3e3b1b5c-d99a-4063-a322-1a30de517258
+processing_run_audits_count: 13
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-layout-fix-settings-workflows
+  name: "Fix mobile layout: Settings \u2192 Workflows page"
+  intent: "Resolve mobile viewport overflow on the Settings Workflows page \u2014 search box and template list overflow the viewport, a button is clipped at the right edge, and horizontal\
+    \ scroll is required for primary content."
+  status: active
+warnings: []
+notes: "Automated mobile layout check on the AgentEPC Settings \u2192 Workflows page returned FAIL \u2014 search box and template list overflow the viewport, a button is clipped at the\
+  \ right edge, and horizontal scroll is required. Created drift milestone mobile-layout-fix-settings-workflows to track this defect for operator triage and assignment to a track."

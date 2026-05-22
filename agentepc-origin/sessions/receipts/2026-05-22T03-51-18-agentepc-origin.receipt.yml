@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-18-agentepc-origin.md
+audit_sha: 8ed5847b5ae6ac3c7e2f59fbbb2a706d46d4cff5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 1eba54b6-9a13-4534-b2ff-2031d6427781
+processing_run_audits_count: 8
+deltas_emitted: []
+warnings: []
+notes: 'Session covering first-time Claude Code configuration on the agentepc-origin box: alwaysThinkingEnabled, MAX_THINKING_TOKENS=16000, and a statusline script were applied. The
+  operator also confirmed production DB credentials and connection details. No product or project canvas milestones are implicated; this is infrastructure/onboarding configuration. No
+  canvas changes.'

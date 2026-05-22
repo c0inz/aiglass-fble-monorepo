@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-24-agentepc-origin.md
+audit_sha: 15c938bde9afc00c652aaabf86dbce429dffa9c4
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 20d40e04-d1ad-4254-a1da-2ed24c3c9bea
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile viewport usability check of the AgentEPC Schedule page, returning PASS. No decisions, status changes, or canvas-mappable content were present. No canvas changes.

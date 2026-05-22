@@ -1,0 +1,17 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-55-agentepc-origin.md
+audit_sha: ed28b646754e0f1b8a6653046fd674ea13a05663
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 8737a776-de62-4982-8d55-014f16d4c301
+processing_run_audits_count: 13
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-projects-column-clipping
+  name: Fix mobile Projects list column clipping
+  intent: Resolve the mobile viewport overflow on the Projects list page where the 'Onboarding' phase label is truncated to 'Onbo' due to column overflow or truncation.
+  status: active
+warnings: []
+notes: 'Automated mobile usability check on the Projects list page returned FAIL: the ''Onboarding'' column label is clipped to ''Onbo'' due to mobile viewport overflow. Created drift
+  milestone mobile-projects-column-clipping to track this recurring UI defect; two audits (-51 and -55) document the same issue and are merged here.'

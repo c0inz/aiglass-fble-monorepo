@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-10-agentepc-origin.md
+audit_sha: 40539c70ca0dd088823d8558445edb69ba203ee6
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 0494238d-2716-4912-bcec-a279f84bbd67
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile check using different pass criteria (6 labeled bottom-nav icons, heading readability) returned PASS on an unidentified page screenshot. The specific page and
+  test run are unknown; no canvas milestone covers this variant. No canvas changes.

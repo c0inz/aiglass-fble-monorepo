@@ -1,0 +1,27 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-17-agentepc-origin.md
+audit_sha: f91a96c5913727e0d3b74a27f21f8a608bc4e383
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 1eba54b6-9a13-4534-b2ff-2031d6427781
+processing_run_audits_count: 8
+deltas_emitted:
+- op: upsert_milestone
+  slug: prod-db-audit-design
+  name: "Production database audit \u2014 design and execution"
+  intent: 'Design and execute an 8-dimension production database audit covering schemas AIEPC_BRI0 and master, producing a findings report (docs/AUDIT_2026-05-02.md), a machine-readable
+    JSON sidecar, and per-dimension SQL scripts. Execution uses a two-phase hybrid: 5 parallel subagents for schema-only dimensions, then one sequential agent for code-tracing dimensions.'
+  status: active
+- op: upsert_milestone
+  slug: broken-sync-paths-fix
+  name: Fix broken sync paths across schema splits
+  intent: 'Resolve root-cause data integrity issues where sync writes inconsistently across schema splits: the ai_work_ticket sync path is broken end-to-end after migration 100 consolidated
+    service tickets into ai_task_instance; the catalog split has 376 specs missing attribute_ref, 8 duplicates per attribute, 5,065 unanchored task_virtual specs, and 721 specs with
+    legacy ids. Address as a follow-on to the audit findings.'
+  status: planned
+warnings: []
+notes: 'Large session (21 MB, truncated) covering a full production database audit design for schemas AIEPC_BRI0 and master. The operator and assistant completed an 11-question design
+  session, locking scope, output format, execution parallelism, and all 5 design sections; at least partial audit execution occurred with labeled findings (A-01, B-007/008, D-04/08/10)
+  visible in the session tail. Created drift/prod-db-audit-design (active) reflecting approved design and partial execution, and drift/broken-sync-paths-fix (planned) capturing the identified
+  root cause: sync writing inconsistently across schema splits with the ai_work_ticket path broken end-to-end.'

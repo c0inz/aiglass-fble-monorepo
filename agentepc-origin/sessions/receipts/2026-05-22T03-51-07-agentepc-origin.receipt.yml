@@ -1,0 +1,17 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-07-agentepc-origin.md
+audit_sha: 27b0db6663193da77f86bacd6d500c68319be009
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 0494238d-2716-4912-bcec-a279f84bbd67
+processing_run_audits_count: 13
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-service-tickets-site-column-fix
+  name: Fix SITE column truncation in Service Tickets mobile view
+  intent: "Resolve the mobile viewport layout defect where the SITE column is truncated to '123\u2026' on every row in the Open Actions (Service Tickets) view, making site names unreadable."
+  status: active
+warnings: []
+notes: Automated mobile layout audit of the Open Actions (Service Tickets) view returned FAIL; the SITE and ASSIGNEE columns were empty and the ticket number column was truncated, making
+  row content unreadable on mobile. Created drift milestone mobile-service-tickets-site-column-fix to track remediation of this defect. Supersedes the same finding in audit 2026-05-22T03-51-04-agentepc-origin.

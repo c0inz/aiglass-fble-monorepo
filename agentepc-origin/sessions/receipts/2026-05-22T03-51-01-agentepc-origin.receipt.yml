@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-01-agentepc-origin.md
+audit_sha: 92be348f9557f4abd2601aeb1317c0c7b2bf68e3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 8737a776-de62-4982-8d55-014f16d4c301
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check on the Open Actions (Service Tickets) view (test run mobile-llm-3t4ymm) returned PASS. No decisions made, no canvas changes implied, and no actionable
+  items identified.

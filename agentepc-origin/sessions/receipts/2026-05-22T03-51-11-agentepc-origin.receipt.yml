@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-11-agentepc-origin.md
+audit_sha: e76be8caae89895b3a3b73568a5d11374f18bd6c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 0494238d-2716-4912-bcec-a279f84bbd67
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Session consisted of UI verification of the My Work tab mobile screenshot describing the six bottom-nav icons and tab bar layout. No decisions were made and no open questions
+  were raised. No canvas changes.

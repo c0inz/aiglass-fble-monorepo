@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-51-04-agentepc-origin.md
+audit_sha: 2625b5b514c0753911b646846b4c6437cd4cd1b5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 0494238d-2716-4912-bcec-a279f84bbd67
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the Open Actions (Service Tickets) view returned FAIL due to SITE column truncation. The defect is captured and attributed to the later audit
+  2026-05-22T03-51-07-agentepc-origin, which reported the same issue with more detail; this earlier audit is superseded.

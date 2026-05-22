@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: agentepc-origin/sessions/audits/2026-05-22T03-50-47-agentepc-origin.md
+audit_sha: 8ad331aa545f6f093fb16b9df1e8bdf578487e1e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-22T07:36:51Z'
+processing_run_id: 959cd2fe-0599-40a5-9cc7-e0727ae9eebc
+processing_run_audits_count: 13
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check for the Projects list page (test run mobile-llm-3tj22h) returned PASS. No decisions, no open questions, and no actionable canvas changes were
+  identified.
