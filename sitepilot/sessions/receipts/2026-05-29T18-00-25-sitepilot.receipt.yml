@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-25-sitepilot.md
+audit_sha: c4f5881d676d5248b08cecdebcd9d72b2ec4ed24
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e5bdf021-2ebb-41d1-87a2-4ce2ef890283
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check of the SitePilot Open Actions (Service Tickets) page returned PASS. Duplicate coverage of the same page as audit 2026-05-29T18-00-24 and 2026-05-29T18-00-30;
+  all passing, no canvas changes needed.

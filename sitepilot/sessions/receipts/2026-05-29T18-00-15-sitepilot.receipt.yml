@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-15-sitepilot.md
+audit_sha: fe5b8ceae797d1c3bef66121e3e2369a0d49f07e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: 'Operational/infrastructure diagnostics session: killed a stale 4.5-day polling process and attempted SIGTERM on a wedged Claude session (PID 1665) that was mid-way through PR
+  #16 (notifications admin UI, Step 6). No product decisions were made and no canvas milestone state changed. The PR #16 work-in-progress is already captured by other audits in this
+  batch. No canvas changes are attributed to this audit.'

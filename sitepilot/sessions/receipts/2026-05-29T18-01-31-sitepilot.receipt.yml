@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-31-sitepilot.md
+audit_sha: b357df8f1b2fe245f5f0ee481d4f539a5e6f3ebf
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 9e1bcf6d-79ff-488c-a938-b6c7600c3344
+processing_run_audits_count: 3
+deltas_emitted: []
+warnings: []
+notes: Audit covered an automated mobile layout check on the SitePilot Schedule page, which returned a PASS verdict. No decisions were made and no status changes were implied. No canvas
+  changes produced.

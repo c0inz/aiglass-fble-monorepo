@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-21-sitepilot.md
+audit_sha: d6fcf1f08c1df4ac168b9d129de1fb99c842a8ac
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e5bdf021-2ebb-41d1-87a2-4ce2ef890283
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-qa-projects-search-clip
+  name: Fix Projects list mobile search panel clipping
+  intent: The search panel (Search input, Search button, Status filter) is partially hidden behind the bottom navigation bar on mobile viewports, clipping the status filter row. This
+    layout bug needs to be fixed.
+  status: active
+warnings: []
+notes: "Automated mobile QA of the SitePilot Projects list page returned FAIL \u2014 the search panel is clipped behind the bottom nav bar on mobile. Created a milestone to track this\
+  \ layout bug fix; no existing canvas milestone covers this mobile layout defect."

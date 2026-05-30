@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-00-sitepilot.md
+audit_sha: a44e49aa853a2978e5005b26d75ff98225d1efdc
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e20caad1-c6d4-4369-b009-b10924bf05c0
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated visual regression check of the Projects list page (projects.png) returned PASS. No decisions or open questions. Duplicate of audit -59 and -53 (different sessions, same
+  page, same result); no additional canvas changes warranted.

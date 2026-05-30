@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-22-sitepilot.md
+audit_sha: 72ed69f2f16584afeef7d52d06e63abd39df4b58
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e28d07af-64fc-426f-b318-623c40d08af9
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated Playwright-based mobile screenshot review of the SitePilot Schedule page returned PASS. Session contained no strategic or operator content. No canvas changes produced.

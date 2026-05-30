@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-09-sitepilot.md
+audit_sha: 6ebce9d85afb2f503e3d293b9d2875cfbc046560
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: desktop-density-url-nav
+  name: Desktop density tokens + URL-driven master-detail for /projects
+  intent: Migrate design tokens to rem with a 16px html baseline, sweep inline font-size px values across four templates, implement URL-driven master-detail for the /projects path, and
+    add sessionStorage scroll persistence. Branch feat/desktop-density-and-url-master-detail completed and pushed for operator review.
+  status: active
+warnings: []
+notes: 'The operator directed implementation of PR #14 (four commits: design tokens to rem, inline font-size sweep, URL-driven master-detail, sessionStorage scroll persistence) on branch
+  feat/desktop-density-and-url-master-detail. All four commits were completed and pushed; smoke checks passed. This is the deciding audit for the desktop-density-url-nav milestone, superseding
+  the earlier analysis-only audit 2026-05-29T18-00-06.'

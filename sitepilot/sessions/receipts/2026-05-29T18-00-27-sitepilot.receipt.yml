@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-27-sitepilot.md
+audit_sha: 4379f840de834aa978a02603b9c83d34196bed82
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e5bdf021-2ebb-41d1-87a2-4ce2ef890283
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check of the SitePilot My Work tab returned PASS. Duplicate coverage of the same page as audits 2026-05-29T18-00-19 and 2026-05-29T18-00-20; all passing,
+  no canvas changes needed.

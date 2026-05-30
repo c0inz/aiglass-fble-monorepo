@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-29-sitepilot.md
+audit_sha: 235f021c02fa81f094747cbf8f06942d4d68429f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e5bdf021-2ebb-41d1-87a2-4ce2ef890283
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Automated mobile layout check of the Settings \u2192 Workflows page returned PASS. Duplicate coverage of the same page as audit 2026-05-29T18-00-26; both passing, no canvas changes\
+  \ needed."

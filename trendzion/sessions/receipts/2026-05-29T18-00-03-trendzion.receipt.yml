@@ -1,0 +1,96 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-05-29T18-00-03-trendzion.md
+audit_sha: be583cbb80c4a9f7d62137e60e3a98efec6c8fe6
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 96fb3b31-127f-4fad-b696-ae28f12d165b
+processing_run_audits_count: 1
+deltas_emitted:
+- op: upsert_milestone
+  slug: corpus-d-and-c
+  name: Doctrine and Covenants corpus load
+  intent: Load all 138 D&C sections plus OD-1 and OD-2 with correct per-section author attribution into sadb.
+  status: shipped
+- op: upsert_milestone
+  slug: corpus-ensign-apostle
+  name: Ensign apostle corpus load
+  intent: Scrape, load, and dedup Ensign apostle articles into sadb; flag Ensign reprints of cojc originals as is_duplicate.
+  status: shipped
+- op: upsert_milestone
+  slug: corpus-new-era-apostle
+  name: New Era apostle corpus load
+  intent: Scrape, load, and dedup New Era apostle articles into sadb with dedup against cojc applied.
+  status: shipped
+- op: upsert_milestone
+  slug: corpus-cojc
+  name: COJC corpus reconciliation
+  intent: Confirm three-way raw/jsonl/sadb parity for the cojc source after rescrape; reach a clean 4,266-row baseline.
+  status: shipped
+- op: upsert_milestone
+  slug: corpus-jsp-documents
+  name: JSP Documents corpus load
+  intent: Load Joseph Smith Papers Documents series (1,159 rows) and JS Journals (10 rows) into sadb; confirm v1-complete.
+  status: shipped
+- op: upsert_milestone
+  slug: corpus-times-and-seasons
+  name: Times and Seasons corpus load
+  intent: OCR, segment, and load all 6 volumes of Times and Seasons; handle both issue-level and article-level segmentation in v1.
+  status: active
+- op: upsert_milestone
+  slug: corpus-scripture-js-history
+  name: Scripture JS History corpus retention
+  intent: "Retain the Joseph Smith\u2014History row in the corpus; leader-authored content stays regardless of scripture classification."
+  status: shipped
+- op: upsert_milestone
+  slug: schema-provenance-canon
+  name: Provenance canon enforcement stack
+  intent: Ship canon.py loader-time validator, audit_canon.py sadb-side audit script, DB check constraint talks_sentinels_require_notes, and project_lds_provenance_canon.md memory file;
+    replace all NULLs with sentinels.
+  status: shipped
+- op: upsert_milestone
+  slug: x-integration-setup
+  name: X developer integration setup
+  intent: Create fable_software_trendziondotcom OAuth 1.0a app, authorize @JohnDavenport, sync tokens to local credentials, and deprecate legacy x-developer.json.
+  status: shipped
+- op: upsert_milestone
+  slug: terms-urim-seer-second-coming
+  name: 'Add library terms: Urim and Thummim, Seer, Second Coming'
+  intent: 'Add three new reading-library terms with appropriate match patterns; land in PR #3 on branch add-terms-urim-seer.'
+  status: active
+- op: upsert_milestone
+  slug: og-card-deseret-merge
+  name: OG card deseret branch merge
+  intent: 'Rebase-merge og-card-deseret branch to main via PR #1; confirm CF Pages prod artifacts already deployed; delete stale local branch.'
+  status: shipped
+- op: upsert_milestone
+  slug: ts-vol4-ocr-quality
+  name: T&S Vol 4 two-column OCR quality fix
+  intent: Resolve DjVuTXT column-interleaving issue in Times and Seasons Vol 4 that regex cannot unscramble; requires re-OCR from image using vision LLM or structure-aware OCR.
+  status: planned
+- op: upsert_milestone
+  slug: testimony-testimoni-slug-dedup
+  name: Fix testimony/testimoni duplicate slug in index.json
+  intent: 'Resolve conflicting entries from build_aggregates.py (stemming to ''testimoni'') and rank_data_driven.py (keeping surface form ''testimony''); tracked as GitHub issue #2.'
+  status: planned
+- op: upsert_milestone
+  slug: api-db-password-hardcoded
+  name: Remove hard-coded DB password from API source
+  intent: Remediate the op-sec finding that trendzion_api.py:40 contains the database password hard-coded in source; move to environment variable or secrets manager.
+  status: planned
+- op: upsert_milestone
+  slug: api-auth-security-gaps
+  name: Address API auth security gaps
+  intent: 'Resolve six identified auth gaps: no auth throttling or failed-login lockout, inconsistent password minimum length (6 signup vs 8 reset), no email verification on signup,
+    session token in localStorage, in-process rate-limit state, and hard-coded DB password.'
+  status: planned
+- op: upsert_milestone
+  slug: grandgallery-db-infra
+  name: GrandGallery DB infrastructure review
+  intent: 'Assess and remediate trendzion user/auth Postgres on GrandGallery droplet: co-resident with API, no block-storage volume, no confirmed encryption at rest; confirm or enable
+    DigitalOcean automated backups/snapshots.'
+  status: planned
+warnings: []
+notes: Long session (2026-04-18 through 2026-05-30) covering corpus loads (D&C, Ensign, New Era, COJC, JSP, T&S), provenance canon enforcement, X integration setup, og-card-deseret merge,
+  and new library terms PR. Canvas was empty prior to this audit, so all 16 milestones are net-new creations; strict ops were avoided entirely. Several open security and infrastructure
+  items (hard-coded DB password, auth gaps, GrandGallery backup status, testimony/testimoni slug dedup, T&S Vol 4 OCR quality) were captured as planned milestones for operator triage.

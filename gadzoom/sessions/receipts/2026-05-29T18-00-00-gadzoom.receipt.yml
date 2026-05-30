@@ -1,0 +1,23 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-29T18-00-00-gadzoom.md
+audit_sha: 30b079bc259af68d3d2f91937aff5713ffe452c5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 1cb65310-bafb-40cc-8c3d-1fc93fea2064
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: surfacemarket-extraction
+  track: launch
+  name: Extract surfacemarket to standalone repo
+  intent: Move the surfacemarket subdirectory out of the gadzoom monorepo into the standalone c0inz/surfacemarket GitHub repo and remove it from gadzoom.
+  status: shipped
+- op: upsert_milestone
+  slug: commit-untracked-gadzoom-files
+  name: Commit untracked gadzoom files before VM loss
+  intent: Commit and push api/ backend files and PHASE0_LOG.md before the VM is lost; also commit CONNECT-BOMBADIL-TO-LOCAL-LLM.md moved to gadzoom/docs/.
+  status: active
+warnings: []
+notes: Session covered msgschool infrastructure fixes (LLM provider migration, rate-limit fix, repo scrub) and gadzoom housekeeping. Emitted a complete milestone for surfacemarket extraction
+  (already done) and an active milestone for committing untracked gadzoom files and the moved runbook before VM loss. msgschool-only work produces no gadzoom canvas deltas.

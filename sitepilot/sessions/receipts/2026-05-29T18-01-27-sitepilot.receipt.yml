@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-27-sitepilot.md
+audit_sha: c6def1877070b4c619d45fc4772044316fea0a33
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e28d07af-64fc-426f-b318-623c40d08af9
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout QA check of the SitePilot Schedule page returned PASS. Duplicate check type for the same page as several prior audits in this batch. No canvas changes
+  produced.

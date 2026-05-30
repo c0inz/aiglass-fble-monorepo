@@ -1,0 +1,32 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-10-sitepilot.md
+audit_sha: faea9bd1ea5b145cfe39f90a9a2a954321e5ac19
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: ticket-status-lifecycle-event-kind
+  name: Fix service-tickets Status Lifecycle filter to include STATUS_MOVED events
+  intent: routes/service-tickets.js line 394 filters the Status Lifecycle aggregation on event_kind='TICKET_PROGRESS' only, but SitePilot-originated status changes write event_kind='STATUS_MOVED'.
+    This means the Status Lifecycle table shows no SitePilot-originated changes. One-line fix mirroring routes/forms.js lines 452 and 1481.
+  status: active
+- op: upsert_milestone
+  slug: migration-deploy-runbook
+  name: Confirm migration runbook includes manual apply to existing tenants
+  intent: The codebase has no migration-tracking table; migrations must be manually applied to existing tenant schemas. Migrations 156 and 157 must be explicitly included in the deploy
+    runbook for AIEPC_BRI0 and all other live tenant schemas. The ai_event_stream tenant_ref column DEFAULT on BRI0 must be confirmed before deploying the workflow.js change.
+  status: active
+- op: upsert_milestone
+  slug: privilege-escalation-worker-create
+  name: Guard worker-create route against SUPERADMIN role assignment by non-SUPERADMIN callers
+  intent: A caller with only workspace.settings edit permissions can supply arbitrary role_ids including the SUPERADMIN role ID when creating a new worker, escalating to SUPERADMIN.
+    Pre-existing but newly high-impact under the fail-closed permission gates shipped in the current branch.
+  status: active
+warnings: []
+notes: 'Senior code review of commits 953d441 through 72dbe1c, assessing the branch as ready to merge with one important fix. The ticket status lifecycle event_kind filter bug (routes/service-tickets.js
+  line 394) was independently confirmed here and is co-attributed to audit 2026-05-29T18-00-08. Two additional milestones are driven by this audit: the migration deploy runbook gap (migrations
+  156/157 must be manually applied to BRI0 before the planned tonight deploy) and the pre-existing comments-panel formatCommentContent potential stored-XSS (landed in the security hardening
+  cluster). The reviewer confirmed several prior findings as fixed.'

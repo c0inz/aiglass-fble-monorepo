@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-29-sitepilot.md
+audit_sha: c83d7c363cd9e3bf49696d07b7dde8f0cfbf2d89
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 9e1bcf6d-79ff-488c-a938-b6c7600c3344
+processing_run_audits_count: 3
+deltas_emitted: []
+warnings: []
+notes: Audit covered an automated mobile usability check on the SitePilot Projects list page, which returned a PASS verdict. No decisions were made and no status changes were implied.
+  No canvas changes produced.

@@ -1,0 +1,51 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-29T18-00-02-gadzoom.md
+audit_sha: a39b9f1fe2778a35e9c86576bec73aac3687c682
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 1cb65310-bafb-40cc-8c3d-1fc93fea2064
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: patent-provisional
+  name: File patent provisional for GADZ / surfacemarket
+  intent: 'Prepare and file a $325 USPTO provisional covering three mechanisms: webmaster-sovereign atomic failover, GADZ-LINK address succession, and trust-tiered payload routing. Must
+    resolve GADZ-LINK enablement gap and leaseModel string inconsistency before filing.'
+  status: active
+- op: upsert_step
+  slug: write-patent-reference-doc
+  milestone: patent-provisional
+  text: Write consolidated PATENT_REFERENCE.md combining attorney patentability analysis with implementation and business language
+  done: true
+- op: upsert_step
+  slug: resolve-gadz-link-enablement
+  milestone: patent-provisional
+  text: 'Resolve GADZ-LINK enablement gap: cite chain-watcher monitor scaffold or implement minimal reference before filing'
+  done: false
+- op: upsert_step
+  slug: resolve-lease-model-inconsistency
+  milestone: patent-provisional
+  text: Resolve leaseModel string inconsistency between server.js and SURFACE_API_SPEC.md / Prisma layer before drafting claims
+  done: false
+- op: upsert_milestone
+  slug: gadz-simulator
+  name: Build GADZ marketplace simulator / test arena
+  intent: 'Implement a sandbox simulator for the gadz.ai marketplace: 100 synthetic websites, 1000 buyers/sellers, scripted agents, fake currency, SIM_MODE env var, injectable sim clock,
+    internal ledger replacing Stellar USDC, per-tick JSONL log, and live HTML dashboard.'
+  status: active
+- op: upsert_step
+  slug: sim-architecture-design
+  milestone: gadz-simulator
+  text: 'Design simulator architecture: SIM_MODE env var vs. forked API, sim time ratio, local vs. droplet deployment, and LLM agent phase inclusion'
+  done: false
+- op: upsert_milestone
+  slug: local-llm-connectivity
+  name: Connect Bombadil agent to local vLLM on LeagueOfBeasty
+  intent: Configure Bombadil agent to use the OpenAI-compatible vLLM endpoint on LeagueOfBeasty (192.168.1.108:8000, model alias local-llm, Qwen3-Coder-30B on dual RTX 3090) with firewall
+    rules and port-proxy as described in the uploaded guide.
+  status: active
+warnings: []
+notes: Session produced the PATENT_REFERENCE.md document and designed the full simulator architecture, making this audit the latest driver for both the patent provisional and the simulator
+  milestones. Created patent-provisional milestone with write-patent-reference-doc step (done), two blocking pre-filing steps (GADZ-LINK enablement, leaseModel inconsistency), the gadz-simulator
+  milestone with architecture design step, and the local-llm-connectivity milestone surfaced from the LeagueOfBeasty integration discussion.

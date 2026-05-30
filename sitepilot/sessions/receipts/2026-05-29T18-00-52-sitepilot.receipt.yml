@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-52-sitepilot.md
+audit_sha: b88cf637546e2b20a718bcb19584509469bd591c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e20caad1-c6d4-4369-b009-b10924bf05c0
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile viewport check of the Inbox page returned PASS. No decisions or open questions. Routine QA pass; no canvas changes warranted.

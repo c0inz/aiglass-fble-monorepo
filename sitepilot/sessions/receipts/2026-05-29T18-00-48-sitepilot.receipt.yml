@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-48-sitepilot.md
+audit_sha: 60a12a8920c7c34a90cc8b0d17110f476698d5cf
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e20caad1-c6d4-4369-b009-b10924bf05c0
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout QA check of the My Work tab returned PASS. No decisions or open questions. Routine QA pass; no canvas changes warranted.

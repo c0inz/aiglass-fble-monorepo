@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-25-sitepilot.md
+audit_sha: 815327ced466b383e5a5b310bcc13a2a62e16326
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e28d07af-64fc-426f-b318-623c40d08af9
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Automated mobile screenshot QA check of the SitePilot Settings \u2192 Workflows page returned PASS. Audit noted no canvas entry covers automated mobile screenshot QA testing,\
+  \ but no operator decision to add one was present. No canvas changes produced."

@@ -1,0 +1,198 @@
+schema_version: 1
+audit_file: gadz-sim/sessions/audits/2026-05-29T18-00-04-gadz-sim.md
+audit_sha: 4705781879a48b8b835f94e28e5f183503ca31c3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: ea51e0fb-d22c-4a71-a699-845e0b1faa92
+processing_run_audits_count: 1
+deltas_emitted:
+- op: upsert_track
+  slug: simulation
+  name: Simulation
+  description: GADZ surface-market simulation engine, demographics, revenue modeling, and campaign analysis
+  ordinal: 1
+- op: upsert_track
+  slug: protocol
+  name: Protocol
+  description: 'GADZ protocol design: Harberger tax mechanics, on-chain settlement, token economics, and legal structure'
+  ordinal: 2
+- op: upsert_track
+  slug: products
+  name: Products
+  description: 'Per-product repos and sites: gadz.ai, adpix, surfacemarket, SoSatisfying'
+  ordinal: 3
+- op: upsert_track
+  slug: infra
+  name: Infrastructure
+  description: Repo structure, credentials, LLM serving, deployment, and tooling
+  ordinal: 4
+- op: upsert_milestone
+  slug: gadz-sim-scaffold
+  track: simulation
+  name: Scaffold gadz-sim repo
+  intent: Create standalone c0inz/gadz-sim repo at ~/projects/gadz-sim with initial simulation code separate from gadzoom monorepo.
+  status: shipped
+  ordinal: 1
+- op: upsert_milestone
+  slug: demographics-and-revenue
+  track: simulation
+  name: Demographics and revenue modeling
+  intent: Implement five buyer demographics with per-demographic CPM rates, per-buyer creative vectors, traditional control-arm kernel, Plugin buyer archetype, and comparison harness.
+  status: shipped
+  ordinal: 2
+- op: upsert_milestone
+  slug: 30-day-llm-campaign
+  track: simulation
+  name: 30-day LLM learning campaign
+  intent: Run 43200-tick simulation with hybrid rule-based and LLM-driven agents (qwen3-coder-30b via vLLM on LeagueOfBeasty) and document results in milestone report, testnet playbook,
+    and launch algorithm report.
+  status: shipped
+  ordinal: 3
+- op: upsert_milestone
+  slug: launch-algorithm-params
+  track: simulation
+  name: Day-one launch algorithm parameters
+  intent: 'Derive and lock day-one protocol parameters from simulation data: tax_rate_per_tick, tax_alpha, lease_window_ticks, guarantee_ticks, early_exit_penalty, transfer_fee, reserve_frac_range,
+    and DV cap decision.'
+  status: shipped
+  ordinal: 4
+- op: upsert_milestone
+  slug: late-campaign-plateau-investigation
+  track: simulation
+  name: Investigate late-campaign plateau
+  intent: Determine why mean cumulative P&L peaked day 23 at +$143 then drifted to +$108 by day 29; likely cause is strategy notes converging on over-aggressive single-surface concentration.
+  status: active
+  ordinal: 5
+- op: upsert_milestone
+  slug: dv-overdeclaration-convergence
+  track: simulation
+  name: DV over-declaration convergence
+  intent: Track and resolve residual 7x DV over-declaration (down from 39x); determine whether further campaigns fully correct it to 1x.
+  status: active
+  ordinal: 6
+- op: upsert_milestone
+  slug: stellar-settlement-design
+  track: protocol
+  name: Stellar atomic settlement design
+  intent: Finalize direct atomic on-chain settlement via Stellar payment ledger with non-custodial settlement-service relayer model; drop escrow contract in favor of Stellar's native
+    primitives.
+  status: shipped
+  ordinal: 1
+- op: upsert_milestone
+  slug: gadz-token-design
+  track: protocol
+  name: GADZ consumptive mint-and-burn token design
+  intent: 'Define consumptive utility token: stablecoin paid in, token minted and burned atomically per transaction, non-holdable and non-transferable, eliminating Howey security risk.'
+  status: shipped
+  ordinal: 2
+- op: upsert_milestone
+  slug: capital-roadmap
+  track: protocol
+  name: Three-instrument capital roadmap
+  intent: 'Define three-instrument structure: (1) consumptive meter token, (2) Reg D/CF SAFE + token warrant, (3) Reg A+ tokenized equity at year 2-3; maintain firewall between meter
+    token and equity raise.'
+  status: shipped
+  ordinal: 3
+- op: upsert_milestone
+  slug: force-buy-veto-semantics
+  track: protocol
+  name: Lock force-buy and owner-veto semantics
+  intent: Decide operator-veto model (refund vs. blacklist vs. rate-limit) and formalize open force-buy authorization with per-epoch rate-limiting as anti-grief safeguard before testnet
+    code is written.
+  status: active
+  ordinal: 4
+- op: upsert_milestone
+  slug: testnet-tax-denomination
+  track: protocol
+  name: Testnet tax denomination decision
+  intent: Decide whether testnet tax is denominated as fixed 1:1 to test stablecoin or floating; required before testnet implementation begins.
+  status: active
+  ordinal: 5
+- op: upsert_milestone
+  slug: gadz-ai-site
+  track: products
+  name: gadz.ai protocol marketing site
+  intent: Build gadz.ai as protocol marketing site and community hub covering token explanation, Harberger tax mechanics, and surface market showcase.
+  status: planned
+  ordinal: 1
+- op: upsert_milestone
+  slug: adpix-product
+  track: products
+  name: "adpix \u2014 modern million-dollar homepage"
+  intent: Build adpix as a modern million-dollar homepage with usable-sized rectangles showcasing surface survivability in a real-time Harberger market; repo initialized at c0inz/adpix.
+  status: active
+  ordinal: 2
+- op: upsert_milestone
+  slug: surfacemarket-product
+  track: products
+  name: "surfacemarket \u2014 surface contract trading platform"
+  intent: Build surfacemarket as the trading platform for GADZ protocol surface contracts; repo cloned at ~/projects/surfacemarket.
+  status: active
+  ordinal: 3
+- op: upsert_milestone
+  slug: sosatisfying-product
+  track: products
+  name: "SoSatisfying \u2014 social aggregation with GADZ surfaces"
+  intent: Build SoSatisfying as a social media aggregation site where users OAuth/DM-validate social accounts, receive an algorithmic aggregate score and cross-posted feed, with page
+    surface space sold via GADZ protocol; repo cloned at ~/projects/SoSatisfying.
+  status: active
+  ordinal: 4
+- op: upsert_milestone
+  slug: embedded-wallet-sdk-selection
+  track: products
+  name: Embedded wallet SDK selection
+  intent: Evaluate and select embedded wallet SDK (Privy, Turnkey, Web3Auth, Dynamic, or Stellar-native tooling) verifying Stellar support among EVM-first options.
+  status: active
+  ordinal: 5
+- op: upsert_milestone
+  slug: repo-structure
+  track: infra
+  name: Per-product repo structure
+  intent: Establish per-product repos (gadz-sim, adpix, surfacemarket, SoSatisfying) as source of truth; gadzoom monorepo flagged as largely stale with README staleness warning and per-product
+    table.
+  status: shipped
+  ordinal: 1
+- op: upsert_milestone
+  slug: github-credentials
+  track: infra
+  name: GitHub credentials setup
+  intent: Replace dead GitHub tokens with classic PAT saved to ~/credentials/github.json as pat_classic_write; fine-grained PAT noted as limited scope and superseded.
+  status: shipped
+  ordinal: 2
+- op: upsert_milestone
+  slug: llm-agent-throughput
+  track: infra
+  name: LLM agent throughput optimization
+  intent: Fix max_tokens=8000 bug to max_tokens=1400 (7.6x improvement) and implement prompt prefix-caching refactor (2.6x improvement); combined reduced 30-day campaign from ~19h projected
+    to ~5.8h actual.
+  status: shipped
+  ordinal: 3
+- op: upsert_milestone
+  slug: git-credential-helper-repair
+  track: infra
+  name: Repair global git credential helper
+  intent: Fix broken ~/.local/bin/git-credential-spaiglass on gadz-sim VM that returns dead tokens; workaround using repo-local helpers is in place but underlying helper is unrepaired.
+  status: active
+  ordinal: 4
+- op: upsert_milestone
+  slug: testnet-playbook
+  track: simulation
+  name: Testnet playbook
+  intent: Write and commit testnet playbook (docs/TESTNET-PLAYBOOK.md) to feat/demographics-and-revenue branch; includes one-week testnet competition design with no specific calendar
+    date set.
+  status: shipped
+  ordinal: 7
+- op: upsert_milestone
+  slug: merge-pr1
+  track: simulation
+  name: 'Merge PR #1 feat/demographics-and-revenue'
+  intent: 'Decide whether to merge PR #1 (feat/demographics-and-revenue branch, HEAD ae6b4d2) or continue iterating; decision was open at session end.'
+  status: active
+  ordinal: 8
+warnings: []
+notes: 'Single greenfield session covering scaffolding of gadz-sim repo, demographics and revenue modeling, 30-day LLM campaign with hybrid agent population, derivation of day-one launch
+  algorithm parameters, Stellar settlement and token economics decisions, three-instrument capital roadmap, four distinct product definitions (gadz.ai, adpix, surfacemarket, SoSatisfying),
+  and infra work (credential setup, throughput optimization). Canvas was empty prior to this audit; all deltas are new track and milestone creations. Several items remain open: PR #1
+  merge decision, late-campaign plateau investigation, DV over-declaration convergence, force-buy/veto semantics, testnet tax denomination, embedded wallet SDK selection, and git credential
+  helper repair.'

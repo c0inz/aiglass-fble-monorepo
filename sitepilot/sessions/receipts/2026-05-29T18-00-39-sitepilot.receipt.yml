@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-39-sitepilot.md
+audit_sha: e0d02afea52114c2e2a0b01027b8434769a96ee9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: c3e44753-d1f9-41d0-bb6b-6313a9994cae
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout QA check on the SitePilot Dispatch page returned PASS. No decisions, open questions, or canvas changes were implied by this session.

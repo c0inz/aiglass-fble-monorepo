@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: gadzoom/sessions/audits/2026-05-29T18-00-01-gadzoom.md
+audit_sha: 2ee25c624a27b1070be6b9718812e816c66faaf9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 1cb65310-bafb-40cc-8c3d-1fc93fea2064
+processing_run_audits_count: 3
+deltas_emitted: []
+warnings: []
+notes: Session was patent source-mining and extraction only with no implementation work and no implied status changes. The patent provisional milestone and its steps are attributed to
+  audit 2026-05-29T18-00-02-gadzoom, which drove the actual decision to write PATENT_REFERENCE.md and scoped the filing work more concretely; this earlier audit is superseded on those
+  items.

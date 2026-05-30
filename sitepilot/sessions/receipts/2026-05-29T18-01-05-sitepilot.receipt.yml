@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-05-sitepilot.md
+audit_sha: 49a6b8bd556bae09e2a70e160b54bc2ae26a1785
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: a2c1293f-c037-421f-817c-b6e01815986a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the Accounts list page returned PASS. No decisions or actionable canvas changes; covered by the mobile-layout-qa milestone created by audit
+  18-01-08.

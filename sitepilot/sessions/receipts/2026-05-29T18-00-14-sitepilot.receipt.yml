@@ -1,0 +1,40 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-14-sitepilot.md
+audit_sha: 13639d37ae8a900ed377df74404d662702ed4c7c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-layout-inbox-dispatch
+  name: Fix mobile layout defects on Inbox and Dispatch pages
+  intent: 'Automated mobile layout tests identified two failures: the Inbox page WO-kind filter dropdown clips at the right edge causing horizontal overflow, and the Dispatch page right-edge
+    vertical tab strip overlaps the map and is clipped. Schedule page passed the same test.'
+  status: active
+- op: upsert_milestone
+  slug: crossplatform-event-stream-tenant-ref
+  name: Fix ai_event_stream tenant_ref cross-tenant pollution and always-TASK kind
+  intent: workflow.js and routes/service-tickets.js previously hardcoded tenant_ref=124 into ai_event_stream on any tenant's step-status change, causing cross-tenant data pollution.
+    Also, ai_event_stream always writes event_kind='TASK' regardless of actual entity type. The hardcoded literal was removed (relying on column DEFAULT) in the V1 promote; the event_kind
+    issue remains.
+  status: active
+- op: upsert_milestone
+  slug: cloudflare-proxy-and-infra-hardening
+  name: 'Infrastructure hardening: Cloudflare proxy, kernel reboots, SSH key pruning'
+  intent: app.sitepilot.work is not behind the Cloudflare proxy, exposing the origin IP. Three droplets need kernel reboots to activate staged patches. Expired dotty SSH key on the app
+    host and duplicate SSH key entries need pruning pending operator approval. DO Account-0 holding 4 unauditable droplets needs investigation.
+  status: active
+- op: upsert_milestone
+  slug: requiremetaaccess-non-numeric-bypass
+  name: Audit meta routes for requireMetaAccess non-numeric ID bypass
+  intent: requireMetaAccess passes requests with non-numeric :id straight through to the route handler with no permission check (isNaN(targetId) -> next()). Any route relying solely
+    on this middleware is bypassable by sending a non-numeric id. A follow-up audit of all meta routes is needed.
+  status: active
+warnings: []
+notes: "Large multi-session summary covering the V1 promote (migrations 156/157 applied to all 21 prod tenant schemas, prod master suite green), Coperniq batch export pipeline, and a\
+  \ comprehensive security audit. Drives four milestone attributions: infrastructure hardening (Cloudflare proxy, kernel reboots, SSH key pruning \u2014 from the security audit findings\
+  \ still open); confirms the cross-tenant event stream tenant_ref fix was partially deployed (hardcoded 124 removed) while the event_kind='TASK' issue remains; co-attributes the privilege-escalation\
+  \ milestone noting H1 and other security findings; and adds the cloudflare-proxy-and-infra-hardening milestone for open M3/M5/M6/M7 items. The C1, H2, M1, M2, M4 fixes are verified\
+  \ closed on prod."

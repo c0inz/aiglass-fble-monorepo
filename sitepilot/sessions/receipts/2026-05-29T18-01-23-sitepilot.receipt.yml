@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-23-sitepilot.md
+audit_sha: 6bf8e3ba97e6d4a8711da38a0777cd2ac985a63a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e28d07af-64fc-426f-b318-623c40d08af9
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated LLM mobile screenshot review of the SitePilot Projects list page returned PASS. No decisions, open questions, or status changes were present. No canvas changes produced.

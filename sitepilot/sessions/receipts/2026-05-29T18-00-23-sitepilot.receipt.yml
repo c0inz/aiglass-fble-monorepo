@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-23-sitepilot.md
+audit_sha: 4c5e72065194a352c209b1ba438eaec02b3de3d5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e5bdf021-2ebb-41d1-87a2-4ce2ef890283
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout QA on the SitePilot Projects list page returned PASS. This is a later check of the same page that audit 2026-05-29T18-00-21 flagged as FAIL; the passing
+  result here may indicate the clipping bug was intermittent or environment-dependent, but the defect milestone (delta 0) is already captured from the earlier FAIL and attributed to
+  that audit.

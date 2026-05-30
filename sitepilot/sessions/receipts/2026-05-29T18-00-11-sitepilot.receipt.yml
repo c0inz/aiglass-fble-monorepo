@@ -1,0 +1,25 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-11-sitepilot.md
+audit_sha: 6e2f775dc158654f47db1b0cff194755a17eb2c1
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: attachment-serve-security
+  name: Harden /attachments/:id to prevent inline HTML serving
+  intent: 'The upload stored-XSS defense (Content-Disposition: attachment + X-Content-Type-Options: nosniff) was placed on /uploads/* static route, not the actual serving path /attachments/:id.
+    The real handler serves files inline with a client-supplied MIME type, enabling stored XSS via spoofed text/html content type. Fix must be applied before the planned production deploy.'
+  status: active
+- op: upsert_milestone
+  slug: cloudflare-proxy-and-infra-hardening
+  name: 'Infrastructure hardening: Cloudflare proxy, kernel reboots, SSH key pruning'
+  intent: app.sitepilot.work is not behind the Cloudflare proxy, exposing the origin IP. Three droplets need kernel reboots to activate staged patches. Expired dotty SSH key on the app
+    host and duplicate SSH key entries need pruning pending operator approval. DO Account-0 holding 4 unauditable droplets needs investigation.
+  status: active
+warnings: []
+notes: Security-focused code review of the same branch (953d441 to 72dbe1c), determining the branch is not yet ready to merge due to a Critical finding (upload /attachments/:id serving
+  files inline with attacker-controllable MIME type, bypassing the defense-in-depth header placed on the wrong route) and an Important finding (privilege escalation via worker-create
+  route). Both findings land as new active milestones; the security hardening cluster milestone (index 5) picks up additional context from this audit as well.

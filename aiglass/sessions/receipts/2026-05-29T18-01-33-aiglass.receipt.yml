@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: aiglass/sessions/audits/2026-05-29T18-01-33-aiglass.md
+audit_sha: 4b48daaacdaca14669ced7dfecc1037149fe3cc9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 0c450fec-abe3-4efc-aa13-a79f6a8411d1
+processing_run_audits_count: 2
+deltas_emitted: []
+warnings: []
+notes: Session covered AI infrastructure stock research (ranked list of 10 buy candidates for 12-month hold) and surfacemarket org-structure context (nonprofit vs. PBC). The audit itself
+  states no canvas milestones were referenced by slug and no status changes to aiglass tracks or milestones can be inferred. All content belongs to separate projects (investment research
+  and surfacemarket); no aiglass canvas changes produced.

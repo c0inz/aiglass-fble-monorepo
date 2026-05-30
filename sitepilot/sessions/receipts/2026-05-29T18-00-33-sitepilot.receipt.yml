@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-33-sitepilot.md
+audit_sha: cc50366ce48f3ec5f5acfcab86f74e412da96965
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: c3e44753-d1f9-41d0-bb6b-6313a9994cae
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check on the SitePilot My Work tab returned PASS. No decisions, no open questions, and no canvas changes were implied by this session.

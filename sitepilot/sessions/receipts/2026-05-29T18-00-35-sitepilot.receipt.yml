@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-35-sitepilot.md
+audit_sha: e72646d4be3c0c726ad917abff40cb2ee92cc97f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: c3e44753-d1f9-41d0-bb6b-6313a9994cae
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check on the SitePilot Open Actions (Service Tickets) view returned PASS. No decisions, open questions, or canvas changes were implied.

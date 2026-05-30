@@ -1,0 +1,20 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-07-sitepilot.md
+audit_sha: 77a0d3d643048a3540d945f1d1da524d6b593a8b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: workflow-engine-unification
+  name: Unify workflow engine calls into a single orchestrator
+  intent: Four engine modules (stage-engine.js, visibility-engine.js, prerequisite-engine.js, automation/engine.js) are called independently with no unified transaction wrapper. Automation-driven
+    completions do not cascade to stage or venture completion. A lib/workflow.js unified orchestrator with exported functions executeWorkflowStep, autoAssignOnStageStart, evaluateAllEngines,
+    executeAutomationWithCascade was proposed.
+  status: active
+warnings: []
+notes: Read-only audit of the workflow engine architecture, identifying four independent engine modules with no unified transaction wrapper, a dead prerequisite engine in the live request
+  path, automation-driven completions that do not cascade, and the form field save path not triggering the stage engine. A detailed proposal for a lib/workflow.js unified orchestrator
+  was produced. No implementation work occurred; findings land as a new active milestone for workflow engine unification.

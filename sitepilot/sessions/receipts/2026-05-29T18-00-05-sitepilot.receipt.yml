@@ -1,0 +1,37 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-05-sitepilot.md
+audit_sha: 098ccf84c8fe761a17c52aa10bf3dd579424e1c7
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: site-service-venture-ref-bug
+  name: Fix SITE_SERVICE work-order missing venture_ref
+  intent: The SITE_SERVICE work-order create path does not bind venture_ref, violating the data dictionary contract. Affects BRI0 (42 cumulative venture-less tasks) and AIEPC_MAS1 (3
+    tasks). Fix is localized to the service-ticket creation route.
+  status: active
+- op: upsert_milestone
+  slug: inbox-migration-backfill
+  name: Backfill inbox migration to lagging tenant schemas
+  intent: '14 of 20 tenant sandbox schemas (EAV0-3, REP0-3, SUP0-1, WFE0-1, MNT0) are stuck at 72 tables, missing the inbox subsystem (PR #16/17/22) and ai_field_entry migration (mig
+    155). A backfill run is needed.'
+  status: active
+- op: upsert_milestone
+  slug: ai-remark-scope-backfill
+  name: Backfill and enforce non-NULL scope on ai_remark
+  intent: 8 of 33 recent ai_remark rows have NULL scope. The data dictionary requires this field to always be populated. Needs backfill of existing NULLs and a NOT NULL constraint or
+    application-level enforcement.
+  status: active
+- op: upsert_milestone
+  slug: collaborator-added-notification-bug
+  name: Fix COLLABORATOR_ADDED inbox event delivering zero recipients
+  intent: A COLLABORATOR_ADDED inbox event with zero recipients was observed in the last 4 days, suggesting the newly-added collaborator is not receiving their own COLLABORATOR_ADDED
+    event. Possible bug in the recipient-resolution path.
+  status: active
+warnings: []
+notes: 'Read-only database integrity audit covering the prior 4 days of data across 20 tenant schemas. Surfaced four new canvas candidates: SITE_SERVICE work-orders missing venture_ref
+  (systemic defect in BRI0 and AIEPC_MAS1), 14 tenant schemas lagging on inbox migrations and ai_field_entry, ai_remark rows with NULL scope violating the data dictionary, and a COLLABORATOR_ADDED
+  zero-recipient notification bug. No decisions were made and no existing canvas slugs existed; all four findings land as new drift-triage milestones.'

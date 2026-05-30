@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-14-sitepilot.md
+audit_sha: bb57e10327c010b6854f3b30b78f808b6dc3171c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: a2c1293f-c037-421f-817c-b6e01815986a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the Schedule page returned PASS (a different test run than audit 18-01-08). No decisions or additional canvas changes; the Schedule header
+  overflow regression is already captured as a step under the mobile-layout-qa milestone.

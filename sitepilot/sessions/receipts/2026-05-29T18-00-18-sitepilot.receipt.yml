@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-18-sitepilot.md
+audit_sha: 2b8c829207d05402c081ad92b3a6b78bee2cadf8
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-layout-inbox-dispatch
+  name: Fix mobile layout defects on Inbox and Dispatch pages
+  intent: 'Automated mobile layout tests identified two failures: the Inbox page WO-kind filter dropdown clips at the right edge causing horizontal overflow, and the Dispatch page right-edge
+    vertical tab strip overlaps the map and is clipped. Schedule page passed the same test.'
+  status: active
+warnings: []
+notes: 'Automated mobile layout test of the SitePilot Dispatch page returned FAIL: the right-edge vertical tab strip overlaps the map and is clipped, making labels unreadable. Co-attributed
+  to the mobile-layout-inbox-dispatch milestone alongside audit 2026-05-29T18-00-16 (Inbox page failure). Together these two audits define the scope of mobile layout regressions requiring
+  fixes.'

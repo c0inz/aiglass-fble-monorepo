@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-21-sitepilot.md
+audit_sha: c909fc46f54bddfe4f6a781509311aa938cce9f4
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e28d07af-64fc-426f-b318-623c40d08af9
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the SitePilot 'My Work' tab returned PASS. Audit noted no corresponding canvas milestone for mobile layout validation exists; however, the
+  check itself is operational routine rather than a feature decision, so no canvas change is warranted without operator direction. No canvas changes produced.

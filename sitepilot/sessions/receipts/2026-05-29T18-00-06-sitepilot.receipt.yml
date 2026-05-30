@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-06-sitepilot.md
+audit_sha: 1d413ab98415d9d90ecb10370fb70e1be4db0daf
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: 'Design-analysis-only session producing a written comparison of five options for fixing the /projects desktop density and browser-zoom desync issues. The agent recommended Option
+  B (rem migration + user density toggle) layered on minimal Option A scroll-container cleanup. No decisions were confirmed by the operator and no implementation work began. All findings
+  were superseded or incorporated by audit 2026-05-29T18-00-09-sitepilot, which records actual implementation of PR #14. No independent canvas changes are attributed to this audit.'

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-49-sitepilot.md
+audit_sha: cf2ad9f05330d2ce346759b078bb5fca8bf4716a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e20caad1-c6d4-4369-b009-b10924bf05c0
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Automated mobile viewport check of the Settings \u2192 Workflows page returned PASS. No decisions or open questions. Duplicate of audit -47 (different session, same page, same\
+  \ result); no additional canvas changes warranted."

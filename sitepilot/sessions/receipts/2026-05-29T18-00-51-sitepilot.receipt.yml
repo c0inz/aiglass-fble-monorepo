@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-51-sitepilot.md
+audit_sha: 235dca83161dadb8f7efa714af17d35e7deee3a8
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e20caad1-c6d4-4369-b009-b10924bf05c0
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-viewport-qa
+  name: Mobile viewport QA automation
+  intent: Track authenticated mobile screenshot tests across key SitePilot pages (Dispatch, Inbox, My Work, Projects, Accounts, Settings/Workflows) and resolve auth-session issues in
+    test infrastructure.
+  status: active
+warnings: []
+notes: "Automated mobile screenshot test of the My Work tab failed because the auth session was not established before capture, resulting in a screenshot of the Sign-in page. This surfaces\
+  \ an open infrastructure gap \u2014 no canvas milestone covers authenticated mobile QA automation. Created drift milestone mobile-viewport-qa to track this work area and the unresolved\
+  \ auth-session issue."

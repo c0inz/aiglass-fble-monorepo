@@ -1,0 +1,23 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-01-08-sitepilot.md
+audit_sha: 5ac3a0e475ee4a8563f5092dd74bd9d6417ba114
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: a2c1293f-c037-421f-817c-b6e01815986a
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-layout-qa
+  name: Mobile layout QA
+  intent: Track automated mobile viewport usability checks across SitePilot pages; capture PASS/FAIL results and any layout regressions found.
+  status: active
+- op: upsert_step
+  slug: schedule-header-overflow-fix
+  milestone: mobile-layout-qa
+  text: "Fix clipped 'All' toggle on Schedule page mobile viewport \u2014 'All' next to 'Mine' is cut off by the 'Today' button in the header row."
+  done: false
+warnings: []
+notes: Automated mobile layout check of the Schedule page returned FAIL due to the 'All' toggle being clipped by the 'Today' button in the header row on mobile. Created drift milestone
+  mobile-layout-qa to capture the ongoing mobile QA effort surfaced across this batch, and added an open step for the Schedule header overflow regression. This is the first audit in
+  the batch to surface a FAIL with an actionable finding.

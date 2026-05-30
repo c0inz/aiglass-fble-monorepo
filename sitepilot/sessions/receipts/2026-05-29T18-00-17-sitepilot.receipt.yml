@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-17-sitepilot.md
+audit_sha: 67e41e254dd697dc910e2ff024df2b1c56abd7ac
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout test of the SitePilot Schedule page returned PASS. No layout defects were identified and no canvas changes are needed. The passing result is informational
+  context for the mobile layout milestone.

@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-12-sitepilot.md
+audit_sha: 808c8738b5cce932f97928c191019d51f79587dc
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: inbox-event-constraint-fixes
+  name: Fix inbox migration CHECK constraint gaps and dead event kinds
+  intent: Migration 138 CHECK constraint does not include STEP_ADDED or TICKET_CREATED, which are actively emitted; fresh tenant deployments will fail. The ai_inbox_recipient reason
+    CHECK constraint in migration 060 is missing PROJECT_MANAGER. STEP_PROGRESS and TICKET_PROGRESS are declared but never emitted (dead code).
+  status: active
+warnings: []
+notes: 'Read-only audit of the inbox subsystem identifying two critical production bugs: migration 138 CHECK constraint missing STEP_ADDED and TICKET_CREATED kinds (active emitters that
+  will fail on fresh tenant deploys), and ai_inbox_recipient reason CHECK constraint in migration 060 missing PROJECT_MANAGER. Additional systemic gaps noted: dead event kind declarations,
+  am_alert_config tables having no effect in Tier 1, no per-user notification preferences, and hardcoded EMAIL_ENABLED_KINDS. All findings land as the inbox-event-constraint-fixes milestone.'

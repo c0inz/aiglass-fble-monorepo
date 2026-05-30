@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-13-sitepilot.md
+audit_sha: e89cbd27805635d4f33c352cb34618b5eb5d89a8
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: migration-deploy-runbook
+  name: Confirm migration runbook includes manual apply to existing tenants
+  intent: The codebase has no migration-tracking table; migrations must be manually applied to existing tenant schemas. Migrations 156 and 157 must be explicitly included in the deploy
+    runbook for AIEPC_BRI0 and all other live tenant schemas. The ai_event_stream tenant_ref column DEFAULT on BRI0 must be confirmed before deploying the workflow.js change.
+  status: active
+warnings: []
+notes: Code review of the PostgreSQL schema migration branch confirming migrations 156 and 157 are safe to ship and correctly ordered, and that dead buildRecipientSet code deletion is
+  clean. The key actionable finding is that migrations do not auto-apply to existing tenants and the deploy runbook must explicitly include manual application to AIEPC_BRI0 and all other
+  live schemas. Co-attributed to delta 12 (migration-deploy-runbook) alongside audit 2026-05-29T18-00-10.

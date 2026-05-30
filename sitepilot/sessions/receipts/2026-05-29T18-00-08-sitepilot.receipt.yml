@@ -1,0 +1,34 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-08-sitepilot.md
+audit_sha: 8905a5722403a985b71496da133da7bdfdb9e2b1
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 32de4975-3edf-403d-b1a0-d2905e1ec2d4
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: security-hardening-batch
+  name: 'Security hardening: permission gates, XSS, abuse vectors, upload path'
+  intent: 'A cluster of critical and high security findings across the codebase: fail-open permission gates (requireSettingsAccess/requireEntityAccess/requireMetaAccess), arbitrary HTML
+    email abuse vector, cross-project task manipulation, inline-served uploaded files with attacker-controllable MIME type on /attachments/:id, CSV injection in schedule export, and
+    stored-XSS surfaces in inbox.ejs and notifications.ejs. Covers both pre-existing debt and findings from the 2026-05-28 code review.'
+  status: active
+- op: upsert_milestone
+  slug: crossplatform-event-stream-tenant-ref
+  name: Fix ai_event_stream tenant_ref cross-tenant pollution and always-TASK kind
+  intent: workflow.js and routes/service-tickets.js previously hardcoded tenant_ref=124 into ai_event_stream on any tenant's step-status change, causing cross-tenant data pollution.
+    Also, ai_event_stream always writes event_kind='TASK' regardless of actual entity type. The hardcoded literal was removed (relying on column DEFAULT) in the V1 promote; the event_kind
+    issue remains.
+  status: active
+- op: upsert_milestone
+  slug: ticket-status-lifecycle-event-kind
+  name: Fix service-tickets Status Lifecycle filter to include STATUS_MOVED events
+  intent: routes/service-tickets.js line 394 filters the Status Lifecycle aggregation on event_kind='TICKET_PROGRESS' only, but SitePilot-originated status changes write event_kind='STATUS_MOVED'.
+    This means the Status Lifecycle table shows no SitePilot-originated changes. One-line fix mirroring routes/forms.js lines 452 and 1481.
+  status: active
+warnings: []
+notes: 'Full prioritized code review of 9 PRs spanning commits 1a368ee through 35314c1, surfacing critical security findings (fail-open permission gates, arbitrary email send abuse,
+  cross-project task manipulation, cross-tenant ai_event_stream pollution, always-TASK event_kind write), high-severity findings (CSV injection, XSS in inbox.ejs and notifications.ejs,
+  dead buildRecipientSet code), and medium/low findings. Three milestones are attributed here: the broad security hardening cluster, the cross-tenant event stream and always-TASK event_kind
+  issue, and the ticket status lifecycle event_kind filter bug.'

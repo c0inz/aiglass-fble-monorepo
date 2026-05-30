@@ -1,0 +1,45 @@
+schema_version: 1
+audit_file: aiglass/sessions/audits/2026-05-29T18-01-32-aiglass.md
+audit_sha: 85d0bbc25823f909e11292d2e438d30d03e6b9c3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 0c450fec-abe3-4efc-aa13-a79f6a8411d1
+processing_run_audits_count: 2
+deltas_emitted:
+- op: upsert_milestone
+  slug: plan-4a
+  name: "Plan 4a \u2014 Products and GitHub Ingest"
+  intent: "Implement product workspace model, GitHub webhook ingest, audit file indexing, and playbook deployment across all registered workspaces. Tasks 0\u201323 fully complete; branch\
+    \ feat/plan-4-products-and-github-ingest deployed to production at commit bb3a1bc."
+  status: shipped
+- op: upsert_milestone
+  slug: plan-4a-prod-deploy
+  name: Plan 4a Production Deploy
+  intent: "Full production deployment to exceedwebsites and exceedbackend: 10 tables migrated, webhook endpoint live, 14 workspaces wired and webhooks registered, 13 audit files backfilled\
+    \ as valid, 8 tracks seeded per workspace, and \xA73.1 redaction-rule playbooks deployed to all 14 repos."
+  status: shipped
+- op: upsert_milestone
+  slug: plan-5-lost-work-structured-recall
+  name: "Plan 5 \u2014 Lost-Work / Structured Recall"
+  intent: 'Design and implement first-class schema additions for decisions, open questions, action items, and benchmarks as queryable structured objects rather than prose in audit bodies.
+    Includes new stage-2 op vocabulary: upsert_decision, decide, upsert_question, answer_question, upsert_action, complete_action, upsert_benchmark. Flagged as right next design effort
+    (Plan 4a.5 / Plan 5) but not yet scheduled.'
+  status: planned
+- op: upsert_milestone
+  slug: playbook-redaction-rule
+  name: "Playbook \xA73.1 Redaction Rule"
+  intent: "Close the stage-1 session audit playbook security gap: add explicit \xA73.1 covering API keys, tokens, passwords, database connection strings, and full credential taxonomy\
+    \ to sessionAuditPlaybookTemplate.md. Committed, deployed, and propagated to all 14 workspace repos via commitPlaybooks on adoption."
+  status: shipped
+- op: upsert_milestone
+  slug: plan-4a-pr-to-main
+  name: "Plan 4a \u2014 Merge PR to Main"
+  intent: Open and merge the PR from feat/plan-4-products-and-github-ingest to main. Branch is 32 commits ahead of main at commit bb3a1bc; operator has not yet opened the PR as of session
+    end.
+  status: planned
+warnings: []
+notes: "Operator session covered the full completion of Plan 4a (Tasks 0\u201323), production deployment to exceedwebsites/exceedbackend, the playbook \xA73.1 redaction-rule security\
+  \ fix, and the adoption backfill gap patch. Created milestones for plan-4a (done), plan-4a-prod-deploy (done), playbook-redaction-rule (done), and plan-4a-pr-to-main (planned, operator's\
+  \ call). Also created plan-5-lost-work-structured-recall (planned) to capture the operator-identified next design effort around structured decisions/questions/actions; no track was\
+  \ assigned as this is a new concept without a clear canvas track."

@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-05-29T18-00-53-sitepilot.md
+audit_sha: 878b80b968e6fb85e767cb474c7d9a225d60624b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: e20caad1-c6d4-4369-b009-b10924bf05c0
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the Projects list page returned PASS. No decisions or open questions. Routine QA pass; no canvas changes warranted.
