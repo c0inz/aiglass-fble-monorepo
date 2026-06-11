@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-06-10T12-00-03-spaiglass.md
+audit_sha: c18aebbe4e34823e601944642ced581792f70847
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: c81864e8-cd0b-4c8b-b3ac-d7c5ce284e16
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: terminal-session-picker-fix
+  name: 'Terminal session picker: history load and cwd/segment fix'
+  intent: 'Fix two related bugs: (1) terminal session history does not load because ChatPage getEncodedName cannot match terminal cwd against the projects list; (2) session picker rewrites
+    cwd while keeping the old URL segment, causing stale state in agent switcher, WebSocket routing, and page header.'
+  status: active
+warnings: []
+notes: "Earlier session (April\u2013May) in which the operator reported terminal session picker bugs and the assistant diagnosed two root causes: missing encodedProject propagation causing\
+  \ history load failure, and cwd/segment mismatch causing stale global state. No decision was made between fix options, so the milestone is created as active for operator triage. No\
+  \ status changes were implied by the session itself."

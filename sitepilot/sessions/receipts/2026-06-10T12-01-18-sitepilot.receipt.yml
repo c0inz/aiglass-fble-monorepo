@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-18-sitepilot.md
+audit_sha: 799b24c07231d72bf4be3caea53304b0d47dec14
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: financials-tab-properties
+  name: Financial Properties group and Financials tab activation
+  intent: Create a Financial Properties group in am_property_group, link field specs via am_field_spec_group, and optionally activate the disabled Financials tab in the project detail
+    view.
+  status: active
+warnings: []
+notes: "Read-only investigation mapping how to add a Financial Properties group and potentially activate the disabled Financials tab in the project detail view. Upserted financials-tab-properties\
+  \ milestone; the Properties tab will render a new group automatically once rows are inserted into am_property_group and am_field_spec_group \u2014 no code changes required for that\
+  \ path. Three open questions remain (enable Financials tab, Properties vs Financials tab surface, legacy panel fate)."

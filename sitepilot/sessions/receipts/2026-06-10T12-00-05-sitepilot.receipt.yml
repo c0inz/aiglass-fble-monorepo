@@ -1,0 +1,43 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-05-sitepilot.md
+audit_sha: b8900a4678a7990c909a8f1bd1776c435df85555
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: agent-api-phase1
+  name: "Agent API Phase 1 \u2014 Foundation"
+  intent: Implement bearer-token auth, rate limiting, and the /users endpoint on the agent API surface; migration 159 creates webhook and idempotency tables for future phases.
+  status: shipped
+- op: upsert_milestone
+  slug: agent-api-phase2
+  name: "Agent API Phase 2 \u2014 Projects/Customers/Sites"
+  intent: Add anchor resources for projects, customers, and sites to the agent API.
+  status: planned
+- op: upsert_milestone
+  slug: agent-api-phase3
+  name: "Agent API Phase 3 \u2014 Broader Resources"
+  intent: Expand agent API coverage to broader resource types beyond core anchors.
+  status: planned
+- op: upsert_milestone
+  slug: agent-api-phase4
+  name: "Agent API Phase 4 \u2014 Webhook Delivery Worker"
+  intent: Implement outbound webhook delivery worker using the am_webhook_subscription and am_webhook_delivery tables created in migration 159.
+  status: planned
+- op: upsert_milestone
+  slug: agent-api-phase5
+  name: "Agent API Phase 5 \u2014 Sandbox Provisioning"
+  intent: Add sandbox tenant provisioning capability to the agent API.
+  status: planned
+- op: upsert_milestone
+  slug: agent-api-tenant-migration
+  name: "Agent API \u2014 Apply Migration 159 to All Tenant Schemas"
+  intent: Apply the tenant portion of migration 159 to all schemas beyond AIEPC_BRI0; build or document the runbook for this rollout.
+  status: planned
+warnings: []
+notes: "Agent API Phase 1 was fully implemented and committed (SHA 0b5c996 on feat/agent-api): bearer-token auth, sliding-window rate limiting, /users endpoint via v_worker_full, migration\
+  \ 159 with webhook and idempotency tables. Created agent-api-phase1 as done, and placeholders for Phases 2\u20135 and the multi-tenant migration runbook as planned. One open risk:\
+  \ migration 159 has only been applied to AIEPC_BRI0; a follow-up milestone captures the remaining tenant rollout."

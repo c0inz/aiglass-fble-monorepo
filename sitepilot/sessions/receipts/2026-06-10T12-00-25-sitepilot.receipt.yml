@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-25-sitepilot.md
+audit_sha: aa999a3c997727cceafb5e850bb3ba6a38d01235
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: label-harvest-catalog
+  name: "Label-inference harvest site catalog \u2014 23-site audit"
+  intent: 'Catalog of all label-anchored data-harvest patterns across the codebase: 23 sites identified across scripts/digest, lib/perfect-packet-ocr.js, routes/projects.js, routes/my-work.js,
+    lib/automation/engine.js, scripts/sync/, lib/sync-column-map.js, lib/pto-agent.js, lib/dependency-engine.js, routes/schedule.js, routes/forms.js, lib/task-virtual-entry.js, routes/accounts.js,
+    routes/custom-views.js, routes/exports.js, and others. Produced as investigative output; feeds Phase 5 consumer kill-list.'
+  status: shipped
+warnings: []
+notes: "Session produced a catalog of 23 label-anchored data-harvest sites across the codebase \u2014 the diagnostic foundation for the Fact Harness consumer kill-list. Work was investigative\
+  \ only; no decisions or status changes were made. Attributed to the label-harvest catalog milestone (delta 11)."

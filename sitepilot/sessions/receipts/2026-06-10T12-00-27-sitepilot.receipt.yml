@@ -1,0 +1,20 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-27-sitepilot.md
+audit_sha: 2f708693bc1372b97b87b4c3c09f7b798e6b1e5a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: fact-harness-adversarial-review
+  name: "Fact Harness adversarial review \u2014 holds-with-fixes verdict"
+  intent: 'Two adversarial review sessions on the Fact Harness plan returned ''holds-with-fixes''. Core projection architecture upheld. Major findings: ai_field_entry writer count is
+    14 not 11; ai_site_visit chokepoint is routes/addons.js not schedule routes; transactions already exist in codebase (q(BEGIN) in routes/forms.js and routes/projects.js); label inference
+    survives in lib/automation/engine.js and routes/agents.js LLM rule builder. Plan requires revision before Phase 2 gate.'
+  status: active
+warnings: []
+notes: 'First adversarial review session returning ''holds-with-fixes''. Identified fatal-class operating model concerns: unmonitored load-bearing cron (43-day dead-cron history), silent
+  coverage decay via pull-only detection, provenance gaps in ai_fact_point_log and ai_fact_pin. Attributed to the adversarial review milestone (delta 12) together with audit 31, which
+  provides more complete factual corrections.'

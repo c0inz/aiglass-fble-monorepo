@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-19-sitepilot.md
+audit_sha: 3cd44e93e65cd9e69fbff621d7fef49a72586c6b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: meeting-features-batch1
+  name: Meeting Features Batch 1 (F4/F5/F6/F8)
+  intent: 'F4: contact columns on venture detail; F5: searchable-select for manager/owner/sales-rep; F6 data half: task_instance_ref and venture_ref added to comment query; F8: default
+    work-order status changed from ASSIGNED to QUEUED.'
+  status: shipped
+warnings: []
+notes: 'Meeting features batch 1 implemented on feat/meeting-features-batch1: F4 contact columns on venture detail, F5 searchable-select partial for manager/owner/sales-rep, F6 data
+  half (task_instance_ref and venture_ref added to comment query), and F8 default WO status changed to QUEUED at three creation sites. All verification checks passed. Created meeting-features-batch1
+  milestone as done. Open risk: downstream consumers keyed on ASSIGNED status have not been audited.'

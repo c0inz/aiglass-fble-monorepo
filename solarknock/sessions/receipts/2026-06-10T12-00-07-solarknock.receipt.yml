@@ -1,0 +1,29 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-06-10T12-00-07-solarknock.md
+audit_sha: 7201ff5df6ba3c8a6b2794f4758d607429bacdc0
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: fc9d4957-4e9f-46e0-86af-41e73ccd3de4
+processing_run_audits_count: 4
+deltas_emitted:
+- op: upsert_milestone
+  slug: perf-test-suite-track-b
+  name: Performance test suite Track B scaffolding
+  intent: Track B of the production surface performance test suite scaffolded per 2026-05-30-perf-eval-and-surface-suite-design.md spec, including assertSLO, Telegram alert integration,
+    and perf-baseline-compute.js.
+  status: shipped
+- op: upsert_milestone
+  slug: perf-test-suite-qa-provisioning
+  name: QA org provisioning for performance suite
+  intent: scripts/provision-qa-org.sh does not exist; ~/credentials/solarknock-qa.json is absent. Performance suite is blocked from running until this script is created and run.
+  status: planned
+- op: upsert_milestone
+  slug: perf-test-cleanup-endpoint
+  name: Build DELETE /api/qa/perf-runs/:runId cleanup endpoint
+  intent: The cleanup endpoint does not exist; 404s are swallowed and cleanup is best-effort in the current suite. Likely Track A work.
+  status: planned
+warnings: []
+notes: 'Subagent session scaffolded Track B of the perf test suite per the pre-approved 2026-05-30 design spec. Three gaps warrant canvas milestones: the Track B suite itself (done),
+  QA org provisioning script (blocked/planned), and the missing cleanup endpoint (planned for Track A). The perf-format-alert.js and perf-baseline-compute.js helper scripts and the PERF_TEST_SUITE.md
+  doc are considered artifacts of the suite milestone rather than standalone milestones.'

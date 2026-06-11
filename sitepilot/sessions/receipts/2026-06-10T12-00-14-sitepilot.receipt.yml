@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-14-sitepilot.md
+audit_sha: dfb4b5b3a973c20aa5f0962131eabad7ae83661c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Investigative session identifying four bugs/changes: completion-percentage denominator, workflow step rendering, default WO status (ASSIGNED\u2192QUEUED), and unused property\
+  \ tab. No fixes were authorized. The QUEUED default change was subsequently implemented in audit 2026-06-10T12-00-19-sitepilot and is captured in the meeting-features-batch1 milestone."

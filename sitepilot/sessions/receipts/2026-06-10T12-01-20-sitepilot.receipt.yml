@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-20-sitepilot.md
+audit_sha: f2317f791f813ebab82430bb684f08837a2028de
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 32ff701c-ef35-41d4-a0a6-cd35525e7efc
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: form-field-cascade-risk
+  name: Assess form field cascade architecture risk
+  intent: 'Document and resolve the live/cascade architecture for shared form fields: editing or deleting a field spec immediately affects all existing projects and permanently destroys
+    ai_field_entry answers via ON DELETE CASCADE with no soft-delete or snapshotting mechanism.'
+  status: active
+warnings: []
+notes: Agent-only read-only investigation of the sitepilot form/questionnaire system's live/cascade architecture. Created a drift milestone to surface the cascade-delete risk on ai_field_entry
+  answers, which is a significant product integrity concern with no operator resolution yet recorded. No status changes were implied by the session itself.

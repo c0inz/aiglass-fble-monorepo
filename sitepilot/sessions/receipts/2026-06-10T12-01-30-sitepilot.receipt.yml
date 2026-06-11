@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-30-sitepilot.md
+audit_sha: 84791629f45bca6024d755fc4de46c3ca3ed2203
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 32ff701c-ef35-41d4-a0a6-cd35525e7efc
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the SitePilot Projects list page; LLM judge returned PASS. Duplicate check pattern of audit -27. No canvas changes.

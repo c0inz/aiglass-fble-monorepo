@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-10-sitepilot.md
+audit_sha: cf1bf507d91cdb43ec811a7d4a1b06303e5353bc
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: fact-harness-greenlight
+  name: 'Fact harness: document review and greenlight'
+  intent: Complete adversarial review of FACT_HARNESS.md, resolve all must-fix findings (stale duplicate count, missing binding-copy obligation in versioning spec, unused emoji-label
+    constant, four-vs-five table discrepancy, pin auto-demotion unconfirmed), and obtain greenlight for six weeks of fact harness work.
+  status: active
+warnings: []
+notes: Read-only technical fact-check of FACT_HARNESS.md; verdict was convincing-with-fixes. Upserted fact-harness-greenlight milestone to track resolution of the five must-fix contradictions
+  identified (stale 444-duplicate count, binding-copy obligation absent from versioning spec branch, unused emoji-label constant, four-vs-five table discrepancy, pin auto-demotion unconfirmed
+  in DDL). Session confirmed several claims as code-verified.

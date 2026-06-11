@@ -1,0 +1,64 @@
+schema_version: 1
+audit_file: aiglass/sessions/audits/2026-06-10T12-00-11-aiglass.md
+audit_sha: 0911b9876a888dbfdec00c4afd3ad2041243faed
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: bd8a97df-34c0-471e-ae36-7e0245e660cf
+processing_run_audits_count: 2
+deltas_emitted:
+- op: upsert_milestone
+  slug: x-auth-multiacccount
+  name: Multi-account X authentication tooling
+  intent: OAuth 1.0a PIN-flow x-auth tool deployed to /usr/local/bin/x-auth on readystack; @JohnDavenport onboarded with permanent token. OAuth 2.0 bookmark tool x-oauth2 also deployed.
+  status: active
+- op: upsert_step
+  slug: x-auth-deployed
+  milestone: x-auth-multiacccount
+  text: x-auth (OAuth 1.0a) built and deployed to /usr/local/bin/x-auth; @JohnDavenport onboarded
+  done: true
+- op: upsert_step
+  slug: x-oauth2-deployed
+  milestone: x-auth-multiacccount
+  text: x-oauth2 (OAuth 2.0 bookmark tool) built and deployed; 196 @JohnDavenport bookmarks retrieved to /tmp/jd-bookmarks.json
+  done: true
+- op: upsert_milestone
+  slug: quant-data-collector
+  name: Polymarket/crypto data collector (qlab)
+  intent: 7-day data collection run to build dataset for refining trade model; day-4 review 2026-06-14, day-7 final review 2026-06-17.
+  status: active
+- op: upsert_step
+  slug: qlab-deployed
+  milestone: quant-data-collector
+  text: qlab.service deployed as systemd daemon on readystack VM (active, enabled)
+  done: true
+- op: upsert_step
+  slug: qlab-review-timers
+  milestone: quant-data-collector
+  text: qlab-review.timer armed; fires 2026-06-14 09:00 UTC (day-4) and 2026-06-17 09:00 UTC (day-7)
+  done: true
+- op: upsert_step
+  slug: qlab-day4-review
+  milestone: quant-data-collector
+  text: "Day-4 review snapshot at ~/quant/review-2026-06-14.md \u2014 review crypto strategy retuning decision"
+  done: false
+- op: upsert_milestone
+  slug: quant-paper-trading-sim
+  name: "Paper-trading simulator (qsim) \u2014 $5k split crypto/Polymarket"
+  intent: $5k paper-trading simulation ($2,500 crypto, $2,500 Polymarket) running in parallel with qlab; LLM used only at design time and on-demand analysis, not in live trading loop.
+  status: active
+- op: upsert_step
+  slug: qsim-deployed
+  milestone: quant-paper-trading-sim
+  text: qsim.service deployed as systemd daemon on readystack VM (active, enabled); 9 World Cup longshot fades opened on first run
+  done: true
+- op: upsert_step
+  slug: qsim-crypto-halt-review
+  milestone: quant-paper-trading-sim
+  text: 'Crypto sleeve halted day 0: z-score mean-reversion triggered 5%-daily-loss stop after ~1,107 trades at -5.21%; review strategy retuning at day-4 checkpoint'
+  done: false
+warnings: []
+notes: "Session covered building and deploying quantitative trading infrastructure: multi-account X auth tooling (x-auth, x-oauth2), a 7-day Polymarket/crypto data collector (qlab),\
+  \ and a $5k paper-trading simulator (qsim), all as systemd services on readystack. Canvas milestones created for each deployed system with completed steps marked done. Crypto sleeve\
+  \ halted on day 0 due to loss-stop trigger \u2014 flagged as an open step for day-4 review. Surfacemarket nonprofit concept and AI infrastructure stock research were noted as thoughts\
+  \ not yet confirmed for canvas action and were omitted to avoid premature tracking."

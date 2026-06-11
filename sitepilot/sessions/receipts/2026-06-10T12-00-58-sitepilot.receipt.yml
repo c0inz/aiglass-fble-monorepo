@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-58-sitepilot.md
+audit_sha: 95fbdffb14d844bfd97adef36e0454f7f304078b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Maintenance-lens judge session that also selected FULL ORNAMENT (8 vs 7.5) and identified the same Design 2 grafts and the shared lib/task-virtual-entry.js defect. All actionable
+  content is superseded by audit 2026-06-10T12-00-57, which covers identical decisions with greater specificity and is the latest-driving audit. No independent deltas attributed here.

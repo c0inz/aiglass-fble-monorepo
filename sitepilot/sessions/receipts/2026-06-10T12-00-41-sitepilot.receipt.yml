@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-41-sitepilot.md
+audit_sha: 576ef509dc48dda934dc25395e12d6b47bc2857a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Read-only architecture inventory session that surfaced the owner's core thesis (facts harvested chaotically from labels) and confirmed Agent API v1 and group/label uniqueness
+  key as already shipped. No canvas changes produced; the investigation framed the problem space that later sessions designed solutions for. No existing canvas slugs were available to
+  update.

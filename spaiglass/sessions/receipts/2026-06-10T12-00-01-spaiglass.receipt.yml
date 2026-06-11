@@ -1,0 +1,50 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-06-10T12-00-01-spaiglass.md
+audit_sha: d4422fd19c04f800337b1daad8e131ea55b92262
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: c81864e8-cd0b-4c8b-b3ac-d7c5ce284e16
+processing_run_audits_count: 3
+deltas_emitted:
+- op: upsert_milestone
+  slug: phase-6-rich-renderer
+  name: 'Phase 6: Rich terminal renderer'
+  intent: Deliver the rich renderer cutover, skills row, session status bar, and transcript download.
+  status: shipped
+- op: upsert_milestone
+  slug: phase-1-session-resumption
+  name: 'Phase 1: Session resumption after disconnect'
+  intent: Close the reconnect gap so browsers that disconnect or reload can resume streaming without missing or duplicating frames.
+  status: active
+- op: upsert_step
+  slug: g1-reload-race-fix
+  milestone: phase-1-session-resumption
+  text: 'Fix G1 page-reload frame-gap race: route reload-rejoin through resume{lastCursor: maxHistorySeq} in the frontend WS hook, syncing lastCursorRef from the reducer''s lastSeq before
+    sending on reconnect.'
+  done: false
+- op: upsert_step
+  slug: p1-live-e2e-verification
+  milestone: phase-1-session-resumption
+  text: "Live end-to-end verification of interactive widgets round-trip (Claude calls request_user_input \u2192 masked widget \u2192 value returned) on production relay when no active\
+    \ browsers/connectors block the test window."
+  done: false
+- op: upsert_milestone
+  slug: fleet-deploy-500-fix
+  name: 'Fleet deploy: 500-to-404/400 fix (files.ts)'
+  intent: Rebuild bun binary with the committed files.ts fix and redistribute to all 19 fleet connectors; the fix is CI-green on main but connectors still run the old binary.
+  status: active
+- op: upsert_milestone
+  slug: ci-tagpr-autotagging
+  name: Fix tagpr CI auto-tagger (C5)
+  intent: Resolve the known-broken tagpr auto-tagger failure that appears in every CI run on main; currently out of scope but should be tracked.
+  status: planned
+- op: upsert_milestone
+  slug: lint-warning-reduction
+  name: Reduce frontend lint warnings
+  intent: Bring the ~28 frontend lint warnings (zero errors) down to zero to maintain a clean baseline.
+  status: planned
+warnings: []
+notes: Main operator session (2026-05-30) covering shipped state vs ROADMAP staleness, CI green status, frontend deploy, and deferred work items. Created milestones for Phase 6 (complete),
+  Phase 1 (active with G1 and live-verification steps), the fleet binary deploy for the 500-fix, and two planned items (tagpr fix, lint warnings). The G1 step detail and integration-test
+  step were refined by Audit 2 and attributed there.

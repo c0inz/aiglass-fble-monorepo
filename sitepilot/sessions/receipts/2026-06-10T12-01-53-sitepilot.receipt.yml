@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-53-sitepilot.md
+audit_sha: 8b4039b355f448e8a70a6e322bd3105061a91cdf
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 00b8c08b-b8f4-42bd-959d-ff43160a9a62
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check on the Dispatch page returned PASS. No decisions or open questions were raised in this session. No canvas changes warranted.

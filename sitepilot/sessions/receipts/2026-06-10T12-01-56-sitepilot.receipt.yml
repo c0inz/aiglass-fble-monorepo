@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-56-sitepilot.md
+audit_sha: 93f899c3d60dcc7cf40c7bbb8951d145a1a78a4a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 00b8c08b-b8f4-42bd-959d-ff43160a9a62
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check on the Open Actions (Service Tickets) page returned PASS. No decisions or open questions were raised; audit notes no canvas milestone or track maps
+  to this mobile QA activity. No canvas changes warranted.

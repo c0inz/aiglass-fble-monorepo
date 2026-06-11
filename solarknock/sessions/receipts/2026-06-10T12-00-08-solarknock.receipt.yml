@@ -1,0 +1,25 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-06-10T12-00-08-solarknock.md
+audit_sha: 4b3b6bd46bd6107a175e98796ab9305e86d6b3f6
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: fc9d4957-4e9f-46e0-86af-41e73ccd3de4
+processing_run_audits_count: 4
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-layout-audit-p0-fixes
+  name: Fix P0 mobile layout issues from 2026-06-03 audit
+  intent: 'Five P0 issues identified: team leaderboard 7-column no-scroll, dashboard Knock List 6-column collapse, dashboard Top Performers name collapse, candidate-detail 9-column no-scroll,
+    and account tab last tile hidden under web tab bar.'
+  status: planned
+- op: upsert_milestone
+  slug: mobile-layout-audit-p1-fixes
+  name: Fix P1 mobile layout issues from 2026-06-03 audit
+  intent: 'Four P1 issues: schedule list paddingBottom, outreach-schedule 9-column grid with sub-HIG touch targets, leads list name compression, and add-appointment-lead date+time row
+    overflow.'
+  status: planned
+warnings: []
+notes: "Report-only mobile layout audit producing a 12-item P0\u2013P2 prioritized list. JD did not commission fixes in this session; two bugs reported prior (dvh bottom cut-off, FullCalendar\
+  \ scroll jank) were confirmed already shipped. Canvas receives planned milestones for the P0 and P1 issue groups so the operator can prioritize and assign them; P2 items are lower\
+  \ severity and captured in the P1 milestone's intent rather than a separate milestone to avoid premature fragmentation."

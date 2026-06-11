@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-44-sitepilot.md
+audit_sha: 77f26726ef431cb1b3fd62f4b28813bc48f08974
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "This session formally refuted the prior-pass claim that step dependencies do not propagate to existing projects \u2014 settings.js does propagate adds and deletes via explicit\
+  \ SQL to ai_step_dependency rows. Also confirmed the legacy dependency engine (lib/dependency-engine.js, lib/phase-engine.js) is dead code disabled 2026-05-13. Informational finding\
+  \ with no canvas milestone to update; legacy code removal could be a future milestone but was not directed in this session."

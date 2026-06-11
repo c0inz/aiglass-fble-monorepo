@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-02-15-sitepilot.md
+audit_sha: 69eef722f896a0fb347b3fb3c131aded20d2e788
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 6171afbb-e939-407d-b9a9-9d41252e8a28
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Automated mobile layout check of the Settings \u2192 Workflows page returned PASS. No decisions were made and no canvas changes are warranted. This is the latest of four audits\
+  \ covering this page; all are consistent automated QA passes with no operator-driven canvas action."

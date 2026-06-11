@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-46-sitepilot.md
+audit_sha: c91e88322988276cb6b1a1677b3de262cbcacb3d
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Read-only blueprint-to-instance schema mapping investigation. Produced a detailed mapping of am_process_blueprint, am_stage_blueprint, am_step_blueprint, and related tables to
+  their instance counterparts. Informational context for implementation work; no decisions made and no canvas changes produced.

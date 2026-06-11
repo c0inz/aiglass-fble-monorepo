@@ -1,0 +1,20 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-31-sitepilot.md
+audit_sha: 588ecfe482d6163594676e8b5550455e70db0e2e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: fact-harness-adversarial-review
+  name: "Fact Harness adversarial review \u2014 holds-with-fixes verdict"
+  intent: 'Two adversarial review sessions on the Fact Harness plan returned ''holds-with-fixes''. Core projection architecture upheld. Major findings: ai_field_entry writer count is
+    14 not 11; ai_site_visit chokepoint is routes/addons.js not schedule routes; transactions already exist in codebase (q(BEGIN) in routes/forms.js and routes/projects.js); label inference
+    survives in lib/automation/engine.js and routes/agents.js LLM rule builder. Plan requires revision before Phase 2 gate.'
+  status: active
+warnings: []
+notes: 'Second and more detailed adversarial review session, refuting three of four ''re-verified'' plan claims: ai_field_entry writer count is 14 not 11, ai_site_visit is in routes/addons.js
+  not schedule routes, and transactions already exist in the codebase. Label inference survival in lib/automation/engine.js and routes/agents.js LLM rule builder identified as unresolvable
+  by the plan as written. Attributed to and driving the adversarial review milestone (delta 12).'

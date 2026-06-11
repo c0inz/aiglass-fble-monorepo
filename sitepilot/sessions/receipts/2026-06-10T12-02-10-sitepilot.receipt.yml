@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-02-10-sitepilot.md
+audit_sha: 2dcbe990e0065f0267bc0de733f5848ad3db0951
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 6171afbb-e939-407d-b9a9-9d41252e8a28
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Automated visual QA check of the Projects list page on a mobile viewport returned PASS. No decisions or open questions were raised. Duplicate mobile QA coverage of the Projects\
+  \ page \u2014 same finding as audit 2026-06-10T12-02-06."

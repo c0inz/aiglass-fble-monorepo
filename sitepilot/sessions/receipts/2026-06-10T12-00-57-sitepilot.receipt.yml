@@ -1,0 +1,76 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-57-sitepilot.md
+audit_sha: 2c617b46442c782715b495a6790725f0a04e73ca
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: plan-v1-fact-harness
+  name: "Plan v1 \u2014 Fact Harness (Tabled)"
+  intent: Registry + bindings + derived projection table ai_fact_point approach for custom field storage. Rejected by John on grounds that copying capture data into a projection-of-rows
+    is weak and fragile.
+  status: parked
+- op: upsert_milestone
+  slug: alt1-full-ornament-design
+  name: "Alt1 \u2014 FULL ORNAMENT design selected"
+  intent: FULL ORNAMENT (ai_venture_ext 1:1 ornament table, real Postgres columns for tenant fields, DDL chokepoint via lib/ornament.js, reject-trigger at Phase 3) selected as Alt1 winner
+    over WAINSCOT by all three judges. Design 2 addressing contract (semantic fact_key/internal_name, am_promoted_fact table, native-row registry seeding) grafted in as mandatory.
+  status: active
+- op: upsert_milestone
+  slug: alt1-phase0-identity
+  name: "Alt1 Phase 0 \u2014 Identity (internal_name minting)"
+  intent: Mint internal_name for the 612 BRI0 property specs that currently lack it (83 of 695 already have it). Migration 163 adds column_name and storage columns to am_field_spec.
+    Migration 164 handles blueprint internal_name minting for stage and WO blueprints.
+  status: planned
+- op: upsert_milestone
+  slug: alt1-phase1-dual-home-backfill
+  name: "Alt1 Phase 1 \u2014 Dual-home backfill"
+  intent: Backfill 11,457 valued EAV property entries into ai_venture_ext columns. Backfill is idempotent; verified by shadow-read diff over at least 1 week before Phase 2 gate. Zero-diff
+    is the go/no-go condition.
+  status: planned
+- op: upsert_milestone
+  slug: alt1-phase2-read-cutover
+  name: "Alt1 Phase 2 \u2014 Read cutover"
+  intent: 'Flip all property reads from ai_field_entry EAV rows to ai_venture_ext columns. Gate: at least 1 week of zero parity diffs. Dual-write window during P2/P3 is a known gap (sync-coperniq.js
+    line 579 and import scripts continue writing EAV).'
+  status: planned
+- op: upsert_milestone
+  slug: alt1-phase3-one-home
+  name: "Alt1 Phase 3 \u2014 One home (EAV deletion)"
+  intent: 'Delete the 177k+ venture-anchored EAV property rows (predicate: venture_ref IS NOT NULL AND step_instance_ref IS NULL AND spec.storage=column). Gated on verified pg_dump restore
+    drill and John''s explicit per-action approval. Install reject-trigger trg_reject_column_backed_entry on ai_field_entry. Retire instantiateProjectProperties and 177k eager-instantiation
+    padding rows.'
+  status: planned
+- op: upsert_milestone
+  slug: alt1-phase4-promoted-facts
+  name: "Alt1 Phase 4 \u2014 Promoted facts"
+  intent: 'Implement am_promoted_fact table for declared workflow-fact bindings (f_ prefix columns on ai_venture_ext). Gate: 1-week prod shadow-compare before digest reads from columns.
+    Add cascade hooks in lib/workflow.js:337/443, visibility-engine:241, inbox:163, service-tickets:530/873/925 (these write ai_task_instance directly, not through lib/task-virtual-entry.js).
+    resolveFact() must be shared by hook and nightly recompute with unit test asserting identical output. Mint mig-164-style internal_name on stage and WO blueprints.'
+  status: planned
+- op: upsert_milestone
+  slug: alt1-phase5-fleet
+  name: "Alt1 Phase 5 \u2014 Fleet rollout"
+  intent: 'Apply the ornament migration across all ~20 AIEPC schemas beyond BRI0. Nightly ornament-reconcile.js diffs registry against information_schema.columns across all tenant schemas
+    and repairs with ADD COLUMN IF NOT EXISTS. Budget gates: warn at 800 live attnums, hard-refuse at 1200; overflow slot (ai_venture_ext2) baked into registry schema.'
+  status: planned
+- op: upsert_milestone
+  slug: alt1-ci-label-matching-gate
+  name: Alt1 CI grep-gate for label-matching elimination
+  intent: Add CI enforcement that fails the build on new occurrences of `label ILIKE`, `def_group_label IS DISTINCT FROM`, or `title ILIKE` in routes/lib files. This structurally eliminates
+    the 23 label-inference sites catalogued in FACT_HARNESS_EVIDENCE.md and enforces the requirement that any replacement design must eliminate label-matching as the consumer lookup
+    mechanism.
+  status: planned
+- op: upsert_milestone
+  slug: alt1-rule-json-label-migration
+  name: Alt1 automation rule label-to-spec_id migration
+  intent: Migrate automation rule JSON from label-based lookups to spec_id references. Must emit a loud report listing every unmatched or ambiguous rule for human confirmation; nothing
+    is silently disabled. Prod has 133 measured orphan dropdown values plus keyless bare-label options that must not be misdiagnosed.
+  status: planned
+warnings: []
+notes: "Definitive three-judge session that selected FULL ORNAMENT as the Alt1 winner (scores 8/8.5/8 vs 7.5/7.5/7) and produced the full phased implementation plan with risk register\
+  \ and go/no-go gates. Tabled Plan v1, created the full set of Alt1 phase milestones (Phase 0\u20135), and captured the CI label-matching gate and rule-JSON migration requirements.\
+  \ This is the latest and most authoritative session driving the architecture canvas additions."

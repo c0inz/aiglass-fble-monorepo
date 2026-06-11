@@ -1,0 +1,68 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-06-10T12-00-04-solarknock.md
+audit_sha: 9a1fb5533a67ef88d3a0e533f8e7c9c8f97258b9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: fc9d4957-4e9f-46e0-86af-41e73ccd3de4
+processing_run_audits_count: 4
+deltas_emitted:
+- op: upsert_milestone
+  slug: conversations-stat
+  track: launch
+  name: Add Conversations stat to dashboard and leaderboard
+  intent: Surface totalConversations as a new 'Convos' column on the team leaderboard and a new tile on the dashboard StatCard grid, using the same definition as the green map pill (status
+    NOT IN not_home, failed_knock).
+  status: shipped
+- op: upsert_milestone
+  slug: leaderboard-role-restriction-removal
+  track: launch
+  name: Remove role-based restrictions on team leaderboard
+  intent: Allow every org member to see full team totals and top performers, not just managers.
+  status: shipped
+- op: upsert_milestone
+  slug: leaderboard-focus-refetch
+  track: launch
+  name: Refetch leaderboard and territories on screen focus
+  intent: Use useFocusEffect to refetch leaderboard data and territories when the tab is returned to, without background/foreground polling.
+  status: shipped
+- op: upsert_milestone
+  slug: knock-actions-taken
+  track: launch
+  name: Add Actions Taken field to knock pins
+  intent: 'Multi-value actions_taken text[] column on knocks; chips appear above note in AddressPopup. Initial values: Price Estimate and Proposal Given. Full-stack with read/write API.'
+  status: shipped
+- op: upsert_milestone
+  slug: lead-actions-taken
+  track: launch
+  name: Add Actions Taken field to leads
+  intent: Multi-value actions_taken text[] column on leads with an additional Qualified value, surfaced on /add-appointment-lead. Full-stack with read/write API.
+  status: shipped
+- op: upsert_milestone
+  slug: lead-status-picklist-cleanup
+  track: launch
+  name: Remove Qualified and Proposal Sent from lead status picklist
+  intent: Drop Qualified and Proposal Sent as selectable lead status options; existing data remains queryable.
+  status: shipped
+- op: upsert_milestone
+  slug: admin-settings-spec-v2
+  name: Admin-settings consolidation spec v2
+  intent: 'Design-review subagent dispatched and spec v2 committed. Awaiting three operator decisions before implementation: API key split from invite code, sub-route vs inline layout,
+    and scope of v1 API panel.'
+  status: active
+- op: upsert_milestone
+  slug: ghost-users-admin-panel
+  name: Admin panel for auto-created disabled users
+  intent: Auto-created disabled users accumulate when the reporting write API receives an unknown user_email. Customer-facing docs promise a panel to list, activate, promote, and delete
+    these users; no such UI exists.
+  status: planned
+- op: upsert_milestone
+  slug: api-key-rotation
+  name: Implement API key rotation endpoint
+  intent: Customer-facing docs at solarknock.com/api promise key rotation for all invite code types, but no endpoint or UI exists in the codebase. Must be built or documentation must
+    be corrected.
+  status: planned
+warnings: []
+notes: 'Long operator session covering shipped features: conversations stat, leaderboard role removal, focus refetch, knock and lead actions_taken fields, lead status picklist cleanup,
+  and admin-settings spec v2 committed and awaiting decisions. Canvas updated with done milestones for all shipped work and planned milestones for ghost-users admin panel, API key rotation,
+  and the admin-settings spec. Audit also surfaced the closer-settings dead-route gap, but that delta is attributed to the later design-review audit that documented it in greater detail.'

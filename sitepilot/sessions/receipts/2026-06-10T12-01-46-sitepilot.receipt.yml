@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-46-sitepilot.md
+audit_sha: 620c07bb9172b55b762ae336548f0bca359c3cec
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 47d4d111-2f58-4f28-af4e-e34569ad8b7b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the Dispatch page returned PASS. Content is fully captured by the sibling Dispatch page audit in this batch. No canvas changes implied.

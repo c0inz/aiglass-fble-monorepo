@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-11-sitepilot.md
+audit_sha: 1f573c74c389fa2fed8cd9916d78ca64594c56ae
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: bug-fix-batch-b1-b3-b5
+  name: 'Bug-fix batch: B1, B3, B5 (comments mention, hidden steps, inbox search)'
+  intent: 'Resolve three numbered bugs: B1 (@-mention autocomplete in reply textareas via event delegation), B3 (hidden workflow steps rendered with strikethrough instead of omitted),
+    and B5 (inbox search field retained on bfcache back/forward navigation).'
+  status: active
+warnings: []
+notes: 'Session implemented bug B5 (inbox search retaining typed text on bfcache back/forward) via a pageshow event listener with event.persisted guard and autocomplete=off in views/inbox.ejs.
+  Attributed to the shared bug-fix-batch milestone alongside B1 and B3; the heavier Cache-Control: no-store alternative was explicitly rejected to preserve bfcache performance.'

@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-35-sitepilot.md
+audit_sha: 1c54ecf8cfc3d37b02decf2a46825e437e26816b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: fact-harness-architecture
+  name: "Fact Harness Architecture \u2014 Design 2 selected"
+  intent: Design 2 (am_fact_def / am_fact_binding / ai_fact_point + ai_fact_pin) was selected as the winning architecture across three judge verdicts (3-0). Replaces label/title/phase-name
+    inference with a declared binding layer without rebuilding capture tables. Migration 163 targets BRI0, MAS0, and lib/tenant-provisioner.js.
+  status: active
+warnings: []
+notes: 'Session synthesized the final Fact Harness plan: Design 2 selected 3-0 across all judge verdicts, with grafts from Designs 1 and 3. Introduced ai_fact_pin as a fourth table,
+  froze the source-kind set at six, established PATCH-writes-pin-only semantics, and formalized the Phase 2 acceptance gate. Co-attributed to the fact-harness-architecture milestone
+  (delta 0) as the latest and most authoritative design decision session.'

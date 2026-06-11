@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-33-sitepilot.md
+audit_sha: 928636ac81eff558c3c66683beebdd6a50a5504f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: agent-api-v1-shape-gap-analysis
+  name: "Agent API v1 \u2014 data-shape gap analysis"
+  intent: 'Read-only analysis of shipped Agent API v1 to document data-shape weaknesses: ambiguous field addressing when two fields share the same label, or when the same logical fact
+    lives in a form on one project and a property on another. Top 10 gaps delivered as structured report. Feeds Fact Harness API design.'
+  status: shipped
+warnings: []
+notes: Session directed an AI agent to review the shipped Agent API v1 and document data-shape weaknesses. Produced a structured gap analysis (top 10 gaps) covering ambiguous field addressing
+  across forms, work orders, and project properties. Attributed to the agent-api-v1-shape-gap-analysis milestone (delta 13). No status changes implied.

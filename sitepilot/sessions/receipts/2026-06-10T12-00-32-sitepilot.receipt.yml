@@ -1,0 +1,68 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-32-sitepilot.md
+audit_sha: 43f71542e69beb18a1b1fce33c2c918e1c3bf3ea
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: fact-harness-phase0-catalog
+  name: "Fact Harness Phase 0 \u2014 Fact catalog definition"
+  intent: "Define the starter-pack ~25-35 solar-EPC system facts, resolve money-column disambiguation (contract_value vs monetary_value vs total_price), trace Sales Rep column origin\
+    \ (BLUEPRINT_META \xA79), and produce lib/facts/catalog.js and seed-catalog.js. Described as 'mostly John' \u2014 0.5\u20132 dev-days."
+  status: planned
+- op: upsert_milestone
+  slug: fact-harness-phase1-schema
+  name: "Fact Harness Phase 1 \u2014 Schema, library, and nightly cron"
+  intent: Implement migration 163 (am_fact_def, am_fact_binding, ai_fact_point, ai_fact_pin), create lib/facts/ library with resolveCell() and refreshFacts(), and ship the nightly rebuild-and-reconcile
+    cron (scripts/facts/reconcile.js) on day one. Estimated 2-3 dev-days.
+  status: planned
+- op: upsert_milestone
+  slug: fact-harness-phase2-chokepoints
+  name: "Fact Harness Phase 2 \u2014 Write-through chokepoints and acceptance gate"
+  intent: Wire refreshFacts() at four route-tier chokepoints and all 14 ai_field_entry writers (including sync-form-blueprint.js:217, backfill-definitions.js, merge-dup-property-specs.js).
+    Ship ai_fact_point_log. Fix ai_site_visit chokepoint to routes/addons.js (not schedule routes). Run old-ILIKE digest vs new fact digest side-by-side on prod BRI0 as acceptance gate.
+    Estimated 5-6 dev-days.
+  status: planned
+- op: upsert_milestone
+  slug: fact-harness-api-endpoints
+  name: "Fact Harness \u2014 Agent API fact endpoints"
+  intent: Implement GET /api/v1/meta/facts, GET /api/v1/projects/:id/facts, GET /api/v1/facts/:key/values, and PATCH /api/v1/projects/:id/facts. PATCH writes ai_fact_pin only, returns
+    state:PINNED, uses am_api_idempotency machinery from mig 159. Map-keyed payload, UNBOUND vs EMPTY distinction on the wire.
+  status: planned
+- op: upsert_milestone
+  slug: fact-harness-settings-ui
+  name: "Fact Harness \u2014 Settings / Project Data / Facts UI"
+  intent: "Build the Settings \u2192 Project Data \u2192 Facts tab: fact list, fact detail, three-tab binding picker, coverage preview, conflict queue (pins disagreeing with top capture\
+    \ candidate). Includes field-editor binding chip ('Feeds fact: \u2026'), provenance chips on project detail page, and preview-before-commit on binding save."
+  status: planned
+- op: upsert_milestone
+  slug: fact-harness-suggestion-wizard
+  name: "Fact Harness \u2014 Suggestion wizard (label-inference at declaration time)"
+  intent: "Build the declaration-time label-scan UI with human confirmation step \u2014 the one permitted place for label inference in the Fact Harness design. Prevents label inference\
+    \ from being eliminated from UI while still requiring explicit human sign-off."
+  status: planned
+- op: upsert_milestone
+  slug: fact-harness-ci-gate
+  name: "Fact Harness \u2014 CI grep gate single-writer enforcement"
+  intent: Add a CI build step that fails if ai_fact_point (or ai_fact_value in variant) appears outside lib/facts/. Enforces single-writer discipline by construction; complements standing
+    code-review rule that new label-reading code fails review.
+  status: planned
+- op: upsert_milestone
+  slug: fact-harness-consumer-killlist
+  name: "Fact Harness Phase 5 \u2014 Consumer kill-list migration"
+  intent: Migrate 23 audited label-inference harvest sites (scripts/digest/admin-daily-digest.js, lib/perfect-packet-ocr.js, routes/projects.js, routes/my-work.js, lib/automation/engine.js,
+    etc.) to use the fact registry. Estimated ~1 dev-day each, ~23 sites total.
+  status: planned
+- op: upsert_milestone
+  slug: fact-harness-mig164-internal-name
+  name: "Fact Harness Phase 6 \u2014 Migration 164 internal_name on workflow blueprints"
+  intent: Add minted-once internal_name to am_stage_blueprint and am_assignment_blueprint as stable keys for stage_anchor bindings, kanban filters, view styling, and automation phase
+    conditions. Non-blocking Phase 6 follow-on; required before fresh-tenant provisioner pre-binds can be fully stable.
+  status: planned
+warnings: []
+notes: 'Session produced the original Fact Harness design deliverable (Design 1 variant with am_fact_def/am_fact_binding/ai_fact_value). Contains the most complete set of implementation
+  decisions: phase breakdown, migration 163, API endpoints, Settings UI, suggestion wizard, CI gate, consumer kill-list, and money-column disambiguation. Attributed to deltas 1 through
+  9 as the primary source design; audit 35 synthesizes the final plan but this audit is the origin of most implementation detail.'

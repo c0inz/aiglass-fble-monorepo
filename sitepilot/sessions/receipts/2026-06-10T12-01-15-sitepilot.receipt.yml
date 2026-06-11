@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-15-sitepilot.md
+audit_sha: dcdb5d5cda49d6ea91645fdea77ee4887acbf72a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: feature-batch1-meeting-features
+  name: 'Feature batch 1: meeting features (F3, F6, F7)'
+  intent: Implement F3 (Open Actions hides completed by default with Show Completed checkbox), F6 (comment breadcrumb chip linking to work order or service ticket), and F7 (account-level
+    comment roll-up UNION query with 100-row cap) on branch feat/meeting-features-batch1.
+  status: active
+warnings: []
+notes: "Session implemented F6 (comment breadcrumb chip in comments-panel.ejs) and F7 (account-level comment UNION roll-up in routes/accounts.js and views/accounts/site-detail.ejs) on\
+  \ branch feat/meeting-features-batch1. Attributed to the shared feature-batch1 milestone; a dependency note was flagged \u2014 the project-route comment query must also select task_instance_ref\
+  \ and chip_venture_ref for the F6 chip to render on the project workspace surface."

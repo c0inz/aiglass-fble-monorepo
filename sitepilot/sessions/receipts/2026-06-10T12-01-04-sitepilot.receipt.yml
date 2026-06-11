@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-04-sitepilot.md
+audit_sha: f270d5d5ecc70a65d3666f4f9614c166557e7e5e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Empty journal session \u2014 the source blob (journal.jsonl) contained no entries. No decisions, people, dates, or actionable content. No canvas changes."

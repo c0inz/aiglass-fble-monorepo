@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-07-sitepilot.md
+audit_sha: 5387ff5a0af6d0b83b05e78b35462e3fe48bb198
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: bug-fix-batch-b1-b3-b5
+  name: 'Bug-fix batch: B1, B3, B5 (comments mention, hidden steps, inbox search)'
+  intent: 'Resolve three numbered bugs: B1 (@-mention autocomplete in reply textareas via event delegation), B3 (hidden workflow steps rendered with strikethrough instead of omitted),
+    and B5 (inbox search field retained on bfcache back/forward navigation).'
+  status: active
+warnings: []
+notes: 'Session implemented bug B3: hidden workflow steps now render with strikethrough and a clickable reason chip instead of being omitted from the project workspace, via changes to
+  routes/projects.js, views/projects/detail.ejs, and public/css/app.css. Attributed to the same bug-fix-batch milestone as B1 and B5; a pre-existing uncommitted app.css change (safe-area-inset)
+  was flagged as out-of-scope drift worth a separate cleanup pass.'

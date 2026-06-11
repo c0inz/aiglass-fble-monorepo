@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-16-sitepilot.md
+audit_sha: fc12bff0814a4e2a710aa46e785b8ddc4e9c3483
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: form-versioning-spec
+  name: Form and work-order versioning spec
+  intent: Write and implement a feature spec covering field reordering, soft-delete for fields/groups, and draft-to-lock versioning lifecycle for forms (am_questionnaire_blueprint) and
+    work orders (am_assignment_blueprint), building on the codebase investigation findings.
+  status: active
+warnings: []
+notes: "Read-only codebase investigation scoping a forthcoming form and work-order versioning/editing spec, covering four capabilities: field reordering (no position column exists),\
+  \ soft-delete for fields/groups (no is_disabled flag), edit field help text (already fully wired \u2014 no build needed), and form versioning (greenfield, no version concept exists\
+  \ anywhere). Upserted form-versioning-spec milestone to capture this work; five open design questions remain unresolved."

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-03-sitepilot.md
+audit_sha: ed761b48a198a62a611192de88322f688147d462
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Bug B5 investigation session for bfcache search input retention on browser back/forward; investigation only, no edits made. Recommended fix (pageshow+persisted handler) was identified
+  but not applied in this session. No canvas milestone slug was referenced and no completed work exists to record; flagged for follow-up as a separate task.

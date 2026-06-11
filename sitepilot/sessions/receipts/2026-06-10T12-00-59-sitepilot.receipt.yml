@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-59-sitepilot.md
+audit_sha: f82593afef680f59b568654c0bca4e1a5ed4fb63
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Session producing input for the 'reasons for Plan v1' document section; no decisions made and no canvas milestone slugs referenced. Informational only \u2014 the Plan v1 tabled\
+  \ status is captured via audit 2026-06-10T12-00-57."

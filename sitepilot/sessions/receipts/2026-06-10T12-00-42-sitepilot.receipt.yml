@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-42-sitepilot.md
+audit_sha: 2b0c45e8bb217f6f2a58fe8ae53f49cb0f7cf6b7
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Read-only data dictionary investigation scoping a potential versioning feature for ai_field_entry, ai_step_instance, ai_task_instance, and blueprint tables. No decisions were
+  made and no architectural direction was set. No canvas changes produced.

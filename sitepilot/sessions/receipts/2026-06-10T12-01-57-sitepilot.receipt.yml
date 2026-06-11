@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-57-sitepilot.md
+audit_sha: 9b5b580c9b55560a090d44e2f64a1425dc754a07
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 00b8c08b-b8f4-42bd-959d-ff43160a9a62
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check on the My Work tab returned PASS (duplicate of same page covered by 2026-06-10T12-01-55-sitepilot, different session). No decisions or open questions
+  were raised; audit notes no corresponding canvas milestone exists for mobile layout QA. No canvas changes warranted.

@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-34-sitepilot.md
+audit_sha: 4a8d2b5f135dddb1dbb40be01d2066ae656a5b7b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Session was a read-only data model mapping task \u2014 the operator directed an agent to read source code, migrations, and documentation to produce a data model report. The framing\
+  \ of the 'structured project data layer' initiative is fully captured by the Fact Harness architecture milestone (delta 0) attributed to audit 26 and 35. No additional canvas changes\
+  \ are warranted from this research session."

@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-33-sitepilot.md
+audit_sha: 501d3df95428d96cb20154713cd58023437d59df
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 32ff701c-ef35-41d4-a0a6-cd35525e7efc
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Operator uploaded HAR files, screenshots, and plain-text Coperniq project property field definitions for reconnaissance of the Coperniq data model, likely in support of sitepilot
+  integration or migration work. No operator decisions were made and no canvas milestones were referenced. No canvas changes; the Coperniq field mapping work may warrant a future milestone
+  if the operator confirms it as a tracked deliverable.

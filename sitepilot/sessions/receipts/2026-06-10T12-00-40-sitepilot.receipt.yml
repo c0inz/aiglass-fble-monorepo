@@ -1,0 +1,22 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-40-sitepilot.md
+audit_sha: 769aead62994f9e990871f16506891056988eaf9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: label-inference-elimination
+  track: data-layer
+  name: "Eliminate Label-Inference \u2014 23 Harvest Sites"
+  intent: Migrate all 23 label-inference sites catalogued in FACT_HARNESS_EVIDENCE.md away from label ILIKE / def_group_label matching. A CI grep-gate (failing on label ILIKE, def_group_label
+    IS DISTINCT FROM, title ILIKE) enforces the new norm from Phase 2 forward. Approximately 4 sites are addressed directly by the Alt1 ornament; digest flagship and phase-label inference
+    require migration-164 internal_name companion work.
+  status: planned
+  ordinal: 9
+warnings: []
+notes: This session produced a competing Fact Harness design (ai_fact_point projection variant) and introduced the 23-harvest-sites evidence catalog (FACT_HARNESS_EVIDENCE.md) and the
+  label-inference-elimination engineering policy. The label-inference elimination milestone is attributed here as this session most explicitly named the 23 sites and the CI grep-gate
+  rule. The broader architecture was superseded by Alt1 per audit 48.

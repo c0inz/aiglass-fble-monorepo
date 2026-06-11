@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-52-sitepilot.md
+audit_sha: e24ab8b61bcea8dc491646d3db441dc49a685579
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 00b8c08b-b8f4-42bd-959d-ff43160a9a62
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check on the Schedule page returned PASS (duplicate of same page covered by 2026-06-10T12-01-51-sitepilot, different session). No decisions or open questions
+  were raised. No canvas changes warranted.

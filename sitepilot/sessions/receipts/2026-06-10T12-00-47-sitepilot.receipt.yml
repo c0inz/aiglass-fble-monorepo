@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-47-sitepilot.md
+audit_sha: ba1dff2212a4f3902eebf59acaafc0981b232a86
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Read-only schema investigation covering migration 158 (def_* frozen snapshot columns on ai_field_entry), anchor columns, and the vestigial is_archetype / archetype_ref fields
+  on am_questionnaire_blueprint. No decisions were made. Confirmed that ancestor_assignment_ref is the active inheritance mechanism, not the legacy archetype columns. No canvas changes
+  produced.

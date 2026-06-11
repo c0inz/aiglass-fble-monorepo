@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-36-sitepilot.md
+audit_sha: 702aa7f3993ae1f06671a4510870f722d87743b4
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 47d4d111-2f58-4f28-af4e-e34569ad8b7b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile screenshot test of the My Work tab (session bb81942d) returned PASS. No operator decisions or canvas-relevant content. All audits in this batch covering the same
+  mobile QA pattern produce no deltas.

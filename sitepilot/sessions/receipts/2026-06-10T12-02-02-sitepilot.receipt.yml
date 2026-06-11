@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-02-02-sitepilot.md
+audit_sha: 21156fd6b85b176aa281c76f8716c88715b81f89
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 6171afbb-e939-407d-b9a9-9d41252e8a28
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile LLM screenshot check of the Inbox page returned PASS. No human decisions were made and no canvas changes were requested. The observation that mobile QA is not
+  mapped to a canvas milestone is noted but not actioned by any operator.

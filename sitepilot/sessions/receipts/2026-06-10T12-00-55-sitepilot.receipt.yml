@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-55-sitepilot.md
+audit_sha: 00319fcd3008800d0aa8d29e0c11d5e7b450ada8
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Judge session through API/consumer/admin lens selected Design 1 (FULL ORNAMENT) over Design 2 (WAINSCOT), scoring 8 vs 7; Design 2 addressing contract named a mandatory graft.
+  This decision is superseded by audit 2026-06-10T12-00-57, which records the final three-judge consensus with the same outcome and a more complete architectural specification. No independent
+  deltas attributed here to avoid duplication.

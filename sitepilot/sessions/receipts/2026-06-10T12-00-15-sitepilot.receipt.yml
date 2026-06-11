@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-15-sitepilot.md
+audit_sha: f39b798a4eae2d52d8762d23368e7c527df3c9ed
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: 'Read-only code investigation of the comment system: @-mention binding in reply textareas, work-order breadcrumb feasibility, and account-level comment roll-up query design. No
+  decisions or implementation were commissioned. No canvas changes; findings are inputs to future work.'

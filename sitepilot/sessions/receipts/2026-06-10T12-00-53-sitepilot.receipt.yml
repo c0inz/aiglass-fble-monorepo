@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-53-sitepilot.md
+audit_sha: 0afa7450a0c97623c2e33c3a41bf3fc1b5565963
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Session tasked with writing the 'reasons for EAV' section as input to Alt1 design; DB tunnel attempts were inconclusive. No decisions were made and no canvas milestone slugs were
+  referenced. Superseded as a canvas driver by the judge-decision audits later in this batch.

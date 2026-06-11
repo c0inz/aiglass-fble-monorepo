@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-17-sitepilot.md
+audit_sha: 5db6729b872d30bc306bd8587dd271b02bef4382
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: ui-ux-enhancements-batch
+  name: 'UI/UX enhancements: My Work, Open Actions, contact block, searchable dropdowns'
+  intent: 'Scope and implement four UI/UX improvements: My Work list (hide completed, due dates, sorting, SLA indicators), Open Actions default filter, project-header contact block,
+    and searchable worker dropdowns replacing plain selects.'
+  status: active
+warnings: []
+notes: 'Read-only scoping session covering four UI/UX enhancements: My Work list improvements, Open Actions filter (later implemented as F3), project-header contact block, and searchable
+  worker dropdowns. Upserted ui-ux-enhancements-batch milestone in drift for triage; the /projects/api/workers endpoint and lazyLoadWorkers mechanism were identified as the integration
+  points for the searchable dropdown work.'

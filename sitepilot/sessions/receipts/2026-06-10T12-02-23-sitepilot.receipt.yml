@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-02-23-sitepilot.md
+audit_sha: 294db5dbed5060390189cbf8ea68e78ff608f447
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: e4cd728a-3eec-41f6-8882-2dd935c66390
+processing_run_audits_count: 11
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check of the SitePilot Accounts list page returned PASS. No human decisions were made and no canvas changes are implied. This is a second Accounts list
+  mobile QA run in this batch consistent with audit 2026-06-10T12-02-18-sitepilot.

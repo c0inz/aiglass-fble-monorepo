@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-00-sitepilot.md
+audit_sha: 3f0cce9be297ec737c3b6f29777884ed8014ed1a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Session covered DevOpsMachine fleet-inventory script relocation and an unresolved discussion about a stuck project. No sitepilot product milestones or status changes were implied;
+  all activity was infrastructure/DevOps scoped. No canvas changes.

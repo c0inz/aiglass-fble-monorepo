@@ -1,0 +1,108 @@
+schema_version: 1
+audit_file: gadz-sim/sessions/audits/2026-06-10T12-00-09-gadz-sim.md
+audit_sha: deda327f5b2e17a7059ec2bd67f97044c3b6eccf
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 3ee138e0-7b21-4bdd-8125-59e814340ffb
+processing_run_audits_count: 1
+deltas_emitted:
+- op: upsert_track
+  slug: simulation
+  name: Simulation
+  description: GADZ surface-market simulation development and findings
+- op: upsert_track
+  slug: testnet
+  name: Testnet
+  description: GADZ testnet build, chain decisions, and protocol design
+- op: upsert_track
+  slug: capital
+  name: Capital
+  description: Capital structure, fundraising instruments, and equity roadmap
+- op: upsert_track
+  slug: infrastructure
+  name: Infrastructure
+  description: Repo setup, VM connectors, credentials, and tooling
+- op: upsert_milestone
+  slug: 30-day-learning-campaign
+  track: simulation
+  name: 30-Day All-LLM Learning Campaign
+  intent: Run 30 simulated days with 100 LLM-driven agents (qwen3-coder-30b) to measure market self-correction, DV over-declaration compression, surface-owner income, and allocative
+    efficiency.
+  status: shipped
+- op: upsert_step
+  slug: run-30-day-campaign
+  track: simulation
+  milestone: 30-day-learning-campaign
+  text: 'Execute 30-day simulation (6 hr 4 min wall time); commit MILESTONE-REPORT.md and LAUNCH-ALGORITHM-REPORT.md to feat/demographics-and-revenue branch, PR #1 at c0inz/gadz-sim.'
+  done: true
+- op: upsert_step
+  slug: record-findings
+  track: simulation
+  milestone: 30-day-learning-campaign
+  text: "Record key findings: 26%\u219263% profitable agents via nightly LLM reflection; DV over-declaration 39\xD7\u21927\xD7; surface-owner income $88,788 over 30 days; allocative\
+    \ efficiency 62.6%; TaxArb strategy identified as structurally broken; single-controller-per-surface constraint limits ad value to ~60% of competitive per-demo exchange."
+  done: true
+- op: upsert_milestone
+  slug: testnet-playbook
+  track: testnet
+  name: Testnet Playbook
+  intent: Define and commit the GADZ testnet playbook covering chain choice, custody model, owner-veto semantics, win condition, entry gate, capital roadmap, and settlement design.
+  status: active
+- op: upsert_step
+  slug: commit-initial-playbook
+  track: testnet
+  milestone: testnet-playbook
+  text: Commit TESTNET-PLAYBOOK.md with Stellar chain decision, non-custodial wallet architecture, no-escrow settlement design, and capital roadmap (Reg D / SAFE + token warrant).
+  done: true
+- op: upsert_step
+  slug: resolve-open-protocol-questions
+  track: testnet
+  milestone: testnet-playbook
+  text: 'Resolve open Phase A.1 decisions: on-chain vs accounting-unit utility token, owner-veto cap and refund mechanics, embedded-wallet SDK selection, website ad-space slot inclusion,
+    DV declaration cap policy, and allocative efficiency improvement from 62.6% baseline.'
+  done: false
+- op: upsert_milestone
+  slug: capital-structure
+  track: capital
+  name: Capital Structure Definition
+  intent: 'Formalize the three-instrument capital structure: (1) inert consumptive meter token (mint-and-burn, non-holdable, non-transferable), (2) Reg D / Reg CF fundraising security
+    with SAFE + token warrant, (3) eventual Reg A+ public equity tokenization with firewall from meter token narrative.'
+  status: active
+- op: upsert_step
+  slug: document-capital-roadmap
+  track: capital
+  milestone: capital-structure
+  text: 'Add capital roadmap to testnet playbook: three-instrument structure accepted by operator; securities-integration firewall between meter token and equity tokenization documented.'
+  done: true
+- op: upsert_step
+  slug: plan-reg-a-plus
+  track: capital
+  milestone: capital-structure
+  text: Plan Year 2-3 Reg A+ public equity raise and 5-year equity tokenization offering; maintain strict firewall from meter token to avoid securities integration risk.
+  done: false
+- op: upsert_milestone
+  slug: repo-and-vm-setup
+  track: infrastructure
+  name: Repo and VM Setup
+  intent: Initialize c0inz/gadz-sim private GitHub repo, configure SpAIglass connector Gadzoom on readystack VM, register gadz-sim and gadzoom projects with Developer role files, and
+    store GitHub classic PAT.
+  status: shipped
+- op: upsert_step
+  slug: create-gadz-sim-repo
+  track: infrastructure
+  milestone: repo-and-vm-setup
+  text: Create c0inz/gadz-sim as a new private GitHub repo (separate from gadzoom monorepo); initialize ~/projects/adpix as fresh git repo and create c0inz/adpix private repo.
+  done: true
+- op: upsert_step
+  slug: configure-spaiglass-connector
+  track: infrastructure
+  milestone: repo-and-vm-setup
+  text: 'Connect readystack VM to SpAIglass relay via spaiglass.xyz/setup; connector named Gadzoom online, gadz-sim and gadzoom projects registered, Developer role files in place, spaiglass.service
+    active. Note: spaiglass credential helper remains broken and requires separate remediation.'
+  done: true
+warnings: []
+notes: This audit covered a major simulation session on the gadz-sim project, spanning the 30-day all-LLM learning campaign completion, testnet playbook formalization with Stellar chain
+  selection, capital structure definition (three-instrument framing with Reg D / SAFE + token warrant), and infrastructure setup (c0inz/gadz-sim repo, SpAIglass Gadzoom connector). The
+  canvas had no prior slugs, so all tracks and milestones were created fresh from the audit findings. Several open protocol questions (utility token on-chain vs accounting unit, owner-veto
+  mechanics, embedded-wallet SDK, allocative efficiency improvement) are recorded as pending steps for operator triage.

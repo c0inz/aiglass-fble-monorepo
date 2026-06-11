@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-54-sitepilot.md
+audit_sha: f346b9821a7fc42d92217ed553473e8794a8c436
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Adversarial review of the ALT1 Ornament Plan returning a 'holds-with-fixes' verdict with five flagged release-risk gaps. No decisions were made and no milestone status changes
+  were implied; the session was a technical review round, not a decision session. The flagged issues are captured in the intent fields of the Phase milestones attributed to audit 2026-06-10T12-00-57.

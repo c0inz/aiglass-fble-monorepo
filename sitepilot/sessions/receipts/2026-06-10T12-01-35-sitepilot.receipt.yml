@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-35-sitepilot.md
+audit_sha: c5fa8b756c399be94ec6fdf23be40ac4f0d01d4a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 47d4d111-2f58-4f28-af4e-e34569ad8b7b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile screenshot audit of the Accounts list page returned PASS. No decisions or operator input were present. Same recurring automated mobile QA pattern as other audits
+  in this batch; no canvas changes warranted.

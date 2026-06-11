@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-24-sitepilot.md
+audit_sha: c959ac0099ba373d30c003d5792e86ae086fe192
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 32ff701c-ef35-41d4-a0a6-cd35525e7efc
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check of the SitePilot Dispatch page; LLM judge returned PASS. No operator decisions and no canvas milestones referenced. No canvas changes.

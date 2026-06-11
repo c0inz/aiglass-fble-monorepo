@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-12-sitepilot.md
+audit_sha: 1d04832c8ed220218522515b73e8f2a2790f9909
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Session was a ground-truth REST API inventory for sitepilot \u2014 research only, no architectural or feature decisions finalized. The inventory surfaced latent capabilities\
+  \ (export routes, API key CRUD, agent-chat surface) and four fully missing feature areas, but no operator action was taken. No canvas changes; findings inform future planning sessions."

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-37-sitepilot.md
+audit_sha: d05cad0246161558ae3d3ca917d7ab248a8a90f9
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 47d4d111-2f58-4f28-af4e-e34569ad8b7b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile visual regression test of the Schedule page returned PASS. Session lasted approximately 6 seconds and contained no operator input or decisions. No canvas changes
+  implied.

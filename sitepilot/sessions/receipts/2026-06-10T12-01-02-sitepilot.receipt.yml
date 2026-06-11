@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-02-sitepilot.md
+audit_sha: 3b126a26876214ee8ec2053a3c5af517d1e3cbf3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: bug-b4-iphone-pwa-header
+  name: "Bug B4 \u2014 iPhone PWA header under iOS status bar (fixed)"
+  intent: 'Fix .app-header rendering under the iOS status bar in PWA mode. Applied CSS safe-area inset: padding-top: env(safe-area-inset-top, 0px) and height: calc(var(--header-height)
+    + env(safe-area-inset-top, 0px)) to public/css/app.css only. Non-notch/desktop layout is byte-for-byte unchanged.'
+  status: shipped
+warnings: []
+notes: 'Bug B4 fix session: iPhone PWA header rendering under iOS status bar corrected with CSS safe-area inset in public/css/app.css. Fix was applied and confirmed; desktop layout unaffected.
+  Created bug-b4-iphone-pwa-header milestone with status done.'

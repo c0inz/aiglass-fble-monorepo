@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-36-sitepilot.md
+audit_sha: 0ce01dfb24260d99e12215e6827368d7164acef6
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Session blob contained only a source header referencing an empty journal.jsonl file with no operator input or conversation content. No decisions, open questions, or canvas-relevant
+  thoughts were recorded. No canvas changes are attributed to this audit.

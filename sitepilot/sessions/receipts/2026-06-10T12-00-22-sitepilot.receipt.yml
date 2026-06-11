@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-22-sitepilot.md
+audit_sha: 883d0fe0ebd4a23d4e6ff99c41da41d48d023933
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: mobile-inbox-bug-fixes
+  name: Mobile/Inbox Frontend Bug Fixes
+  intent: 'Fix three identified frontend bugs: iPhone PWA header overlap (missing safe-area-inset-top), inbox search bar retaining previous query on navigation, and inbox note dismiss
+    button hidden by long text on narrow viewports.'
+  status: planned
+warnings: []
+notes: 'Investigation-only session identifying three frontend bugs: iPhone PWA header overlap (missing safe-area-inset-top on .app-header), inbox search bar persisting previous query
+  on navigation, and inbox note dismiss button hidden by long text on mobile. Root causes were identified but no fixes were authorized. Created mobile-inbox-bug-fixes as a planned milestone
+  for operator triage.'

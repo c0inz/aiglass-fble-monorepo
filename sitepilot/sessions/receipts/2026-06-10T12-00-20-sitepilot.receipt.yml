@@ -1,0 +1,25 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-20-sitepilot.md
+audit_sha: 5936ec6a5caa4ccf7038126c16c23555c1b00765
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: data-shape-agent-api-design-revision
+  name: "Data Shape & Agent API Design \u2014 Revise and Resequence"
+  intent: 'Address principal-engineer review findings on DATA_SHAPE_AND_AGENT_API_DESIGN.md: correct build order (extract lib/shape/ first, then dedup am_field_spec, then add key columns,
+    then Agent API skin), resolve open items on envelope mutations, key uniqueness scope, concurrency model, FILE field serialization, and writeValues validation parity.'
+  status: planned
+- op: upsert_milestone
+  slug: field-spec-dedup-merge
+  name: am_field_spec Dedup-Merge Pass
+  intent: Perform prerequisite dedup-merge on am_field_spec to resolve duplicate internal_name values (jurisdictionId, inverter_count_1) before any slug-uniqueness index can be built;
+    required to unblock Agent API key-addressed field access.
+  status: planned
+warnings: []
+notes: 'Principal-engineer architecture review of DATA_SHAPE_AND_AGENT_API_DESIGN.md returned a sound-with-revisions verdict. Key findings: wrong build order, am_field_spec dedup prerequisite
+  (two duplicate internal_name values on production), envelope-mutation gap, concurrency model conflict, and FILE field serialization gap. Created data-shape-agent-api-design-revision
+  and field-spec-dedup-merge milestones as planned to track the required remediation before Agent API development proceeds.'

@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-05-sitepilot.md
+audit_sha: fbb2ee0681cd6dfd4472fd36a0c4918e9a184772
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: bug-b6-inbox-row-stretch
+  name: "Bug B6 \u2014 Inbox row stretching on long note text (fixed)"
+  intent: 'Fix inbox row layout stretching on long note text that pushes the dismiss checkbox off-screen. Applied inline-style changes to views/inbox.ejs: content column gets min-width:0/max-width:100%/overflow:hidden,
+    inner wrapper gets max-width:100%, action wrapper gets min-width:44px/margin-left:auto/white-space:nowrap. public/css/mobile.css not touched per operator instruction.'
+  status: shipped
+warnings: []
+notes: 'Bug B6 fix session: inbox row stretching on long note text corrected with scoped inline-style changes to views/inbox.ejs; fix mathematically verified at 390px width. public/css/mobile.css
+  was not touched per operator instruction. Created bug-b6-inbox-row-stretch milestone with status done.'

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-16-sitepilot.md
+audit_sha: fb78516643d5b02ee9b5630033ba985f906b63b5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Read-only investigation confirming the workflow/step structure uses a SNAPSHOT model with a rendering-time COALESCE workaround. No operator decisions were made and no code was
+  changed. No canvas changes; findings are architectural context for future development.

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-00-sitepilot.md
+audit_sha: 15d2d82e5e7f178b556de752070c8d7eacc11f52
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f3c248ab-f442-408a-8079-a45b54fbda12
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: WAINSCOT design delivered in full as an architect-produced document; no owner acceptance was recorded in this session. The design was the losing candidate in the judge rounds
+  covered by later audits. Plan v1 tabled status and FULL ORNAMENT selection are captured via audit 2026-06-10T12-00-57; no independent deltas needed.

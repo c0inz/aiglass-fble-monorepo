@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-02-00-sitepilot.md
+audit_sha: e60902c4fa779b77852fb505455b74249f4b1bbe
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 00b8c08b-b8f4-42bd-959d-ff43160a9a62
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check on the Accounts list page returned PASS. No decisions or open questions were raised; audit notes this automated visual QA pattern is not represented
+  as a milestone in the current canvas. No canvas changes warranted.

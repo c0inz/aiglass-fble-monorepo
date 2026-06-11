@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-09-sitepilot.md
+audit_sha: 0712365a744bf58881ffa4d5070ef924c1bef6f3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Session file was empty (journal.jsonl with no content). No decisions, open questions, or canvas-actionable information were present. No canvas changes.

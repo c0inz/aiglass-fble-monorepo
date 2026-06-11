@@ -1,0 +1,68 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-48-sitepilot.md
+audit_sha: b1b9b16989d00fc90ff06aa87f7d1b4c4c7e69a1
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: ornament-plan-alt1
+  track: data-layer
+  name: "Alt1 Full Ornament \u2014 Real Column Per Tenant Field"
+  intent: Replace EAV property rows with a dedicated 1:1 ornament table (ai_venture_ext) using real Postgres columns per scalar property field. Column names are minted immutable identifiers;
+    all DDL goes through lib/ornament.js; workflow-fact columns are trigger-protected and nightly-recomputable. Adversarial review returned holds-with-fixes verdict.
+  status: active
+  ordinal: 2
+- op: upsert_milestone
+  slug: alt1-phase0-internal-name-mint
+  track: data-layer
+  name: "Alt1 Phase 0 \u2014 internal_name Minting Script"
+  intent: One-shot script to mint internal_name for the 612 of 695 BRI0 property specs that currently lack it. Required before any column minting can proceed. Also finalizes the v1 fact
+    list (~25 facts) and money-column mapping (project_value vs contract_value).
+  status: planned
+  ordinal: 10
+- op: upsert_milestone
+  slug: alt1-phase1-backfill
+  track: data-layer
+  name: "Alt1 Phase 1 \u2014 Column Backfill and Zero-Diff Gate"
+  intent: 'Add real columns to ai_venture_ext for all scalar property fields, backfill from ai_field_entry, verify zero-diff parity between EAV rows and new columns across all AIEPC_*
+    schemas. Includes dropdown option-key translation (values are currently labels in EAV). Go/no-go gate: one week of zero parity diffs before Phase 2.'
+  status: planned
+  ordinal: 11
+- op: upsert_milestone
+  slug: alt1-ornament-review-fixes
+  track: data-layer
+  name: "Alt1 Ornament Plan \u2014 Fix Five Adversarial Hits"
+  intent: 'Address the five major issues identified in the holds-with-fixes adversarial review: (1) ghost-option destruction before harvest, (2) undefined data_kind mutation / missing
+    retype path, (3) arbitrary-collapse resolver for form fields at venture grain, (4) instance-collapse and time-relative facts the column model cannot express, (5) grep-gate contradicting
+    its own rollback path.'
+  status: active
+  ordinal: 12
+- op: upsert_step
+  slug: ci-grep-gate
+  track: data-layer
+  milestone: label-inference-elimination
+  text: Add CI grep-gate test failing build on new occurrences of label ILIKE, def_group_label IS DISTINCT FROM, or title ILIKE in routes/lib.
+  done: false
+  ordinal: 1
+- op: upsert_step
+  slug: lib-ornament-ddl-chokepoint
+  track: data-layer
+  milestone: ornament-plan-alt1
+  text: Implement lib/ornament.js as the single DDL chokepoint for all ALTER TABLE ADD COLUMN operations on ai_venture_ext; verify AsyncLocalStorage transaction atomicity with settings.js
+    BEGIN/COMMIT.
+  done: false
+  ordinal: 1
+- op: upsert_step
+  slug: write-protection-trigger
+  track: data-layer
+  milestone: ornament-plan-alt1
+  text: Implement write-protection trigger on ai_venture_ext enforcing single-writer for workflow-authority columns via GUC guard; rogue writes raise error rather than silently corrupting.
+  done: false
+  ordinal: 2
+warnings: []
+notes: "Pivotal session: John rejected Plan v1 (Fact Harness projection) and directed Alt1 (Full Ornament \u2014 real Postgres columns per tenant field via ai_venture_ext). The full\
+  \ Alt1 design was produced including DDL chokepoint (lib/ornament.js), write-protection trigger, lazy column minting, promoted workflow-fact columns, nightly reconciler, and six-phase\
+  \ migration plan. Alt1 milestones and implementation steps are attributed here as the decision-driving audit."

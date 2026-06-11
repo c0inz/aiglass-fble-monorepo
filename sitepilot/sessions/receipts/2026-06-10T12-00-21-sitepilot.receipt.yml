@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-21-sitepilot.md
+audit_sha: a6f0673a650314b40a401c8c77eb6d5f0f2d8f6f
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Read-only investigation confirming the project properties system uses a cascade/live/global model. Surfaced a data integrity risk when data_kind changes (no migration of existing
+  ai_field_entry rows) and a gap in admin tooling (group assignment is read-only in the UI). No operator decisions were made. No canvas changes; findings are architectural context.

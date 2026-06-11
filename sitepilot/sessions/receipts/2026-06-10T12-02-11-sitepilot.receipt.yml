@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-02-11-sitepilot.md
+audit_sha: d209aa162abf6829f00a3abe850f4a24903297e2
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 6171afbb-e939-407d-b9a9-9d41252e8a28
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile screenshot test of the Dispatch page returned PASS. No decisions were made and no canvas changes are implied. One of two audits covering the Dispatch page; both
+  consistent with no canvas action needed.

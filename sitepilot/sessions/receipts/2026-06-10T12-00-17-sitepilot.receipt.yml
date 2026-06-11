@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-17-sitepilot.md
+audit_sha: 1b04c4a2f67e4112c8ed11844982de969b38ad42
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Documentation lookup on enabling and disabling ultracode (multi-agent orchestration) in Claude Code. No product or architectural decisions were made. No canvas changes.

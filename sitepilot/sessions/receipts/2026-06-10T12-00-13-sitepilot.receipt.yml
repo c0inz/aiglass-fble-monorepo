@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-13-sitepilot.md
+audit_sha: 23c68af67bc774aaab1b4df07b4a380216d7d0a5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: archive-delete-ux-consistency
+  name: Archive/Delete UX Consistency
+  intent: Make archive and delete UX consistent and safer across the form editor and work-order editor, addressing the inconsistency between field archive (no confirm) and group archive
+    (has confirm), and aligning hard-DELETE vs soft-archive patterns.
+  status: planned
+warnings: []
+notes: Read-only investigation of archive/delete UX across form-editor.ejs and work-order-editor.ejs. No decisions were made, but the operator signaled intent to address the inconsistency.
+  Created archive-delete-ux-consistency as a planned milestone to capture this pending work for operator triage.

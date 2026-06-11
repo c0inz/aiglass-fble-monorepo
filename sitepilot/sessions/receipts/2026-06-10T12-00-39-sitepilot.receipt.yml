@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-39-sitepilot.md
+audit_sha: aa5ed4f8bb49f05278c0f4a2c6e462bd5477201e
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: This session conducted a scored architecture comparison (Design 2 vs 1 vs 3) and selected Design 2 (Fact Harness with ai_fact_point projection) as the winner. However, audit 48
+  (later, chronologically) records that John rejected the projection approach entirely, superseding this selection. Migration 164 internal_name concept was also confirmed here but is
+  already captured via audit 38. No additional deltas are attributed to this audit.

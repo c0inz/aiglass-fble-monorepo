@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-43-sitepilot.md
+audit_sha: 355060fee18df377400f50aab4f0f827cbcce6f2
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 47d4d111-2f58-4f28-af4e-e34569ad8b7b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile screenshot audit of the Open Actions Service Tickets view returned PASS. All mentions in this audit are captured by sibling audits in this batch. No canvas changes
+  implied.

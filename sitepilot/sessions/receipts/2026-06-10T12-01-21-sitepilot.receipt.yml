@@ -1,0 +1,47 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-21-sitepilot.md
+audit_sha: a098d16147fc8d292b97ab3bd69e657c1cc7cb58
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 32ff701c-ef35-41d4-a0a6-cd35525e7efc
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: ui-route-sweep
+  name: "UI route sweep \u2014 post-migration file patching"
+  intent: Patch all route files referencing removed tables (ai_step_instance, ai_work_ticket_old, ai_remark.work_ticket_ref) after the schema migration. Actual blast radius was 19+14
+    files, not the 3 originally estimated.
+  status: shipped
+- op: upsert_milestone
+  slug: bri0-account-reload
+  name: BRI0 production account reload (615611, 693903, 694215)
+  intent: Wipe and reload the three target accounts into BRI0 production using the canonical Coperniq extractor with full FK hydration for process_ref, active_stage_ref, serial_number,
+    owner, manager, and address fields.
+  status: shipped
+- op: upsert_milestone
+  slug: coperniq-batch-export
+  name: "Coperniq batch export \u2014 remaining 576 accounts"
+  intent: Pull all remaining accounts in batches of 25 at 8-minute intervals using the existing batch driver. Batch 308312 failed with a SQL syntax error (empty IN-clause) and requires
+    a manual re-run.
+  status: active
+- op: upsert_milestone
+  slug: fact-harness-plan-v1
+  name: Fact Harness Plan v1 (projection-based, ai_fact_point)
+  intent: Original fact harness design using a projection-based copy table. Operator declared the design fundamentally unsatisfactory and tabled it; nothing was built.
+  status: shipped
+- op: upsert_milestone
+  slug: alt1-ornament-plan
+  name: "Alt1 Full Ornament Plan \u2014 per-tenant typed column registry"
+  intent: 'Alternative fact harness design: per-tenant ai_venture_ext ornament table with real typed columns, am_field_spec promoted to column registry, workflow-derived facts as machine-written
+    recomputable columns, EAV forms/WOs permanent. Plan committed to docs/ALT1_ORNAMENT_PLAN.md on docs/fact-harness-plan branch; awaiting operator approval before implementation begins.'
+  status: active
+- op: upsert_milestone
+  slug: migration-103-old-table-drop
+  name: "Migration 103 \u2014 _old table drop gate"
+  intent: Final drop of _old tables gated until 2026-06-06. Migration 123 (CASCADE to NO ACTION on 70 FK constraints in BRI0 and MAS0) was applied in this session.
+  status: active
+warnings: []
+notes: Large operator session (2026-05-06 to 2026-06-10) covering UI route sweep completion, BRI0 account reload, Coperniq batch export kickoff, tabling of Fact Harness Plan v1, commissioning
+  of the Alt1 Full Ornament plan, and Migration 123 application. Created milestones reflecting each of these major engineering decisions; Alt1 remains awaiting operator approval and
+  the batch export has one account (308312) requiring a manual re-run.

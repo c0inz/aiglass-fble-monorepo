@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-19-sitepilot.md
+audit_sha: fc707b5e09745da9b07ee48d1a016d0bd6014c4a
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: attribute-editor-ux-harmonization
+  name: Attribute/field editor UX harmonization
+  intent: 'Resolve six identified UX inconsistencies across field editor surfaces: soft-archive vs hard-delete semantics, delete button placement, modal widths, rename interaction pattern,
+    visual language for controls, and scope of user control across form fields vs project properties vs work order fields.'
+  status: active
+warnings: []
+notes: Read-only inventory and consistency mapping of the four attribute/field editor surfaces, confirming Account and Request attributes share the project_property origin (no separate
+  editor). Six specific UX inconsistencies were identified and are captured in the attribute-editor-ux-harmonization milestone intent. A follow-up harmonization effort is implied but
+  not yet scoped or assigned.

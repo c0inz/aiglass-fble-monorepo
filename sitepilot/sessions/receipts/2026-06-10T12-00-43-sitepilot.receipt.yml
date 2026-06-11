@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-43-sitepilot.md
+audit_sha: 8a21c6c1974e605ad286b3cd8b26f977c3b55de0
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Read-only investigation into workflow rule freezing behavior \u2014 specifically whether step dependencies (BLOCKS edges) are frozen at project creation vs read live from blueprints.\
+  \ No decisions made; the session ended with the analysis delivered. The finding was formally refuted by audit 44. No canvas changes produced."

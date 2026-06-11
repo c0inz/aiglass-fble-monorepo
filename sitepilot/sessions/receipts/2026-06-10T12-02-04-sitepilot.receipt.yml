@@ -1,0 +1,11 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-02-04-sitepilot.md
+audit_sha: d06dd16b31b5399b1e6318b2e309aff54b81f090
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 6171afbb-e939-407d-b9a9-9d41252e8a28
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile usability check of the Schedule page returned PASS. No human operator decisions or canvas changes were implied. The session contained only automated QA output.

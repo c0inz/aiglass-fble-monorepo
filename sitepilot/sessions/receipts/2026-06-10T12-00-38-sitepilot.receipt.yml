@@ -1,0 +1,74 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-38-sitepilot.md
+audit_sha: 12ad4bd83f5e26019931a08a9bd31befe2a8ba79
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_track
+  slug: data-layer
+  name: Data Layer
+  description: Canonical project-facts architecture, schema migrations, and EAV elimination work.
+  ordinal: 1
+- op: upsert_milestone
+  slug: fact-harness-design
+  track: data-layer
+  name: "Fact Harness Architecture Design (Plan v1 \u2014 Tabled)"
+  intent: Registry-governed canonical store with am_fact, am_fact_binding, and ai_fact_point projection tables layered over existing capture surfaces. Tabled by John on 2026-06-11 after
+    adversarial review found the projection approach fragile against out-of-band writers.
+  status: planned
+  ordinal: 1
+- op: upsert_milestone
+  slug: migration-163-facts-schema
+  track: data-layer
+  name: "Migration 163 \u2014 Facts Ledger Schema"
+  intent: SQL migration creating am_fact, am_fact_binding, and ai_fact_value (or ai_fact_point) tables as the schema substrate for whichever canonical-facts architecture is approved.
+    Produced as a design artifact during Fact Harness sessions; status contingent on final architecture approval.
+  status: planned
+  ordinal: 3
+- op: upsert_milestone
+  slug: migration-164-workflow-internal-name
+  track: data-layer
+  name: "Migration 164 \u2014 Workflow Blueprint internal_name Columns"
+  intent: Add internal_name to am_stage_blueprint and am_assignment_blueprint, seeded for known templates, eliminating phase-label and WO-title string-matching at the root. Companion
+    change required by both the Fact Harness design and the Alt1 Ornament Plan.
+  status: planned
+  ordinal: 4
+- op: upsert_milestone
+  slug: lib-facts-resolver
+  track: data-layer
+  name: lib/facts/ Single-Writer Module
+  intent: New library module enforcing single-writer discipline over the canonical fact surface, including catalog.js (~35 solar-EPC fact definitions), rebuild.js (truncate-and-rebuild
+    per tenant), and apply-binding.js / regen-view.js utilities.
+  status: planned
+  ordinal: 5
+- op: upsert_milestone
+  slug: agent-api-facts-endpoints
+  track: data-layer
+  name: "Agent API v1 \u2014 Project Facts Endpoints"
+  intent: 'New Agent API endpoints: GET /api/v1/meta/facts, GET /api/v1/projects/:id/facts, GET /api/v1/projects/:id/facts/:key, and PATCH /api/v1/projects/:id/facts (or PUT per-key
+    variant). PATCH uses am_api_idempotency machinery. Scoped into v1 because fact projection is a typed permanent-schema surface.'
+  status: planned
+  ordinal: 6
+- op: upsert_milestone
+  slug: project-facts-settings-ui
+  track: data-layer
+  name: "Settings \u2014 Project Facts Admin UI Page"
+  intent: "New Settings \u2192 Data \u2192 Project Facts page providing a declaration glossary with coverage counts, conflict report, priority reorder, and suggestion wizard that infers\
+    \ label matches once at declaration time (never at runtime)."
+  status: planned
+  ordinal: 7
+- op: upsert_milestone
+  slug: reconciler-nightly-job
+  track: data-layer
+  name: "Nightly Reconciler \u2014 EAV vs Column Parity Checker"
+  intent: 'reconcile.js / scripts/facts/reconcile.js: nightly job that diffs am_field_spec desired state against information_schema.columns across all AIEPC_* schemas, repairs with ADD
+    COLUMN IF NOT EXISTS, and asserts a heartbeat row via /healthz to prevent silent reconciler death.'
+  status: planned
+  ordinal: 8
+warnings: []
+notes: This session produced the full 'Facts Ledger' (Plan v1) architecture design including three new tables, migration numbering (163/164), the lib/facts/ module, Agent API endpoints,
+  Project Facts settings UI, and the nightly reconciler concept. Those design artifacts are captured as planned milestones. Per audit 48 (later in this batch), Plan v1 was subsequently
+  rejected by John; fact-harness-design is therefore created with status planned but will be superseded by the Alt1 ornament milestones.

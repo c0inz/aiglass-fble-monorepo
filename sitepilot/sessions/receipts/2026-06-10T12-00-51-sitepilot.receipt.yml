@@ -1,0 +1,14 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-51-sitepilot.md
+audit_sha: 9ef30a36eb2ea1c1ff9eaa8ed427936df5e93ebf
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: f55882b6-ec27-4274-8615-6ad37d797ba1
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: "Second adversarial review session confirming the holds-with-fixes verdict on Alt1; the five named major attack hits (ghost-option destruction, data_kind mutation, form-field\
+  \ collapse resolver, time-relative facts, grep-gate rollback contradiction) are the same issues captured in the alt1-ornament-review-fixes milestone attributed to audit 48. This session\
+  \ corroborated those findings and confirmed ~12\u201317 off-chokepoint ai_field_entry writers and 14 ai_task_instance writer files vs 4 scoped in the plan. No additional deltas attributed\
+  \ here as the fixes milestone was already created."

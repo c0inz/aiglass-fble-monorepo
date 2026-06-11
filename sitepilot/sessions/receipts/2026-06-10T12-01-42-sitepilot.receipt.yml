@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-42-sitepilot.md
+audit_sha: a7b29744699b1a1d0c5d29109b4a029fba5a96e3
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 47d4d111-2f58-4f28-af4e-e34569ad8b7b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Automated mobile layout check of the Open Actions Service Tickets view returned PASS. No decisions or operator input; same pattern as other audits in this batch. No canvas changes
+  implied.

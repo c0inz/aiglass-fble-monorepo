@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-29-sitepilot.md
+audit_sha: 488efd8a0a27e9046c5d49e068e00f3c7147c504
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Session submitted the Fact Harness plan for adversarial review and recorded the 'holds-with-fixes' verdict with seven major and five minor issues. The specific factual corrections
+  identified in this session are captured in the adversarial review milestone (delta 12), which is attributed to audit 31 as the more detailed and later review. This audit's findings
+  are a subset; no additional deltas are warranted.

@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-28-sitepilot.md
+audit_sha: 1545df1fda3906211d1928524b85e0be5a6bd122
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Session presented three competing designs for AI scoring without a recorded operator decision. All material (design scoring, schema options, migration numbering) is superseded
+  by audits 26 and 35, which contain the actual selection and synthesized plan. No additional canvas changes are attributed to this audit.

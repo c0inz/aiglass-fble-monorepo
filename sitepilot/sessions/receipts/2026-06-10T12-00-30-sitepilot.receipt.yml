@@ -1,0 +1,18 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-30-sitepilot.md
+audit_sha: 61b47e69420486a07fdb8a5db02ae3db8f106651
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 7addfe4d-7996-4cee-8e9a-cdbc4ff1b27b
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: architecture-research-eav-patterns
+  name: "Architecture research \u2014 EAV / CQRS / openEHR / Salesforce data-model patterns"
+  intent: Three parallel build-vs-borrow research sessions covering openEHR two-level modeling (stable RM vs archetypes), FHIR/CDM/MDM patterns, CQRS-lite read models and Postgres EAV
+    guidance, and Salesforce/Dataverse metadata registry mechanics. Research delivered; architectural decision (Fact Harness Design 2) subsequently made.
+  status: shipped
+warnings: []
+notes: Session commissioned a Salesforce/Dataverse metadata-registry build-vs-borrow research report covering field metadata API, formula and rollup columns, alternate keys, and scale
+  failure modes. Research delivered; no decisions made. Co-attributed to the architecture research milestone (delta 10) as a parallel research session alongside audits 24 and 37.

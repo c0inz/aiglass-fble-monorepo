@@ -1,0 +1,13 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-00-23-sitepilot.md
+audit_sha: c9dddc936435a76fde04e553ac390ef62a10484c
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: 93ce2438-04cb-428e-bfdd-59330b93c92a
+processing_run_audits_count: 14
+deltas_emitted: []
+warnings: []
+notes: Architecture research session on FHIR resource model, Enterprise Integration Canonical Data Model, and MDM survivorship rules as inputs for sitepilot's EAV data layer design.
+  Delivered a research report with takeaways; no build-vs-borrow decision was reached. No canvas changes; this is one of multiple parallel research blobs feeding the data-shape design
+  work.

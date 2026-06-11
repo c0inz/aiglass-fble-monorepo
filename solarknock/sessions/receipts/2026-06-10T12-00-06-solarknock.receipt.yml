@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-06-10T12-00-06-solarknock.md
+audit_sha: 7a0d84bb89fbf6a8686028dbe33c76397328e9c0
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: fc9d4957-4e9f-46e0-86af-41e73ccd3de4
+processing_run_audits_count: 4
+deltas_emitted:
+- op: upsert_milestone
+  slug: closer-settings-route-cleanup
+  name: Clean up dead /closer-settings route and server-side dependencies
+  intent: The /closer-settings route is already a dead redirect (shipped 2026-05-27). Google Calendar OAuth returnPath references it in six server locations; these must be updated before
+    any route cleanup can proceed.
+  status: planned
+warnings: []
+notes: "Adversarial design review of the admin-settings consolidation spec; no operator decisions were recorded. The closer-settings dead route and its six server-side returnPath dependencies\
+  \ were documented precisely enough to warrant a canvas milestone for the cleanup work. All other gaps (billing role gate, Stack.Screen orphans, manager_code visibility) are captured\
+  \ in notes but do not yet have operator buy-in for action \u2014 landing in the existing admin-settings-spec-v2 milestone scope pending the three operator decisions."

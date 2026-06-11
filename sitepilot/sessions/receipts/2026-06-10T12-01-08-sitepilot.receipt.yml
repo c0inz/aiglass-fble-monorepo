@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: sitepilot/sessions/audits/2026-06-10T12-01-08-sitepilot.md
+audit_sha: b61b9cb184a10a2cb7771f29bacb0caabf8b94ee
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-06-10T12:00:00Z'
+processing_run_id: ac5f327a-5ee7-439b-944c-c1dbcf9f57b5
+processing_run_audits_count: 14
+deltas_emitted:
+- op: upsert_milestone
+  slug: hidden-step-visibility-design
+  name: 'Hidden step visibility: always-visible with strikethrough chip'
+  intent: 'Design and implement the always-visible hidden-step UX: display hidden workflow steps, forms, and work orders with strikethrough text and a clickable chip explaining the hide
+    reason, rather than omitting them from the project workspace.'
+  status: active
+warnings: []
+notes: Read-only investigation session scoping the hidden-step always-visible UX change; no files were edited per operator instruction. Upserted hidden-step-visibility-design milestone
+  to capture the design work identified (hidden_reason column question, toggle interaction, condition-engine chip data, CSS class behavior change). Four open design questions remain
+  unresolved and are recorded in milestone intent.
