@@ -1,0 +1,19 @@
+schema_version: 1
+audit_file: solarknock/sessions/audits/2026-06-24T02-35-06-solarknock.md
+audit_sha: cce69b3389ff13585a4fcadd0b02d6dd9ebaddcf
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: fb1b52a4-e94b-47ff-a67a-725a6bcbc06f
+processing_run_audits_count: 1
+deltas_emitted:
+- op: upsert_milestone
+  slug: knock-distance-gps-wiring
+  name: Wire device GPS into knock-distance capture
+  intent: Ensure AddressPopup knock-create paths (disposition modal and Add-Lead) call captureDeviceLocation() to populate knock_pins.knock_distance, completing the write path that migration
+    028 introduced but left unwired.
+  status: shipped
+warnings: []
+notes: "Session covered the discovery and fix of a silent migration gap: migration 028 added knock_distance but AddressPopup never called captureDeviceLocation(), leaving the column\
+  \ NULL on all 10,399 rows. The operator approved and deployed the fix (prod-20260612-141107-c6fbe90) with end-to-end verification. No existing canvas slugs were referenced, so a new\
+  \ milestone is created in drift for operator triage; no strict-op targets were assumed. PWA cache-busting was noted informally but no action was taken \u2014 no canvas change warranted."

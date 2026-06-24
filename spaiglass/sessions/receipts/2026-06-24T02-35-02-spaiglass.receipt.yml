@@ -1,0 +1,51 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-06-24T02-35-02-spaiglass.md
+audit_sha: 41ca779bb96aa80ead3c6c09f21b4bbe686c6ae5
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 3a02b3ea-3e73-4650-a598-f96391405595
+processing_run_audits_count: 2
+deltas_emitted:
+- op: upsert_milestone
+  slug: argocd-non-root-path
+  track: drift
+  name: ArgoCD non-root rootless architecture (Path 2)
+  intent: Confirm and execute the Path 2 rootless k3s architecture (--rootless --disable-agent, USER 999, supervisord + KUBECONFIG under $HOME) for the single-SKU ReadyStack argocd release.
+  status: active
+- op: upsert_step
+  slug: correct-argocd-strategy-non-root-claim
+  track: drift
+  milestone: argocd-non-root-path
+  text: "Correct the false assertion in strategies/argocd.json (line 341) that non-root is structurally unfixable \u2014 empirical rootless test disproved this claim."
+  done: false
+- op: upsert_step
+  slug: add-docker-scout-grade-a-claim
+  track: drift
+  milestone: argocd-non-root-path
+  text: Add docker_scout_grade_a claim object to registry/claims.json and wire registry/stages.json seq-70 gate to enforce all-8-green Scout policies (not just 0-fixable C/H).
+  done: false
+- op: upsert_step
+  slug: fix-runtime-user-contradiction
+  track: drift
+  milestone: argocd-non-root-path
+  text: Resolve contradiction between runtime_user=argocd in argocd strategy and fat image shipping as root; make the pipeline enforce the declared runtime_user.
+  done: false
+- op: upsert_step
+  slug: implement-offline-vendoring
+  track: drift
+  milestone: argocd-non-root-path
+  text: Add Dockerfile.offline, BUILD_OFFLINE.sh, VERIFY_OFFLINE.sh, and vendored apt/source directories to argocd kit to close the offline build gap (docker build --network=none currently
+    fails at first apt-get).
+  done: false
+- op: upsert_step
+  slug: install-cosign-and-sbom-attestation
+  track: drift
+  milestone: argocd-non-root-path
+  text: 'Install cosign on build host, replace empty rc4 SBOM attestation with a real signed SBOM, and establish signing key identity (keyless OIDC vs. managed key) to unblock Scout
+    supply-chain policy #5 and the signed-provenance free-chip bullet.'
+  done: false
+warnings: []
+notes: 'Session established Path 2 (k3s rootless, USER 999) as the confirmed architectural direction for the single-SKU ReadyStack argocd release, and surfaced five concrete pipeline/artifact
+  gaps not yet in the canvas: a false strategy assertion, a missing Grade-A Scout claim object, a runtime_user contradiction, an offline-build gap, and an empty SBOM attestation. Created
+  the argocd-non-root-path drift milestone with one step per actionable gap. No spaiglass canvas milestones were referenced by slug, so all deltas land in drift for operator triage.'

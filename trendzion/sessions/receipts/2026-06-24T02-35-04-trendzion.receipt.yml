@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-06-24T02-35-04-trendzion.md
+audit_sha: 461e779fc42692bbef01b0c8ea13cdc0ea034089
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: a815aa44-0bd9-45b0-af88-ac59693c34fd
+processing_run_audits_count: 2
+deltas_emitted: []
+warnings: []
+notes: Audit source was an empty session blob containing only a header and filename reference with no message content. No decisions, open questions, or canvas-relevant material were
+  present. No canvas changes.

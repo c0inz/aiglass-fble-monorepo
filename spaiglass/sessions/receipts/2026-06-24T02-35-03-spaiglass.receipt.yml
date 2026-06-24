@@ -1,0 +1,31 @@
+schema_version: 1
+audit_file: spaiglass/sessions/audits/2026-06-24T02-35-03-spaiglass.md
+audit_sha: be77f0f61393c8df0db1f5701418a0c1652892df
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: 3a02b3ea-3e73-4650-a598-f96391405595
+processing_run_audits_count: 2
+deltas_emitted:
+- op: upsert_milestone
+  slug: cosign-key-fleet-inventory
+  track: drift
+  name: Fleet-wide cosign signing-key inventory
+  intent: Locate the ReadyStack canonical image-signing key (target fingerprint b698e6e62c09a245) across all fleet hosts; document which host holds it and establish a canonical key assignment.
+  status: active
+- op: upsert_step
+  slug: scan-remaining-hosts-for-signing-key
+  track: drift
+  milestone: cosign-key-fleet-inventory
+  text: Continue host-by-host cosign key discovery beyond exceedbot1 (which did not hold the target key b698e6e62c09a245); note prep4 has fingerprint 552bf24ec474fc39 for reference.
+  done: false
+- op: upsert_step
+  slug: investigate-exceedbot1-spaiglass-dir
+  track: drift
+  milestone: cosign-key-fleet-inventory
+  text: "Enumerate the spaiglass directory found on exceedbot1 during key-discovery session \u2014 contents are unknown and may be relevant to the project."
+  done: false
+warnings: []
+notes: Session was a fleet-wide cosign key-discovery task; exceedbot1 was scanned and did not yield the canonical signing key (b698e6e62c09a245). The session surfaced an untracked multi-host
+  signing-key inventory effort and a spaiglass directory on exceedbot1 whose contents are unknown. Created the cosign-key-fleet-inventory drift milestone with steps to continue the scan
+  and investigate the exceedbot1 spaiglass directory. No existing canvas milestones were referenced, so all deltas land in drift.

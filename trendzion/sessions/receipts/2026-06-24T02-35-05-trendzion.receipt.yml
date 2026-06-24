@@ -1,0 +1,12 @@
+schema_version: 1
+audit_file: trendzion/sessions/audits/2026-06-24T02-35-05-trendzion.md
+audit_sha: 825e66e77974f91d85368c8ad9894aef4903226b
+processed_by: claude-sonnet-4-6
+playbook_version: 1.0.0
+processed_at: '2026-05-29T18:00:00Z'
+processing_run_id: a815aa44-0bd9-45b0-af88-ac59693c34fd
+processing_run_audits_count: 2
+deltas_emitted: []
+warnings: []
+notes: "Audit covered an infrastructure key inventory session on rsagent4 searching for cosign image-signing keys \u2014 a DevOps/fleet concern unrelated to the trendzion product canvas.\
+  \ The session concluded no cosign keys exist on rsagent4 and implied no product decisions, status changes, or canvas items for trendzion. No canvas changes."
